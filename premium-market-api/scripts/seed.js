@@ -3,7 +3,7 @@
 // y usuarios de prueba de cada rol.
 //
 //   npm run seed            → carga solo lo que falta
-//   npm run seed -- --reset → borra productos, usuarios, pedidos y movimientos y vuelve a cargar
+//   npm run seed -- --reset → borra productos, usuarios, pedidos, recepciones y movimientos y vuelve a cargar
 //
 // Por seguridad solo corre contra una base local (127.0.0.1 / localhost).
 
@@ -15,6 +15,7 @@ const Producto   = require('../src/models/producto.model');
 const Usuario    = require('../src/models/usuario.model');
 const Pedido     = require('../src/models/pedido.model');
 const Movimiento = require('../src/models/movimiento.model');
+const Recepcion  = require('../src/models/recepcion.model');
 const productos  = require('./data/productos.json');
 
 const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/premium_market';
@@ -39,7 +40,10 @@ async function main() {
   console.log(`Conectado a ${mongoose.connection.name}`);
 
   if (process.argv.includes('--reset')) {
-    await Promise.all([Producto.deleteMany({}), Usuario.deleteMany({}), Pedido.deleteMany({}), Movimiento.deleteMany({})]);
+    await Promise.all([
+      Producto.deleteMany({}), Usuario.deleteMany({}), Pedido.deleteMany({}),
+      Recepcion.deleteMany({}), Movimiento.deleteMany({}),
+    ]);
     console.log('Base vaciada');
   }
 
