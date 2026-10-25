@@ -53,6 +53,14 @@ function generarDetalle(metodo, rutaOriginal, body, params, data) {
     return `Actualizó stock por venta: ${nombre} → ${body.stock} u.`;
   }
 
+  // Ajuste atómico de stock (venta en caja o reversión)
+  if (metodo === 'PATCH' && base === '/api/productos' && body && 'delta' in body) {
+    const delta = Number(body.delta);
+    return delta < 0
+      ? `Vendió en caja: ${nombre} ${delta} u. (quedan ${data?.stock ?? '?'})`
+      : `Devolvió stock: ${nombre} +${delta} u. (quedan ${data?.stock ?? '?'})`;
+  }
+
   const mapa = {
     'POST /api/productos':    `Creó producto: ${nombre}`,
     'PUT /api/productos':     `Editó producto: ${nombre}`,

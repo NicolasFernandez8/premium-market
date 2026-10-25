@@ -153,7 +153,7 @@
                       @for (p of historiales.get(c.clave) ?? []; track p._id) {
                         <li>
                           <span class="detalle-cantidad">{{ p.codigo }}</span>
-                          <span>{{ p.createdAt | date:'dd/MM/yyyy HH:mm' }} · {{ p.items.length }} productos</span>
+                          <span>{{ p.createdAt | date:'dd/MM/yyyy HH:mm' }} · {{ p.items.length }} {{ p.items.length === 1 ? 'producto' : 'productos' }}</span>
                           <span class="detalle-categoria">{{ estados[p.estado].texto }}</span>
                           <span class="detalle-costo">{{ p.total | currency:'ARS':'symbol-narrow':'1.0-0':'es-AR' }}</span>
                         </li>

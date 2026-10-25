@@ -27,7 +27,7 @@ export const CATEGORIAS: Categoria[] = [
   { nombre: 'Golosinas',             icono: 'cake'              },
   { nombre: 'Limpieza',              icono: 'cleaning_services' },
   { nombre: 'Higiene Personal',      icono: 'soap'              },
-  { nombre: 'Perfumería',            icono: 'self_care'         },
+  { nombre: 'Perfumería',            icono: 'face_retouching_natural' },
   { nombre: 'Farmacia',              icono: 'local_pharmacy'    },
   { nombre: 'Mascotas',              icono: 'pets'              },
   { nombre: 'Ferretería',            icono: 'hardware'          },

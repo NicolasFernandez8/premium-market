@@ -180,11 +180,11 @@
   "descuento": 0
  },
  {
-  "nombre": "Yogur Actimel Frutilla 100g x4",
+  "nombre": "Yogurísimo Frutilla 120g x4",
   "categoria": "Lácteos",
   "precio": 3800,
   "stock": 18,
-  "descripcion": "Yogur bebible probiótico x4 unidades",
+  "descripcion": "Yogur firme sabor frutilla x4 unidades",
   "icono": "icecream",
   "oferta": false,
   "descuento": 0
@@ -360,11 +360,11 @@
   "descuento": 0
  },
  {
-  "nombre": "Agua Villavicencio 1.5L",
+  "nombre": "Agua Villavicencio Con Gas 1.5L",
   "categoria": "Aguas y Jugos",
   "precio": 1800,
   "stock": 60,
-  "descripcion": "Agua mineral sin gas 1.5 litros",
+  "descripcion": "Agua mineral con gas 1.5 litros",
   "icono": "water_drop",
   "oferta": false,
   "descuento": 0
@@ -720,21 +720,21 @@
   "descuento": 0
  },
  {
-  "nombre": "Cerveza Stella Artois 473ml Lata",
+  "nombre": "Cerveza Stella Artois Sin Alcohol 473ml Lata",
   "categoria": "Bebidas con Alcohol",
   "precio": 3200,
   "stock": 36,
-  "descripcion": "Cerveza rubia premium lata 473ml",
+  "descripcion": "Cerveza premium sin alcohol lata 473ml",
   "icono": "sports_bar",
   "oferta": false,
   "descuento": 0
  },
  {
-  "nombre": "Cerveza Schneider 473ml Lata",
+  "nombre": "Cerveza Schneider Remix Pomelo 473ml Lata",
   "categoria": "Bebidas con Alcohol",
   "precio": 1800,
   "stock": 48,
-  "descripcion": "Cerveza rubia lata 473ml",
+  "descripcion": "Cerveza saborizada pomelo lata 473ml",
   "icono": "sports_bar",
   "oferta": false,
   "descuento": 0
@@ -3155,17 +3155,17 @@
   "precio": 4200,
   "stock": 30,
   "descripcion": "Removedor de maquillaje suave para ojos",
-  "icono": "self_care",
+  "icono": "face_retouching_natural",
   "oferta": true,
   "descuento": 20
  },
  {
-  "nombre": "Esmalte de Uñas OPI 15ml",
+  "nombre": "Esmalte de Uñas Verde 15ml",
   "categoria": "Perfumería",
   "precio": 4800,
   "stock": 28,
-  "descripcion": "Esmalte de uñas gel larga duración",
-  "icono": "self_care",
+  "descripcion": "Esmalte de uñas color verde larga duración",
+  "icono": "face_retouching_natural",
   "oferta": false,
   "descuento": 0
  },
@@ -3175,7 +3175,7 @@
   "precio": 10500,
   "stock": 12,
   "descripcion": "Crema contorno de ojos antibolsas y ojeras",
-  "icono": "self_care",
+  "icono": "face_retouching_natural",
   "oferta": false,
   "descuento": 0
  },
@@ -3705,7 +3705,7 @@
   "precio": 45000,
   "stock": 10,
   "descripcion": "Eau de Toilette unisex cítrico y floral",
-  "icono": "self_care",
+  "icono": "face_retouching_natural",
   "oferta": false,
   "descuento": 0
  },
@@ -3715,7 +3715,7 @@
   "precio": 52000,
   "stock": 8,
   "descripcion": "Colonia marino fresca para hombre",
-  "icono": "self_care",
+  "icono": "face_retouching_natural",
   "oferta": true,
   "descuento": 10
  },
@@ -3725,7 +3725,7 @@
   "precio": 3800,
   "stock": 50,
   "descripcion": "Desodorante aerosol para hombre menta y eucalipto",
-  "icono": "self_care",
+  "icono": "face_retouching_natural",
   "oferta": false,
   "descuento": 0
  },
@@ -3735,7 +3735,7 @@
   "precio": 5200,
   "stock": 30,
   "descripcion": "Crema antienvejecimiento con coenzima Q10",
-  "icono": "self_care",
+  "icono": "face_retouching_natural",
   "oferta": false,
   "descuento": 0
  },
@@ -3745,7 +3745,7 @@
   "precio": 7800,
   "stock": 20,
   "descripcion": "Sérum iluminador con vitamina C pura",
-  "icono": "self_care",
+  "icono": "face_retouching_natural",
   "oferta": true,
   "descuento": 15
  },
@@ -3755,7 +3755,7 @@
   "precio": 6500,
   "stock": 35,
   "descripcion": "Protector solar FPS 50 para piel sensible",
-  "icono": "self_care",
+  "icono": "face_retouching_natural",
   "oferta": false,
   "descuento": 0
  },
@@ -3765,7 +3765,7 @@
   "precio": 12000,
   "stock": 15,
   "descripcion": "Crema regeneradora nocturna con ácido hialurónico",
-  "icono": "self_care",
+  "icono": "face_retouching_natural",
   "oferta": false,
   "descuento": 0
  },
@@ -3775,7 +3775,7 @@
   "precio": 4500,
   "stock": 30,
   "descripcion": "Lápiz delineador de ojos en gel negro intenso",
-  "icono": "self_care",
+  "icono": "face_retouching_natural",
   "oferta": false,
   "descuento": 0
  },
@@ -3785,7 +3785,7 @@
   "precio": 3200,
   "stock": 35,
   "descripcion": "Kit de tintura permanente cobre dorado",
-  "icono": "self_care",
+  "icono": "face_retouching_natural",
   "oferta": false,
   "descuento": 0
  },
@@ -3795,7 +3795,7 @@
   "precio": 5500,
   "stock": 20,
   "descripcion": "Fijador de maquillaje larga duración HD",
-  "icono": "self_care",
+  "icono": "face_retouching_natural",
   "oferta": false,
   "descuento": 0
  },
@@ -4000,11 +4000,11 @@
   "descuento": 20
  },
  {
-  "nombre": "Pintura Acuarela Pañuelos x12",
+  "nombre": "Set de Pinceles x12",
   "categoria": "Librería",
   "precio": 2900,
   "stock": 28,
-  "descripcion": "Set de acuarelas en pastilla con pincel incluido",
+  "descripcion": "Pinceles para acuarela y témpera, 12 tamaños",
   "icono": "menu_book",
   "oferta": false,
   "descuento": 0
@@ -4315,7 +4315,7 @@
   "precio": 8500,
   "stock": 25,
   "descripcion": "Splash corporal floral suave",
-  "icono": "self_care",
+  "icono": "face_retouching_natural",
   "oferta": false,
   "descuento": 0
  },
@@ -4325,7 +4325,7 @@
   "precio": 5800,
   "stock": 25,
   "descripcion": "Labial cremoso con hidratación",
-  "icono": "self_care",
+  "icono": "face_retouching_natural",
   "oferta": false,
   "descuento": 0
  },
@@ -4335,7 +4335,7 @@
   "precio": 9800,
   "stock": 12,
   "descripcion": "Agua micelar desmaquillante todo tipo de piel",
-  "icono": "self_care",
+  "icono": "face_retouching_natural",
   "oferta": false,
   "descuento": 0
  },
@@ -4510,11 +4510,11 @@
   "descuento": 10
  },
  {
-  "nombre": "Resaltadores Stabilo Boss x4",
+  "nombre": "Resaltadores Pastel x4",
   "categoria": "Librería",
   "precio": 2600,
   "stock": 50,
-  "descripcion": "Marcadores fluorescentes en 4 colores",
+  "descripcion": "Resaltadores en 4 colores pastel",
   "icono": "menu_book",
   "oferta": false,
   "descuento": 0
@@ -4885,7 +4885,7 @@
   "precio": 48000,
   "stock": 8,
   "descripcion": "Eau de Toilette seductor y amaderado",
-  "icono": "self_care",
+  "icono": "face_retouching_natural",
   "oferta": false,
   "descuento": 0
  },
@@ -4895,7 +4895,7 @@
   "precio": 8200,
   "stock": 22,
   "descripcion": "Máscara voluminizadora negra resistente al agua",
-  "icono": "self_care",
+  "icono": "face_retouching_natural",
   "oferta": false,
   "descuento": 0
  },
@@ -4905,7 +4905,7 @@
   "precio": 9500,
   "stock": 18,
   "descripcion": "Base de maquillaje cobertura total larga duración",
-  "icono": "self_care",
+  "icono": "face_retouching_natural",
   "oferta": false,
   "descuento": 0
  },
@@ -4915,7 +4915,7 @@
   "precio": 18000,
   "stock": 10,
   "descripcion": "Polvo compacto matificante con cobertura media",
-  "icono": "self_care",
+  "icono": "face_retouching_natural",
   "oferta": false,
   "descuento": 0
  },

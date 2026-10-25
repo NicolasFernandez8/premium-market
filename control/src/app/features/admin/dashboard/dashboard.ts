@@ -78,6 +78,7 @@ export class DashboardComponent implements OnInit {
     { label: 'Caja',                 icono: 'point_of_sale',   ruta: '/admin/caja',        roles: ['admin', 'cajero']                          },
     { label: 'Usuarios',             icono: 'manage_accounts', ruta: '/admin/usuarios',    roles: ['admin']                                    },
     { label: 'Recepciones',          icono: 'inventory',       ruta: '/admin/recepciones', roles: ['admin', 'empleado', 'repositor']            },
+    { label: 'Clientes',             icono: 'groups',          ruta: '/admin/clientes',    roles: ['admin', 'empleado', 'cajero']               },
     { label: 'Movimientos',          icono: 'manage_search',   ruta: '/admin/movimientos', roles: ['admin']                                    },
   ];
 

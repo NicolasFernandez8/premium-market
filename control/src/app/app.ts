@@ -27,12 +27,15 @@ import { TiendaHeaderComponent } from './shared/components/tienda-header/tienda-
 export class AppComponent {
   private router = inject(Router);
 
+  private auth = inject(AuthService);
+
   constructor() {
     inject(ThemeService);
+    this.auth.refrescarSesion(); // Rol y estado al día (ej: pase a mayorista)
   }
 
   // Sesión reactiva: el header cambia con el login/logout
-  private usuario = toSignal(inject(AuthService).usuarioActual$, { initialValue: null });
+  private usuario = toSignal(this.auth.usuarioActual$, { initialValue: null });
 
   private url = toSignal(
     this.router.events.pipe(

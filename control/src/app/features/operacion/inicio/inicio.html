@@ -14,7 +14,7 @@
       <h1>{{ saludo }}, {{ primerNombre }}</h1>
     </div>
     <div class="saludo-chips">
-      <a class="chip pm-neon" href="#promos-hoy" (click)="irAPromos($event)"><mat-icon>campaign</mat-icon> {{ promosHoy.length }} promos aplican hoy</a>
+      <a class="chip pm-neon" href="#promos-hoy" (click)="irAPromos($event)"><mat-icon>campaign</mat-icon> {{ promosHoy.length }} {{ promosHoy.length === 1 ? 'promo aplica' : 'promos aplican' }} hoy</a>
       <a class="chip pm-neon" routerLink="/catalogo"><mat-icon>inventory_2</mat-icon> {{ totalProductos }} productos</a>
     </div>
   </section>

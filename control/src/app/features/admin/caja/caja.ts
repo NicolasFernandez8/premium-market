@@ -250,20 +250,19 @@ export class CajaComponent implements OnInit {
 
     // Foto del cobro al confirmar: si algo cambia mientras responde la API,
     // la venta se registra con lo que realmente se descontó
-    const items        = this.carrito.map(i => ({ ...i, stockOriginal: i.producto.stock }));
+    const items        = this.carrito.map(i => ({ ...i }));
     const total        = this.total;
     const metodoPago   = this.metodoPago;
     const montoCobrado = this.montoCobrado;
     const montoPagado  = this.montoPagado;
     const idDe = (p: Producto) => p._id || p.id!;
 
-    // Solo se envía el stock nuevo: así no se pisan precios u ofertas
-    // que otro usuario haya cambiado mientras tanto.
+    // Se descuenta con un ajuste atómico (resta lo vendido sobre el stock actual):
+    // no pisa precios ni las reservas de pedidos online que lleguen mientras tanto,
+    // y la API rechaza la venta si ya no alcanza el stock.
     // Cada pedido informa si salió bien, para poder deshacer los que sí se aplicaron.
     const descuentos = items.map(item =>
-      this.productosService.update(idDe(item.producto), {
-        stock: item.stockOriginal - item.cantidad,
-      }).pipe(
+      this.productosService.ajustarStock(idDe(item.producto), -item.cantidad).pipe(
         map(() => true),
         catchError(() => of(false))
       )
@@ -275,13 +274,13 @@ export class CajaComponent implements OnInit {
         // Falla parcial: se devuelve el stock de los productos que sí se descontaron
         const reversiones = items
           .filter((_, i) => resultados[i])
-          .map(item => this.productosService.update(idDe(item.producto), { stock: item.stockOriginal })
+          .map(item => this.productosService.ajustarStock(idDe(item.producto), item.cantidad)
             .pipe(map(() => true), catchError(() => of(false))));
 
         (reversiones.length ? forkJoin(reversiones) : of([] as boolean[])).subscribe(revertidos => {
           this.procesandoCobro = false;
           const msg = revertidos.every(ok => ok)
-            ? 'No se pudo registrar la venta: el stock no se modificó. Revisá la conexión y probá de nuevo.'
+            ? 'No se pudo registrar la venta (sin conexión o sin stock suficiente): el stock no se modificó.'
             : 'No se pudo registrar la venta y parte del stock quedó descontado. Revisalo en Gestión de productos.';
           this.snackBar.open(msg, 'Cerrar', { duration: 6000, panelClass: 'snackbar--error' });
           this.cargarProductos();

@@ -134,7 +134,7 @@
 
 .promo-chip b {
   font-family: var(--pm-fuente-titulo);
-  color: var(--pm-violeta);
+  color: var(--pm-acento) !important; /* Violeta en claro, lila en oscuro */
 }
 
 .promo-chip:hover {
@@ -209,7 +209,16 @@
     gap: 0.6rem;
   }
 
+  /* El botón baja a su propia fila para que el texto tenga todo el ancho */
   .beneficio {
     flex-wrap: wrap;
+  }
+
+  .beneficio div {
+    flex: 1 1 200px;
+  }
+
+  .beneficio a {
+    flex-basis: 100%;
   }
 }

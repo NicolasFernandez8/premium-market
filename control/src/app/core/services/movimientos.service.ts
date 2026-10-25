@@ -20,6 +20,8 @@ export const ETIQUETAS_ACCION: Record<string, string> = {
   RECEPCION_MERCADERIA: 'Recepción de mercadería',
   AJUSTE_STOCK:         'Ajuste de stock',
   PEDIDO_CREADO:        'Pedido creado',
+  PEDIDO_ACTUALIZADO:   'Pedido actualizado',
+  REGISTRO_CLIENTE:     'Registro de cliente',
   ERROR:                'Error',
   OTRO:                 'Otro',
 };
@@ -41,6 +43,8 @@ export const COLORES_ACCION: Record<string, string> = {
   RECEPCION_MERCADERIA: '#7B1FA2',
   AJUSTE_STOCK:         '#8F4700',
   PEDIDO_CREADO:        '#00695C',
+  PEDIDO_ACTUALIZADO:   '#00695C',
+  REGISTRO_CLIENTE:     '#2E7D32',
   ERROR:                '#B71C1C',
   OTRO:                 '#616161',
 };

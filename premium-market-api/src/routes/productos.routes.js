@@ -54,6 +54,31 @@ router.put('/:id', async (req, res) => {
   }
 });
 
+// ── PATCH /api/productos/:id/stock ────────────
+// Suma o resta unidades de forma atómica ($inc): la caja vende con delta negativo.
+// Al restar exige stock suficiente en la misma operación, así una venta en caja
+// no pisa las reservas de los pedidos online que llegan al mismo tiempo.
+router.patch('/:id/stock', async (req, res) => {
+  try {
+    const delta = Number(req.body?.delta);
+    if (!Number.isInteger(delta) || delta === 0) {
+      return res.status(400).json({ error: 'El ajuste tiene que ser un número entero distinto de 0' });
+    }
+
+    const filtro = { _id: req.params.id };
+    if (delta < 0) filtro.stock = { $gte: -delta };
+
+    const producto = await Producto.findOneAndUpdate(filtro, { $inc: { stock: delta } }, { new: true });
+    if (producto) return res.json(producto);
+
+    const existe = await Producto.exists({ _id: req.params.id });
+    if (!existe) return res.status(404).json({ error: 'Producto no encontrado' });
+    res.status(409).json({ error: 'No hay stock suficiente' });
+  } catch (err) {
+    res.status(400).json({ error: 'Error ajustando stock', detalle: err.message });
+  }
+});
+
 // ── DELETE /api/productos/:id ─────────────────
 // Elimina un producto
 router.delete('/:id', async (req, res) => {

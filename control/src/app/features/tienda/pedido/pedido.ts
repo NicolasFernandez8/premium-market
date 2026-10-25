@@ -10,6 +10,8 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatSnackBar } from '@angular/material/snack-bar';
+import { MatDialog } from '@angular/material/dialog';
+import { ConfirmacionDialogComponent } from '../../../shared/components/confirmacion-dialog/confirmacion-dialog';
 
 // ── SERVICIOS Y MODELOS ───────────────────────
 import { TiendaService } from '../../../core/services/tienda.service';
@@ -37,6 +39,7 @@ export class PedidoComponent implements OnInit, OnDestroy {
   private tienda   = inject(TiendaService);
   private cdr      = inject(ChangeDetectorRef);
   private snackBar = inject(MatSnackBar);
+  private dialog   = inject(MatDialog);
 
   pedido: PedidoTienda | null = null;
   error = '';
@@ -90,11 +93,22 @@ export class PedidoComponent implements OnInit, OnDestroy {
   }
 
   cancelar(): void {
-    if (!this.pedido || !confirm('¿Cancelar el pedido? Los productos vuelven a la tienda.')) return;
-    this.tienda.cambiarEstado(this.pedido._id, 'cancelado').subscribe({
-      next: (pedido) => { this.pedido = pedido; this.cdr.detectChanges(); },
-      error: (err: HttpErrorResponse) =>
-        this.snackBar.open(err.error?.error ?? 'No se pudo cancelar', 'Cerrar', { duration: 3500, panelClass: 'snackbar--error' }),
+    const pedido = this.pedido;
+    if (!pedido) return;
+    this.dialog.open(ConfirmacionDialogComponent, {
+      data: {
+        titulo: `¿Cancelar el pedido ${pedido.codigo}?`,
+        mensaje: 'Los productos vuelven a la tienda y el QR deja de servir.',
+        textoConfirmar: 'Cancelar pedido',
+        textoCancelar: 'Volver',
+      },
+    }).afterClosed().subscribe(ok => {
+      if (!ok) return;
+      this.tienda.cambiarEstado(pedido._id, 'cancelado').subscribe({
+        next: (actualizado) => { this.pedido = actualizado; this.cdr.detectChanges(); },
+        error: (err: HttpErrorResponse) =>
+          this.snackBar.open(err.error?.error ?? 'No se pudo cancelar', 'Cerrar', { duration: 3500, panelClass: 'snackbar--error' }),
+      });
     });
   }
 

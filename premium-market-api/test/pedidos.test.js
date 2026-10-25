@@ -202,6 +202,20 @@ test('cancelación y barrido simultáneos devuelven el stock una sola vez', asyn
   assert.equal((await Producto.findById(p._id)).stock, 10);
 });
 
+test('la caja descuenta stock sin pisar una reserva online', async () => {
+  const p = await crearProducto({ stock: 5 });
+  await api('POST', '/pedidos', unPedido(p._id, 3));          // Reserva online: quedan 2
+
+  const venta = await api('PATCH', `/productos/${p._id}/stock`, { delta: -2 });
+  assert.equal(venta.status, 200);
+  assert.equal(venta.body.stock, 0);
+
+  const sinStock = await api('PATCH', `/productos/${p._id}/stock`, { delta: -1 });
+  assert.equal(sinStock.status, 409);
+  assert.equal((await api('PATCH', `/productos/${p._id}/stock`, { delta: 0 })).status, 400);
+  assert.equal((await Producto.findById(p._id)).stock, 0);
+});
+
 test('historial: el cliente ve los suyos y solo el personal ve todos', async () => {
   const p = await crearProducto();
   const cliente = await Usuario.create({ nombre: 'Clara', usuario: 'clara', password: 'x', rol: 'cliente' });

@@ -53,6 +53,31 @@ export class AuthService {
     this.usuarioActualSubject.next(usuario); // Avisamos del cambio
   }
 
+  // Al abrir la app, vuelve a leer el usuario de la API: si el personal lo pasó
+  // a mayorista (o lo desactivó) la sesión se actualiza sin pedir un nuevo login.
+  // Sin conexión se conserva la sesión guardada.
+  refrescarSesion(): void {
+    const actual = this.obtenerUsuario();
+    const id = actual?._id ?? actual?.id;
+    if (!id) return;
+    // Si mientras tanto se cerró la sesión o entró otra cuenta, la respuesta se descarta
+    const sigueSiendoLaMisma = () => {
+      const ahora = this.obtenerUsuario();
+      return (ahora?._id ?? ahora?.id) === id;
+    };
+    this.http.get<Usuario>(`${this.apiUrl}/${id}`).subscribe({
+      next: (usuario) => {
+        if (!sigueSiendoLaMisma()) return;
+        if (!usuario.activo) {
+          this.logout();
+        } else if (usuario.rol !== actual!.rol || usuario.nombre !== actual!.nombre) {
+          this.guardarSesion({ ...actual!, ...usuario });
+        }
+      },
+      error: (err) => { if (err.status === 404 && sigueSiendoLaMisma()) this.logout(); },
+    });
+  }
+
   // Recupera el usuario guardado en LocalStorage
   obtenerUsuario(): Usuario | null {
     return this.leerUsuarioDeStorage();

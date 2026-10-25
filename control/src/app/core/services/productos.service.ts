@@ -40,6 +40,12 @@ export class ProductosService {
     return this.http.put<Producto>(`${this.apiUrl}/${id}`, producto);
   }
 
+  // PATCH — Suma (delta > 0) o resta (delta < 0) stock de forma atómica en la API.
+  // Responde 409 si no alcanza el stock: no pisa reservas de pedidos online.
+  ajustarStock(id: string, delta: number): Observable<Producto> {
+    return this.http.patch<Producto>(`${this.apiUrl}/${id}/stock`, { delta });
+  }
+
   // DELETE — Eliminar un producto
   delete(id: string): Observable<Producto> {
     return this.http.delete<Producto>(`${this.apiUrl}/${id}`);
