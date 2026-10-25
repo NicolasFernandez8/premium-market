@@ -1,6 +1,7 @@
 // ── IMPORTS ──────────────────────────────────
-import { Injectable, inject } from '@angular/core'; // Decorador e inyección
+import { Injectable, Injector, inject } from '@angular/core'; // Decorador e inyección
 import { HttpClient } from '@angular/common/http';  // Para llamadas HTTP
+import { Router } from '@angular/router';
 import { Observable, BehaviorSubject } from 'rxjs'; // Para manejar respuestas asíncronas
 import { environment } from '../../../environments/environment'; // URL base de la API
 import { ROLES_CLIENTE, ROLES_PERSONAL, RegistroCliente, Usuario } from '../models/usuario.model';
@@ -17,6 +18,7 @@ export class AuthService {
 
   // ── CONFIGURACIÓN ─────────────────────────
   private http = inject(HttpClient);   // Inyectamos HttpClient
+  private injector = inject(Injector); // El Router se pide recién al usarlo (los guards dependen de este servicio)
   private apiUrl = `${environment.apiUrl}/usuarios`; // URL base
   private claveStorage = 'storehub_usuario'; // Clave en LocalStorage
   
@@ -65,16 +67,27 @@ export class AuthService {
       const ahora = this.obtenerUsuario();
       return (ahora?._id ?? ahora?.id) === id;
     };
+    // La pantalla actual ya pasó los guards con la sesión vieja: si el acceso
+    // cambió, se lleva al usuario al inicio que le corresponde ahora
+    const salir = () => {
+      this.logout();
+      this.injector.get(Router).navigateByUrl('/');
+    };
     this.http.get<Usuario>(`${this.apiUrl}/${id}`).subscribe({
       next: (usuario) => {
         if (!sigueSiendoLaMisma()) return;
         if (!usuario.activo) {
-          this.logout();
+          salir();
         } else if (usuario.rol !== actual!.rol || usuario.nombre !== actual!.nombre) {
           this.guardarSesion({ ...actual!, ...usuario });
+          // Entre cliente y mayorista no cambia ninguna pantalla; en el personal sí
+          const ambosClientes = ROLES_CLIENTE.includes(actual!.rol) && ROLES_CLIENTE.includes(usuario.rol);
+          if (usuario.rol !== actual!.rol && !ambosClientes) {
+            this.injector.get(Router).navigateByUrl(this.rutaInicio(usuario));
+          }
         }
       },
-      error: (err) => { if (err.status === 404 && sigueSiendoLaMisma()) this.logout(); },
+      error: (err) => { if (err.status === 404 && sigueSiendoLaMisma()) salir(); },
     });
   }
 
