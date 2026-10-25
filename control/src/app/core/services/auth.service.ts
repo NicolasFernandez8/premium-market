@@ -3,7 +3,7 @@ import { Injectable, inject } from '@angular/core'; // Decorador e inyección
 import { HttpClient } from '@angular/common/http';  // Para llamadas HTTP
 import { Observable, BehaviorSubject } from 'rxjs'; // Para manejar respuestas asíncronas
 import { environment } from '../../../environments/environment'; // URL base de la API
-import { Usuario } from '../models/usuario.model';
+import { ROLES_CLIENTE, ROLES_PERSONAL, RegistroCliente, Usuario } from '../models/usuario.model';
 export type { Usuario } from '../models/usuario.model'; // Se re-exporta para los componentes
 
 // ── DECORADOR ────────────────────────────────
@@ -74,6 +74,22 @@ export class AuthService {
     return this.tieneRol('admin');
   }
 
+  // Personal del supermercado: entra a la app de gestión
+  esPersonal(): boolean {
+    return ROLES_PERSONAL.includes(this.obtenerUsuario()?.rol ?? '');
+  }
+
+  // Cliente o mayorista de la tienda online
+  esCliente(): boolean {
+    return ROLES_CLIENTE.includes(this.obtenerUsuario()?.rol ?? '');
+  }
+
+  // Pantalla de inicio según quién entra: el personal va al portal interno,
+  // los clientes y los invitados a la tienda
+  rutaInicio(usuario: Usuario | null = this.obtenerUsuario()): string {
+    return ROLES_PERSONAL.includes(usuario?.rol ?? '') ? '/inicio' : '/';
+  }
+
   // Cierra la sesión eliminando el usuario de LocalStorage
   logout(): void {
     localStorage.removeItem(this.claveStorage);
@@ -100,6 +116,11 @@ export class AuthService {
   // DELETE — Eliminar usuario (solo admin)
   deleteUsuario(id: string): Observable<Usuario> {
     return this.http.delete<Usuario>(`${this.apiUrl}/${id}`);
+  }
+
+  // POST — Registro de un cliente desde la tienda (la API fija el rol)
+  registrar(datos: RegistroCliente): Observable<Usuario> {
+    return this.http.post<Usuario>(`${this.apiUrl}/registro`, datos);
   }
 
   // LOGIN — Manda usuario y password al backend para verificar con bcrypt

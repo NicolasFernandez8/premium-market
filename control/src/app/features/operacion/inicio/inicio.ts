@@ -80,6 +80,7 @@ export class InicioComponent implements OnInit, OnDestroy {
     { label: 'Consultar precio',    descripcion: 'Precio, oferta y stock',         icono: 'sell',            ruta: '/catalogo',           roles: ['admin', 'empleado', 'cajero', 'repositor'] },
     { label: 'Recibir mercadería',  descripcion: 'Sumar stock de un proveedor',    icono: 'local_shipping',  ruta: '/admin/recepciones',  roles: ['admin', 'empleado', 'repositor'] },
     { label: 'Armar pedido',        descripcion: 'Reposición a proveedores',       icono: 'assignment',      ruta: '/admin/pedidos',      roles: ['admin', 'empleado', 'repositor'] },
+    { label: 'Pedidos online',      descripcion: 'Preparar y entregar compras web', icono: 'groups',     ruta: '/admin/clientes',     roles: ['admin', 'empleado', 'cajero'] },
     { label: 'Productos',           descripcion: 'Altas, precios y ofertas',       icono: 'inventory_2',     ruta: '/admin/productos',    roles: ['admin', 'empleado', 'cajero', 'repositor'] },
     { label: 'Estadísticas',        descripcion: 'Stock y ofertas por categoría',  icono: 'query_stats',     ruta: '/admin/estadisticas', roles: ['admin'] },
   ];

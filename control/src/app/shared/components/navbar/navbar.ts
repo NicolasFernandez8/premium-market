@@ -60,6 +60,7 @@ export class NavbarComponent {
     { label: 'Productos',           icono: 'inventory_2',     ruta: '/admin/productos',    roles: TODOS },
     { label: 'Recepciones',         icono: 'local_shipping',  ruta: '/admin/recepciones',  roles: ['admin', 'empleado', 'repositor'] },
     { label: 'Pedidos',             icono: 'assignment',      ruta: '/admin/pedidos',      roles: ['admin', 'empleado', 'repositor'] },
+    { label: 'Clientes',            icono: 'groups',          ruta: '/admin/clientes',     roles: ['admin', 'empleado', 'cajero'] },
     { label: 'Panel',               icono: 'dashboard',       ruta: '/admin/dashboard',    roles: TODOS },
     { label: 'Estadísticas',        icono: 'query_stats',     ruta: '/admin/estadisticas', roles: ['admin'] },
     { label: 'Usuarios',            icono: 'manage_accounts', ruta: '/admin/usuarios',     roles: ['admin'] },

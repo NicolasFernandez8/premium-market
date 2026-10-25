@@ -2,7 +2,7 @@
 import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ReactiveFormsModule, FormGroup, FormControl, Validators } from '@angular/forms';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router, RouterLink } from '@angular/router';
 
 // ── ANGULAR MATERIAL ──────────────────────────
 import { MatCardModule } from '@angular/material/card';
@@ -19,7 +19,7 @@ import { ThemeToggleComponent } from '../../../shared/components/theme-toggle/th
 import { ProductoImagenComponent } from '../../../shared/components/producto-imagen/producto-imagen';
 
 // ── DECORADOR ────────────────────────────────
-// Página de login del personal de Premium Market.
+// Página de login de Premium Market: clientes de la tienda y personal.
 // Verifica credenciales contra la API y guarda sesión en LocalStorage.
 @Component({
   selector: 'app-login',
@@ -27,6 +27,7 @@ import { ProductoImagenComponent } from '../../../shared/components/producto-ima
   imports: [
     CommonModule,
     ReactiveFormsModule,
+    RouterLink,
     ProductoImagenComponent,
     MatCardModule,
     MatButtonModule,
@@ -47,6 +48,7 @@ export class LoginComponent {
   // ── SERVICIOS INYECTADOS ──────────────────
   private authService = inject(AuthService);
   private router = inject(Router);
+  private route = inject(ActivatedRoute); // ?volver= para regresar al carrito
   private snackBar = inject(MatSnackBar);
 
   // ── ESTADO ────────────────────────────────
@@ -74,6 +76,12 @@ export class LoginComponent {
       Validators.minLength(4),
     ]),
   });
+
+  // El registro conserva a dónde volver (ej: el carrito)
+  get volverParams() {
+    const volver = this.route.snapshot.queryParamMap.get('volver');
+    return volver ? { volver } : {};
+  }
 
   // ── GETTERS ───────────────────────────────
   get usuario() { return this.formulario.get('usuario'); }
@@ -118,8 +126,13 @@ export class LoginComponent {
               { duration: 3000, panelClass: 'snackbar--success' }
             );
 
-            // Redirigimos al portal de inicio
-            this.router.navigate(['/inicio']);
+            // El personal va al portal interno; el cliente vuelve a donde estaba
+            // (ej: el carrito) o a la tienda. "volver" solo acepta rutas internas.
+            const volver = this.route.snapshot.queryParamMap.get('volver') ?? '';
+            const destino = volver.startsWith('/') && !volver.startsWith('//')
+              ? volver
+              : this.authService.rutaInicio(usuarioEncontrado);
+            this.router.navigateByUrl(destino);
 
           } else if (usuarios.length > 0) {
             // Credenciales correctas pero el usuario está desactivado

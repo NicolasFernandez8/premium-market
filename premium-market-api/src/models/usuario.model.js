@@ -25,8 +25,19 @@ const usuarioSchema = new mongoose.Schema({
   rol: {
     type: String,
     required: true,
-    enum: ['admin', 'empleado', 'cajero', 'repositor'], // ← agregado cajero
+    enum: ['admin', 'empleado', 'cajero', 'repositor', 'cliente', 'mayorista'], // Personal + clientes de la tienda
     default: 'empleado'
+  },
+  email: {
+    type: String,       // Clientes: para avisarles del pedido
+    trim: true,
+    lowercase: true,
+    default: ''
+  },
+  telefono: {
+    type: String,
+    trim: true,
+    default: ''
   },
   activo: {
     type: Boolean,

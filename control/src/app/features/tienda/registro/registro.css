@@ -1,0 +1,23 @@
+/* ── REGISTRO: AJUSTES SOBRE login.css ────── */
+.dos-campos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+}
+
+.form-registro-cliente .campo-completo + .campo-completo {
+  margin-top: 0.4rem;
+}
+
+.error-form {
+  margin: -0.5rem 0 0.75rem;
+  font-size: 0.8rem;
+  color: var(--pm-error);
+}
+
+@media (max-width: 520px) {
+  .dos-campos {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+}

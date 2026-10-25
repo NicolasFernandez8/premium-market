@@ -1,0 +1,215 @@
+/* ── TIENDA: AJUSTES SOBRE EL PORTAL ─────────
+   La base es inicio.css (carrusel, paneles, tarjetas, accesos) */
+
+/* Botón del cartel para ir a comprar la promo */
+.cartel-pie {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.25rem;
+  margin-top: 0.5rem;
+}
+
+.cartel-pie .cartel-dias {
+  margin-top: 0;
+}
+
+.cartel-comprar {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.55rem 1.1rem;
+  border: none;
+  border-radius: 999px;
+  background: #fff;
+  color: #6B2D8C;
+  font: inherit;
+  font-size: 0.88rem;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 4px 14px rgba(20, 5, 30, 0.2);
+  transition: transform 150ms ease, box-shadow 150ms ease;
+}
+
+.cartel-comprar mat-icon {
+  font-size: 18px;
+  width: 18px;
+  height: 18px;
+  color: #6B2D8C !important;
+}
+
+.cartel-comprar:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 18px rgba(20, 5, 30, 0.28);
+}
+
+.cartel.tinta-oscura .cartel-comprar {
+  background: #6B2D8C;
+  color: #fff;
+}
+
+.cartel.tinta-oscura .cartel-comprar mat-icon {
+  color: #fff !important;
+}
+
+/* ── BENEFICIOS DE CUENTA ──────────────────── */
+.beneficios {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+.beneficio {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.25rem;
+  background: var(--pm-surface);
+  border: 1px solid var(--pm-linea);
+  border-radius: var(--pm-radio);
+}
+
+.beneficio.destacado {
+  background: var(--pm-violeta-suave);
+  border-color: var(--pm-borde);
+}
+
+.beneficio > mat-icon {
+  flex-shrink: 0;
+  font-size: 30px;
+  width: 30px;
+  height: 30px;
+  color: var(--pm-violeta);
+}
+
+.beneficio div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  flex: 1;
+}
+
+.beneficio strong {
+  font-size: 0.95rem;
+}
+
+.beneficio span {
+  font-size: 0.82rem;
+  color: var(--pm-texto-suave) !important;
+}
+
+.beneficio a {
+  flex-shrink: 0;
+  border-radius: 999px !important;
+}
+
+/* ── PROMOS PARA COMPRAR ───────────────────── */
+#promos {
+  scroll-margin-top: 140px;
+}
+
+.promo-chips {
+  display: flex;
+  gap: 0.5rem;
+  overflow-x: auto;
+  padding-bottom: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.promo-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  flex-shrink: 0;
+  padding: 0.5rem 0.9rem;
+  border: 1px solid var(--pm-borde);
+  border-radius: 999px;
+  background: var(--pm-surface);
+  font: inherit;
+  font-size: 0.85rem;
+  color: var(--pm-texto);
+  cursor: pointer;
+  transition: background-color 150ms ease, border-color 150ms ease;
+}
+
+.promo-chip b {
+  font-family: var(--pm-fuente-titulo);
+  color: var(--pm-violeta);
+}
+
+.promo-chip:hover {
+  border-color: var(--pm-violeta-claro);
+}
+
+.promo-chip.activo {
+  background: var(--pm-violeta);
+  border-color: var(--pm-violeta);
+  color: #fff !important;
+}
+
+.promo-chip.activo :is(b, span) {
+  color: #fff !important;
+}
+
+.chip-hoy {
+  padding: 0 0.45rem;
+  border-radius: 999px;
+  background: var(--pm-ok-suave);
+  color: var(--pm-ok) !important;
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+
+.promo-chip.activo .chip-hoy {
+  background: rgba(255, 255, 255, 0.22);
+}
+
+.promo-detalle {
+  display: grid;
+  grid-template-columns: 84px minmax(0, 1fr);
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.promo-detalle strong {
+  font-size: 0.98rem;
+}
+
+.promo-detalle p {
+  font-size: 0.85rem;
+  color: var(--pm-texto-suave);
+  margin-top: 0.15rem;
+}
+
+/* Grilla de productos de la tienda (promos) */
+.grilla-tienda {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+  gap: 1rem;
+}
+
+.ofertas-fila app-tarjeta-producto {
+  min-width: 190px;
+  scroll-snap-align: start;
+}
+
+.nota mat-icon {
+  vertical-align: middle;
+}
+
+:host-context(html.theme-dark) .promo-chip.activo {
+  background: #7E3FA8;
+  border-color: #7E3FA8;
+}
+
+@media (max-width: 520px) {
+  .grilla-tienda {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.6rem;
+  }
+
+  .beneficio {
+    flex-wrap: wrap;
+  }
+}

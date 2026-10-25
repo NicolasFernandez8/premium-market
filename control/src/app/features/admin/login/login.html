@@ -1,6 +1,6 @@
 <!-- ── LOGIN DE PREMIUM MARKET ────────────────
-     Puerta de entrada al sistema interno.
-     Izquierda: marca y módulos del sistema.
+     Una sola puerta para clientes de la tienda y personal.
+     Izquierda: marca y beneficios.
      Derecha: formulario reactivo con validaciones
      y verificación de credenciales contra la API  -->
 
@@ -10,14 +10,14 @@
   <!-- ── PANEL DE MARCA ────────────────────── -->
   <section class="login-marca" aria-hidden="true">
     <img class="marca-logo" src="/marca/premium-market-horizontal-negativo.svg" alt="" width="260" height="74" />
-    <h2>Sistema de gestión interna</h2>
-    <p>Caja, stock, recepciones y pedidos de la sucursal en un solo lugar.</p>
+    <h2>Tu súper, online y en la sucursal</h2>
+    <p>Los clientes compran desde el catálogo y pagan con QR. El personal entra a la gestión de la sucursal.</p>
 
     <ul class="marca-modulos">
-      <li><mat-icon>point_of_sale</mat-icon> Caja y cobros</li>
-      <li><mat-icon>inventory_2</mat-icon> Productos y precios</li>
-      <li><mat-icon>local_shipping</mat-icon> Recepción de mercadería</li>
-      <li><mat-icon>assignment</mat-icon> Pedidos a proveedores</li>
+      <li><mat-icon>qr_code_2</mat-icon> Pagá con QR</li>
+      <li><mat-icon>loyalty</mat-icon> Descuento para clientes</li>
+      <li><mat-icon>local_shipping</mat-icon> Precios mayoristas</li>
+      <li><mat-icon>badge</mat-icon> Gestión para el personal</li>
     </ul>
 
     <div class="marca-gondola">
@@ -37,8 +37,8 @@
     <mat-card-header>
       <div class="login-header">
         <img class="login-icono" src="/marca/premium-market-icono.svg" alt="" width="64" height="64" />
-        <h1>Ingresá a tu turno</h1>
-        <p>Usá el usuario que te asignó la administración.</p>
+        <h1>Ingresá a tu cuenta</h1>
+        <p>Clientes, mayoristas y personal de la sucursal.</p>
       </div>
     </mat-card-header>
 
@@ -126,11 +126,11 @@
     </mat-card-content>
 
     <!-- ── FOOTER DE LA CARD ──────────────────
-         Aviso de uso interno                  -->
+         Registro de clientes y vuelta a la tienda -->
     <mat-card-footer>
       <div class="login-footer">
-        <mat-icon>lock</mat-icon>
-        <span>Acceso exclusivo para personal de Premium Market.</span>
+        <span>¿No tenés cuenta? <a routerLink="/registro" [queryParams]="volverParams">Registrate y ahorrá en cada compra</a></span>
+        <a routerLink="/" class="volver-tienda"><mat-icon>storefront</mat-icon> Volver a la tienda</a>
       </div>
     </mat-card-footer>
 

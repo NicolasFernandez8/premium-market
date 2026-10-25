@@ -1,0 +1,75 @@
+<!-- ── MI CUENTA ───────────────────────────────
+     Datos del cliente, beneficio y pedidos.    -->
+<div class="pagina contenedor">
+
+  <div class="pagina-encabezado">
+    <div>
+      <p class="eyebrow">Mi cuenta</p>
+      <h1 class="pm-titulo-pagina">{{ usuario?.nombre }}</h1>
+      <p class="bajada">
+        {{ usuario?.rol === 'mayorista' ? 'Cuenta mayorista' : 'Cliente' }}
+        @if (config$ | async; as config) {
+          · {{ $any(config.descuentos)[usuario?.rol ?? ''] ?? 0 }}% de descuento en todas tus compras
+        }
+      </p>
+    </div>
+    <a mat-flat-button routerLink="/productos"><mat-icon>add_shopping_cart</mat-icon> Comprar</a>
+  </div>
+
+  <div class="resumen panel resumen-cuenta">
+    <div><span>Compras</span><strong>{{ resumen.compras }}</strong></div>
+    <div><span>Total gastado</span><strong>{{ resumen.gastado | currency:'ARS':'symbol-narrow':'1.0-0':'es-AR' }}</strong></div>
+    <div><span>Ahorraste</span><strong class="ahorro">{{ resumen.ahorrado | currency:'ARS':'symbol-narrow':'1.0-0':'es-AR' }}</strong></div>
+  </div>
+
+  <section class="panel historial">
+    <div class="panel-titulo"><h2><mat-icon>history</mat-icon> Mis pedidos</h2></div>
+
+    @if (cargando) {
+      <div class="cargando"><mat-spinner diameter="36"></mat-spinner></div>
+    } @else if (error) {
+      <p class="nota">No se pudieron cargar tus pedidos. Probá de nuevo en unos segundos.</p>
+    } @else if (pedidos.length === 0) {
+      <div class="vacio"><mat-icon>receipt_long</mat-icon><p>Todavía no hiciste pedidos.</p>
+        <a mat-stroked-button routerLink="/">Ver promos</a></div>
+    } @else {
+      <table>
+        <thead><tr><th></th><th>Código</th><th>Fecha</th><th>Productos</th><th>Total</th><th>Estado</th><th></th></tr></thead>
+        <tbody>
+          @for (p of pedidos; track p._id) {
+            <tr class="fila-pedido" [class.abierta]="expandido === p._id">
+              <td>
+                <button mat-icon-button (click)="alternar(p._id)" [attr.aria-expanded]="expandido === p._id"
+                        [attr.aria-label]="'Ver detalle del pedido ' + p.codigo">
+                  <mat-icon>{{ expandido === p._id ? 'expand_less' : 'expand_more' }}</mat-icon>
+                </button>
+              </td>
+              <td><b>{{ p.codigo }}</b></td>
+              <td>{{ p.createdAt | date:'dd/MM/yyyy HH:mm' }}</td>
+              <td>{{ p.items.length }}</td>
+              <td>{{ p.total | currency:'ARS':'symbol-narrow':'1.0-0':'es-AR' }}</td>
+              <td><span class="estado-chip" [class]="estados[p.estado].clase"><mat-icon>{{ estados[p.estado].icono }}</mat-icon> {{ estados[p.estado].texto }}</span></td>
+              <td><a mat-button [routerLink]="['/pedido', p._id]">{{ p.estado === 'pendiente_pago' ? 'Pagar' : 'Ver' }}</a></td>
+            </tr>
+            @if (expandido === p._id) {
+              <tr class="fila-detalle">
+                <td colspan="7">
+                  <ul class="detalle-items">
+                    @for (item of p.items; track item.producto) {
+                      <li>
+                        <span class="detalle-cantidad">{{ item.cantidad }} u.</span>
+                        <span>{{ item.nombre }}</span>
+                        <span class="detalle-categoria">{{ item.categoria }}</span>
+                        <span class="detalle-costo">{{ item.total | currency:'ARS':'symbol-narrow':'1.0-0':'es-AR' }}</span>
+                      </li>
+                    }
+                  </ul>
+                </td>
+              </tr>
+            }
+          }
+        </tbody>
+      </table>
+    }
+  </section>
+</div>

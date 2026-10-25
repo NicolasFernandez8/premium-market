@@ -1,0 +1,184 @@
+<!-- ── TIENDA ONLINE: PÁGINA PRINCIPAL ─────────
+     1. Bienvenida
+     2. Carrusel de promociones (con botón para comprar)
+     3. Beneficios de tener cuenta
+     4. Promos con sus productos para sumar al carrito
+     5. Ofertas
+     6. Categorías                                    -->
+
+<div class="contenedor portal">
+
+  <!-- ── 1. BIENVENIDA ─────────────────────────── -->
+  @let usuario = usuario$ | async;
+  <section class="saludo">
+    <div>
+      <p class="saludo-fecha">{{ hoy | date:"EEEE d 'de' MMMM" | titlecase }}</p>
+      <h1>
+        @if (usuario) { Hola, {{ usuario.nombre.split(' ')[0] }} } @else { Tu súper, a un clic }
+      </h1>
+    </div>
+    <div class="saludo-chips">
+      <a class="chip pm-neon" href="#promos" (click)="$event.preventDefault(); elegirPromo(promoElegida, true)">
+        <mat-icon>campaign</mat-icon> {{ promosHoy.length }} {{ promosHoy.length === 1 ? 'promo' : 'promos' }} hoy
+      </a>
+      <a class="chip pm-neon" routerLink="/productos" [queryParams]="{ ofertas: 1 }"><mat-icon>local_offer</mat-icon> Ofertas</a>
+      <a class="chip pm-neon" routerLink="/como-pagar"><mat-icon>qr_code_2</mat-icon> Pagás con QR</a>
+    </div>
+  </section>
+
+  <!-- ── 2. CARRUSEL DE PROMOCIONES ──────────────
+       Mismos carteles que el portal interno, con botón para comprar. -->
+  <section class="carrusel" aria-roledescription="carrusel" aria-label="Promociones vigentes">
+    <div class="carrusel-track" [style.transform]="'translateX(-' + (slideActivo * 100) + '%)'">
+      @for (promo of promociones; track promo.id; let i = $index) {
+        <article class="cartel pm-cartel" [class.tinta-oscura]="promo.tinta === 'oscura'"
+                 [style.background]="promo.fondo"
+                 [attr.aria-hidden]="i !== slideActivo">
+          <div class="cartel-texto">
+            <span class="cartel-etiqueta">
+              {{ promo.etiqueta }}
+              @if (esHoy(promo)) { <b class="cartel-hoy">Hoy</b> }
+            </span>
+            <p class="cartel-destacado">{{ promo.destacado }}</p>
+            <p class="cartel-titulo">{{ promo.titulo }}</p>
+            <p class="cartel-detalle">{{ promo.detalle }}</p>
+            <div class="cartel-pie">
+              <span class="cartel-dias"><mat-icon>event</mat-icon> {{ textoDias(promo.dias) }}</span>
+              <button class="cartel-comprar" (click)="elegirPromo(promo, true)" [attr.tabindex]="i === slideActivo ? 0 : -1">
+                <mat-icon>shopping_cart</mat-icon> Comprar la promo
+              </button>
+            </div>
+          </div>
+          <div class="cartel-productos">
+            @for (nombre of promo.productos; track nombre) {
+              <span class="cartel-producto">
+                <app-producto-imagen [nombre]="nombre" icono="shopping_bag" />
+              </span>
+            }
+          </div>
+        </article>
+      }
+    </div>
+
+    <button class="carrusel-flecha izq" (click)="mover(-1)" aria-label="Promoción anterior">
+      <mat-icon>chevron_left</mat-icon>
+    </button>
+    <button class="carrusel-flecha der" (click)="mover(1)" aria-label="Promoción siguiente">
+      <mat-icon>chevron_right</mat-icon>
+    </button>
+
+    <div class="carrusel-dots">
+      @for (promo of promociones; track promo.id; let i = $index) {
+        <button [class.activo]="i === slideActivo" (click)="irA(i)" [attr.aria-label]="'Ver ' + promo.etiqueta"></button>
+      }
+    </div>
+  </section>
+
+  <!-- ── 3. BENEFICIOS DE CUENTA ───────────────── -->
+  <section class="beneficios">
+    @if (usuario) {
+      <div class="beneficio destacado">
+        <mat-icon>loyalty</mat-icon>
+        <div>
+          <strong>Tenés {{ descuentoDe(usuario.rol) }}% de descuento {{ usuario.rol === 'mayorista' ? 'mayorista' : 'de cliente' }}</strong>
+          <span>Se aplica solo en el carrito, además de las ofertas y promos.</span>
+        </div>
+        <a mat-stroked-button routerLink="/mi-cuenta">Mis pedidos</a>
+      </div>
+    } @else {
+      <div class="beneficio destacado">
+        <mat-icon>person_add</mat-icon>
+        <div>
+          <strong>Creá tu cuenta y ahorrá {{ descuentoDe('cliente') }}% en cada compra</strong>
+          <span>Comprás igual sin cuenta, pero con cuenta tenés descuento e historial de pedidos.</span>
+        </div>
+        <a mat-flat-button routerLink="/registro">Registrarme</a>
+      </div>
+      <div class="beneficio">
+        <mat-icon>local_shipping</mat-icon>
+        <div>
+          <strong>¿Comprás por mayor?</strong>
+          <span>Las cuentas mayoristas tienen {{ descuentoDe('mayorista') }}% de descuento. Registrate y pedíselo a la sucursal.</span>
+        </div>
+      </div>
+    }
+  </section>
+
+  <!-- ── 4. PROMOS PARA COMPRAR ─────────────────── -->
+  <section class="seccion" id="promos">
+    <div class="seccion-titulo">
+      <h2>Comprá las promos</h2>
+    </div>
+
+    <div class="promo-chips" role="tablist" aria-label="Promociones">
+      @for (promo of promociones; track promo.id) {
+        <button class="promo-chip" role="tab" [class.activo]="promo.id === promoElegida.id"
+                [attr.aria-selected]="promo.id === promoElegida.id" (click)="elegirPromo(promo)">
+          <b>{{ promo.destacado }}</b> {{ promo.etiqueta }}
+          @if (esHoy(promo)) { <span class="chip-hoy">Hoy</span> }
+        </button>
+      }
+    </div>
+
+    <div class="promo-detalle panel">
+      <span class="promo-valor" [style.background]="promoElegida.tinta === 'clara' ? promoElegida.fondo : '#6B2D8C'">{{ promoElegida.destacado }}</span>
+      <div>
+        <strong>{{ promoElegida.destacado }} {{ promoElegida.titulo }}</strong>
+        <p>{{ promoElegida.detalle }}</p>
+        <span class="como-aplica" [class.en-caja]="!esHoy(promoElegida) && promoElegida.tipo !== 'bancaria'">
+          <mat-icon>{{ comoAplicaOnline(promoElegida).icono }}</mat-icon> {{ comoAplicaOnline(promoElegida).texto }}
+        </span>
+      </div>
+    </div>
+
+    @if (cargando) {
+      <div class="grilla-tienda">
+        @for (n of [1, 2, 3, 4]; track n) { <div class="tarjeta esqueleto"></div> }
+      </div>
+    } @else {
+      <div class="grilla-tienda">
+        @for (p of productosPromo; track p._id ?? p.nombre) {
+          <app-tarjeta-producto [producto]="p" />
+        }
+      </div>
+    }
+  </section>
+
+  <!-- ── 5. OFERTAS ─────────────────────────────── -->
+  <section class="seccion">
+    <div class="seccion-titulo">
+      <h2>Ofertas de la semana</h2>
+      <a routerLink="/productos" [queryParams]="{ ofertas: 1 }">Ver todas <mat-icon>arrow_forward</mat-icon></a>
+    </div>
+
+    @if (error) {
+      <p class="nota"><mat-icon>cloud_off</mat-icon> No se pudo conectar con el servidor. Probá de nuevo en unos segundos.</p>
+    } @else if (cargando) {
+      <div class="ofertas-fila">
+        @for (n of [1, 2, 3, 4, 5, 6]; track n) { <div class="tarjeta esqueleto"></div> }
+      </div>
+    } @else {
+      <div class="ofertas-fila">
+        @for (p of ofertas; track p._id ?? p.nombre) {
+          <app-tarjeta-producto [producto]="p" />
+        }
+      </div>
+    }
+  </section>
+
+  <!-- ── 6. CATEGORÍAS ──────────────────────────── -->
+  <section class="seccion">
+    <div class="seccion-titulo">
+      <h2>Categorías</h2>
+      <a routerLink="/productos">Ver todo <mat-icon>arrow_forward</mat-icon></a>
+    </div>
+    <div class="accesos">
+      @for (cat of categorias; track cat.nombre) {
+        <a class="acceso pm-neon" routerLink="/productos" [queryParams]="{ categoria: cat.nombre }">
+          <span class="acceso-icono"><mat-icon>{{ cat.icono }}</mat-icon></span>
+          <span class="acceso-texto"><strong>{{ cat.nombre }}</strong></span>
+        </a>
+      }
+    </div>
+  </section>
+</div>

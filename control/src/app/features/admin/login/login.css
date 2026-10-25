@@ -159,12 +159,25 @@
    Aviso de uso interno                        */
 .login-footer {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 0.4rem;
+  gap: 0.5rem;
   padding: 1rem;
-  font-size: 0.78rem;
+  font-size: 0.82rem;
+  text-align: center;
   color: var(--pm-texto-suave);
+}
+
+.login-footer a {
+  font-weight: 600;
+  color: var(--pm-violeta);
+}
+
+.volver-tienda {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
 }
 
 .login-footer mat-icon {

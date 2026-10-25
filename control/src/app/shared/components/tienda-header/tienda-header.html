@@ -1,0 +1,75 @@
+<!-- ── HEADER DE LA TIENDA ONLINE ──────────────
+     Fila 1 (violeta): logo, buscador, carrito y cuenta.
+     Fila 2 (blanca): promos, ofertas y categorías.   -->
+<header class="pm-header">
+
+  <div class="barra-principal">
+    <div class="contenedor fila">
+
+      <a routerLink="/" class="logo" aria-label="Premium Market — Tienda">
+        <img src="/marca/premium-market-horizontal-negativo.svg" alt="Premium Market" width="168" height="48" />
+      </a>
+
+      <form class="buscador" role="search" (ngSubmit)="buscar()">
+        <input
+          type="search"
+          name="q"
+          [(ngModel)]="busqueda"
+          placeholder="¿Qué estás buscando?"
+          aria-label="Buscar productos" />
+        <button type="submit" aria-label="Buscar">
+          <mat-icon>search</mat-icon>
+        </button>
+      </form>
+
+      <div class="acciones">
+        <app-theme-toggle class="tema" aria-label="Tema de la página"></app-theme-toggle>
+
+        <a mat-icon-button routerLink="/carrito" class="accion"
+           title="Carrito" aria-label="Carrito"
+           [matBadge]="(cantidadCarrito$ | async) ?? 0"
+           matBadgeSize="small"
+           [matBadgeHidden]="(cantidadCarrito$ | async) === 0">
+          <mat-icon>shopping_cart</mat-icon>
+        </a>
+
+        @if (usuarioActual$ | async; as usuario) {
+          <button class="usuario cuenta" [matMenuTriggerFor]="menuCuenta" aria-label="Mi cuenta">
+            <span class="avatar" aria-hidden="true">{{ iniciales(usuario.nombre) }}</span>
+            <span class="usuario-datos">
+              <span class="usuario-nombre">{{ usuario.nombre }}</span>
+              <span class="usuario-rol">
+                {{ usuario.rol | titlecase }}
+                @if (config$ | async; as config) {
+                  · {{ $any(config.descuentos)[usuario.rol] ?? 0 }}% off
+                }
+              </span>
+            </span>
+            <mat-icon class="cuenta-flecha">expand_more</mat-icon>
+          </button>
+          <mat-menu #menuCuenta="matMenu" xPosition="before">
+            <a mat-menu-item routerLink="/mi-cuenta"><mat-icon>receipt_long</mat-icon> Mis pedidos</a>
+            <button mat-menu-item (click)="logout()"><mat-icon>logout</mat-icon> Cerrar sesión</button>
+          </mat-menu>
+        } @else {
+          <a class="ingresar" routerLink="/login">
+            <mat-icon>person</mat-icon>
+            <span>Ingresar</span>
+          </a>
+        }
+      </div>
+    </div>
+  </div>
+
+  <nav class="barra-modulos" aria-label="Secciones de la tienda">
+    <div class="contenedor modulos">
+      @for (s of secciones; track s.label) {
+        <a [routerLink]="s.ruta" [queryParams]="s.params" [fragment]="s.fragmento" class="modulo"
+           routerLinkActive="activo" [routerLinkActiveOptions]="activoExacto">
+          <mat-icon>{{ s.icono }}</mat-icon>
+          <span>{{ s.label }}</span>
+        </a>
+      }
+    </div>
+  </nav>
+</header>

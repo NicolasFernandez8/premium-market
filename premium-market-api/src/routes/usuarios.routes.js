@@ -92,6 +92,41 @@ router.post('/', async (req, res) => {
   }
 });
 
+// ── POST /api/usuarios/registro ───────────────
+// Alta de clientes desde la tienda online. El rol siempre es "cliente":
+// el pase a mayorista lo hace el personal desde el panel de Clientes.
+router.post('/registro', async (req, res) => {
+  try {
+    const nombre   = String(req.body?.nombre ?? '').trim();
+    const usuario  = String(req.body?.usuario ?? '').trim().toLowerCase();
+    const email    = String(req.body?.email ?? '').trim().toLowerCase();
+    const telefono = String(req.body?.telefono ?? '').trim();
+    const password = String(req.body?.password ?? '');
+
+    if (nombre.length < 3)  return res.status(400).json({ error: 'El nombre debe tener al menos 3 caracteres' });
+    if (!/^[a-z0-9._-]{3,30}$/.test(usuario)) return res.status(400).json({ error: 'El usuario debe tener entre 3 y 30 letras, números, punto o guion' });
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) return res.status(400).json({ error: 'El email no es válido' });
+    if (password.length < 6) return res.status(400).json({ error: 'La contraseña debe tener al menos 6 caracteres' });
+
+    if (await Usuario.exists({ usuario })) {
+      return res.status(409).json({ error: 'Ese usuario ya existe' });
+    }
+
+    const nuevo = await Usuario.create({
+      nombre, usuario, email, telefono,
+      password: await bcrypt.hash(password, 10),
+      rol: 'cliente',
+      activo: true,
+    });
+
+    const { password: _, ...usuarioSinPass } = nuevo.toObject();
+    res.status(201).json(usuarioSinPass);
+  } catch (err) {
+    if (err.code === 11000) return res.status(409).json({ error: 'Ese usuario ya existe' });
+    res.status(400).json({ error: 'Error registrando cliente', detalle: err.message });
+  }
+});
+
 // ── PUT /api/usuarios/:id ─────────────────────
 // Actualiza un usuario — si cambia password, lo hashea
 router.put('/:id', async (req, res) => {

@@ -1,0 +1,51 @@
+<article class="producto" [class.agotado]="sinStock()">
+  <div class="sellos">
+    @if (conOferta()) { <span class="sello oferta">-{{ producto().descuento }}%</span> }
+    @if (sello()) { <span class="sello promo">{{ sello() }}</span> }
+  </div>
+
+  <div class="foto">
+    <app-producto-imagen [nombre]="producto().nombre" [icono]="producto().icono" />
+  </div>
+
+  <span class="categoria-texto">{{ producto().categoria }}</span>
+  <h3 [title]="producto().nombre">{{ producto().nombre }}</h3>
+
+  <div class="precios">
+    @if (conRebaja()) {
+      <span class="precio-lista">{{ producto().precio | currency:'ARS':'symbol-narrow':'1.0-0' }}</span>
+    }
+    <span class="precio">{{ precioFinal() | currency:'ARS':'symbol-narrow':'1.0-0' }}</span>
+  </div>
+
+  @if (pctCliente() > 0) {
+    <span class="precio-cliente">
+      <mat-icon>loyalty</mat-icon>
+      {{ precioCliente() | currency:'ARS':'symbol-narrow':'1.0-0' }} con tu {{ pctCliente() }}%
+    </span>
+  }
+
+  @if (sinStock()) {
+    <span class="stock sin"><mat-icon>cancel</mat-icon> Sin stock</span>
+  } @else if (producto().stock < 5) {
+    <span class="stock bajo"><mat-icon>warning_amber</mat-icon> Últimas {{ producto().stock }} u.</span>
+  }
+
+  <div class="acciones">
+    @if (enCarrito() === 0) {
+      <button mat-flat-button class="btn-agregar" (click)="agregar()" [disabled]="sinStock()">
+        <mat-icon>add_shopping_cart</mat-icon> Agregar
+      </button>
+    } @else {
+      <div class="cantidad" role="group" [attr.aria-label]="'Cantidad de ' + producto().nombre">
+        <button mat-icon-button (click)="restar()" aria-label="Restar una unidad">
+          <mat-icon>{{ enCarrito() === 1 ? 'delete' : 'remove' }}</mat-icon>
+        </button>
+        <span aria-live="polite">{{ enCarrito() }}</span>
+        <button mat-icon-button (click)="agregar()" [disabled]="topeAlcanzado()" aria-label="Sumar una unidad">
+          <mat-icon>add</mat-icon>
+        </button>
+      </div>
+    }
+  </div>
+</article>

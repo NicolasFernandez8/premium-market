@@ -1,0 +1,96 @@
+<!-- ── REGISTRO DE CLIENTES ────────────────────
+     Mismo formato que el login: marca a la izquierda,
+     formulario a la derecha.                         -->
+<div class="login-contenedor">
+  <app-theme-toggle class="login-theme-toggle"></app-theme-toggle>
+
+  <section class="login-marca" aria-hidden="true">
+    <img class="marca-logo" src="/marca/premium-market-horizontal-negativo.svg" alt="" width="260" height="74" />
+    <h2>Creá tu cuenta y ahorrá en cada compra</h2>
+    @if (config$ | async; as config) {
+      <p>Los clientes registrados tienen {{ config.descuentos.cliente }}% de descuento en todo, además de las ofertas y promos.
+         Las cuentas mayoristas llegan al {{ config.descuentos.mayorista }}%.</p>
+    }
+    <ul class="marca-modulos">
+      <li><mat-icon>loyalty</mat-icon> Descuento siempre</li>
+      <li><mat-icon>receipt_long</mat-icon> Historial de pedidos</li>
+      <li><mat-icon>qr_code_2</mat-icon> Pago con QR</li>
+      <li><mat-icon>storefront</mat-icon> Retiro o envío</li>
+    </ul>
+    <div class="marca-gondola">
+      @for (producto of productosGondola; track producto) {
+        <span class="gondola-item"><app-producto-imagen [nombre]="producto" /></span>
+      }
+    </div>
+  </section>
+
+  <mat-card class="login-card">
+    <mat-card-header>
+      <div class="login-header">
+        <img class="login-icono" src="/marca/premium-market-icono.svg" alt="" width="64" height="64" />
+        <h1>Crear cuenta</h1>
+        <p>Tarda menos de un minuto.</p>
+      </div>
+    </mat-card-header>
+
+    <mat-card-content>
+      <form [formGroup]="formulario" (ngSubmit)="registrar()" class="form-registro-cliente">
+        <mat-form-field appearance="outline" class="campo-completo">
+          <mat-label>Nombre y apellido</mat-label>
+          <input matInput formControlName="nombre" autocomplete="name" />
+          @if (f.nombre.touched && f.nombre.invalid) { <mat-error>Mínimo 3 caracteres.</mat-error> }
+        </mat-form-field>
+
+        <mat-form-field appearance="outline" class="campo-completo">
+          <mat-label>Usuario</mat-label>
+          <input matInput formControlName="usuario" autocomplete="username" />
+          <mat-hint>Con este nombre vas a ingresar</mat-hint>
+          @if (f.usuario.touched && f.usuario.invalid) { <mat-error>3 a 30 letras, números, punto o guion.</mat-error> }
+        </mat-form-field>
+
+        <div class="dos-campos">
+          <mat-form-field appearance="outline">
+            <mat-label>Email</mat-label>
+            <input matInput formControlName="email" type="email" autocomplete="email" />
+            @if (f.email.touched && f.email.invalid) { <mat-error>Email no válido.</mat-error> }
+          </mat-form-field>
+          <mat-form-field appearance="outline">
+            <mat-label>Teléfono (opcional)</mat-label>
+            <input matInput formControlName="telefono" type="tel" autocomplete="tel" />
+            @if (f.telefono.touched && f.telefono.invalid) { <mat-error>Teléfono no válido.</mat-error> }
+          </mat-form-field>
+        </div>
+
+        <div class="dos-campos">
+          <mat-form-field appearance="outline">
+            <mat-label>Contraseña</mat-label>
+            <input matInput formControlName="password" [type]="mostrarPassword ? 'text' : 'password'" autocomplete="new-password" />
+            <button mat-icon-button matSuffix type="button" (click)="mostrarPassword = !mostrarPassword" aria-label="Mostrar u ocultar contraseña">
+              <mat-icon>{{ mostrarPassword ? 'visibility_off' : 'visibility' }}</mat-icon>
+            </button>
+            @if (f.password.touched && f.password.invalid) { <mat-error>Mínimo 6 caracteres.</mat-error> }
+          </mat-form-field>
+          <mat-form-field appearance="outline">
+            <mat-label>Repetir contraseña</mat-label>
+            <input matInput formControlName="repetir" [type]="mostrarPassword ? 'text' : 'password'" autocomplete="new-password" />
+          </mat-form-field>
+        </div>
+        @if (formulario.hasError('distintas') && f.repetir.touched) {
+          <p class="error-form">Las contraseñas no coinciden.</p>
+        }
+
+        <button mat-raised-button color="primary" type="submit" class="btn-login" [disabled]="cargando">
+          @if (cargando) { <ng-container><mat-spinner diameter="20"></mat-spinner> Creando cuenta…</ng-container> }
+          @else { <ng-container><mat-icon>person_add</mat-icon> Crear cuenta</ng-container> }
+        </button>
+      </form>
+    </mat-card-content>
+
+    <mat-card-footer>
+      <div class="login-footer">
+        <span>¿Ya tenés cuenta? <a routerLink="/login">Ingresá</a></span>
+        <a routerLink="/" class="volver-tienda"><mat-icon>storefront</mat-icon> Volver a la tienda</a>
+      </div>
+    </mat-card-footer>
+  </mat-card>
+</div>

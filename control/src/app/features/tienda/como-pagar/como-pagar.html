@@ -1,0 +1,42 @@
+<!-- ── CÓMO PAGAR CON QR ───────────────────────
+     QR de muestra en el centro + instructivo abajo. -->
+<div class="contenedor como-pagar">
+
+  <header class="encabezado">
+    <p class="eyebrow">Medios de pago</p>
+    <h1 class="pm-titulo-pagina">Pagá con QR</h1>
+    <p class="bajada">Rápido, sin efectivo y desde tu celular.</p>
+  </header>
+
+  <section class="qr-tarjeta">
+    <div class="qr-marco">
+      @if (qr) {
+        <img [src]="qr" alt="Código QR de muestra de Premium Market" width="260" height="260" />
+      } @else {
+        <mat-spinner diameter="40"></mat-spinner>
+      }
+      <span class="qr-logo"><img src="/marca/premium-market-icono.svg" alt="" width="44" height="44" /></span>
+    </div>
+    <span class="qr-muestra"><mat-icon>info</mat-icon> QR de muestra: el de tu compra aparece al confirmar el pedido</span>
+  </section>
+
+  <section class="instructivo" aria-label="Cómo usar el QR">
+    <h2>Cómo usarlo</h2>
+    <ol class="pasos">
+      @for (paso of pasos; track paso.titulo; let i = $index) {
+        <li class="paso">
+          <span class="paso-numero">{{ i + 1 }}</span>
+          <mat-icon>{{ paso.icono }}</mat-icon>
+          <strong>{{ paso.titulo }}</strong>
+          <p>{{ paso.texto }}</p>
+        </li>
+      }
+    </ol>
+    <p class="nota"><mat-icon>timer</mat-icon> Tenés 30 minutos para pagar: mientras tanto te guardamos los productos.</p>
+  </section>
+
+  <div class="acciones">
+    <a mat-flat-button routerLink="/productos"><mat-icon>storefront</mat-icon> Empezar a comprar</a>
+    <a mat-stroked-button routerLink="/carrito"><mat-icon>shopping_cart</mat-icon> Ir al carrito</a>
+  </div>
+</div>

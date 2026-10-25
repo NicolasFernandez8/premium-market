@@ -25,8 +25,12 @@ const MAPA_ACCIONES = {
   'POST /api/caja':               'VENTA',
   'DELETE /api/ventas':           'ANULAR_VENTA',
 
-  // Pedidos (carrito)
+  // Pedidos de la tienda online (pago, preparación, cancelación)
   'POST /api/pedidos':            'PEDIDO_CREADO',
+  'PATCH /api/pedidos':           'PEDIDO_ACTUALIZADO',
+
+  // Alta de clientes desde la tienda
+  'POST /api/usuarios/registro':  'REGISTRO_CLIENTE',
 };
 
 // ── HELPER: extrae la ruta base sin el ID ─────────────────────────────
@@ -64,7 +68,9 @@ function generarDetalle(metodo, rutaOriginal, body, params, data) {
     'POST /api/ventas':       `Registró venta`,
     'POST /api/caja':         `Registró venta en caja`,
     'DELETE /api/ventas':     `Anuló venta ID: ${id}`,
-    'POST /api/pedidos':      `Creó pedido desde carrito`,
+    'POST /api/pedidos':      `Pedido online ${data?.codigo ?? ''} de ${data?.contacto?.nombre ?? 'un cliente'} por $${data?.total ?? ''}`,
+    'PATCH /api/pedidos':     `Pedido ${data?.codigo ?? id}: ${String(data?.estado ?? '').replace('_', ' ')}`,
+    'POST /api/usuarios/registro': `Se registró el cliente: ${data?.usuario ?? nombre}`,
   };
 
   return mapa[`${metodo} ${base}`] || `${metodo} ${rutaOriginal}`;

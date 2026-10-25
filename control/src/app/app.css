@@ -8,4 +8,56 @@
 .pantalla {
   display: block;
   position: relative;
+  min-height: 100vh; /* Durante la transición las páginas son absolutas: así el pie no sube */
+}
+/* ── PIE DE LA TIENDA ─────────────────────── */
+.pie-tienda {
+  margin-top: 2rem;
+  padding: 1.75rem 0;
+  background: #43185C;
+  color: #fff;
+}
+
+.pie-fila {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.pie-tienda ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.5rem;
+  font-size: 0.82rem;
+}
+
+.pie-tienda li {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: #F3EAF8 !important;
+}
+
+.pie-tienda mat-icon {
+  font-size: 18px;
+  width: 18px;
+  height: 18px;
+  color: #C9A6E0 !important;
+}
+
+:host-context(html.theme-dark) .pie-tienda {
+  background: #0f0a14;
+  border-top: 1px solid var(--pm-linea);
+}
+
+.pie-tienda a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: #F3EAF8 !important;
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }

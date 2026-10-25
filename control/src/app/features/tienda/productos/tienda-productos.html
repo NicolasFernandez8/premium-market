@@ -1,0 +1,90 @@
+<!-- ── CATÁLOGO DE LA TIENDA ONLINE ───────────
+     1. Encabezado con buscador, orden y filtros rápidos
+     2. Categorías (lateral en escritorio)
+     3. Grilla de productos con "Agregar al carrito"  -->
+
+<div class="contenedor consulta">
+
+  <header class="encabezado">
+    <div>
+      <p class="eyebrow">Tienda online</p>
+      <h1 class="pm-titulo-pagina">{{ categoriaSeleccionada || 'Todos los productos' }}</h1>
+    </div>
+
+    <div class="herramientas">
+      <label class="buscador">
+        <mat-icon>search</mat-icon>
+        <input type="search" [(ngModel)]="textoBusqueda" (ngModelChange)="aplicarFiltros()"
+               placeholder="Nombre, marca o categoría" aria-label="Buscar producto" />
+      </label>
+
+      <label class="orden">
+        <span>Ordenar</span>
+        <select [(ngModel)]="orden" (ngModelChange)="aplicarFiltros()" aria-label="Ordenar productos">
+          <option value="nombre">Nombre (A-Z)</option>
+          <option value="precio-asc">Menor precio</option>
+          <option value="precio-desc">Mayor precio</option>
+          <option value="descuento">Mayor descuento</option>
+        </select>
+      </label>
+    </div>
+
+    <div class="filtros-rapidos">
+      <button class="filtro" [class.activo]="soloOfertas" (click)="alternarOfertas()">
+        <mat-icon>local_offer</mat-icon> En oferta <b>{{ cantidadOfertas }}</b>
+      </button>
+      <button class="filtro" [class.activo]="soloPromos" (click)="alternarPromos()">
+        <mat-icon>campaign</mat-icon> En promo hoy <b>{{ cantidadPromos }}</b>
+      </button>
+      @if (hayFiltros) {
+        <button class="limpiar" (click)="limpiarFiltros()"><mat-icon>close</mat-icon> Limpiar filtros</button>
+      }
+    </div>
+  </header>
+
+  <div class="cuerpo">
+    <aside class="categorias" aria-label="Categorías">
+      <button class="categoria" [class.activa]="!categoriaSeleccionada" (click)="categoriaSeleccionada = ''; aplicarFiltros()">
+        <mat-icon>apps</mat-icon> <span>Todas</span> <b>{{ productos.length }}</b>
+      </button>
+      @for (cat of categorias; track cat.nombre) {
+        <button class="categoria" [class.activa]="categoriaSeleccionada === cat.nombre" (click)="seleccionarCategoria(cat.nombre)">
+          <mat-icon>{{ cat.icono }}</mat-icon> <span>{{ cat.nombre }}</span> <b>{{ cantidadEnCategoria(cat.nombre) }}</b>
+        </button>
+      }
+    </aside>
+
+    <section class="resultados">
+      <p class="conteo">
+        {{ productosFiltrados.length }} {{ productosFiltrados.length === 1 ? 'producto' : 'productos' }}
+        @if (categoriaSeleccionada) { en <b>{{ categoriaSeleccionada }}</b> }
+      </p>
+
+      @if (cargando) {
+        <div class="estado"><mat-spinner diameter="40"></mat-spinner><p>Cargando productos…</p></div>
+      } @else if (error) {
+        <div class="estado"><mat-icon>cloud_off</mat-icon><p>No se pudo conectar con el servidor. Probá de nuevo en unos segundos.</p></div>
+      } @else if (productosFiltrados.length === 0) {
+        <div class="estado">
+          <mat-icon>search_off</mat-icon>
+          <p>No encontramos productos con esos filtros.</p>
+          <button mat-stroked-button (click)="limpiarFiltros()">Limpiar filtros</button>
+        </div>
+      } @else {
+        <div class="grilla">
+          @for (p of productosFiltrados.slice(0, visibles); track p._id ?? p.nombre) {
+            <app-tarjeta-producto [producto]="p" />
+          }
+        </div>
+
+        @if (visibles < productosFiltrados.length) {
+          <div class="mas">
+            <button mat-stroked-button (click)="mostrarMas()">
+              Mostrar más ({{ productosFiltrados.length - visibles }} restantes)
+            </button>
+          </div>
+        }
+      }
+    </section>
+  </div>
+</div>

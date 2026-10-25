@@ -46,6 +46,11 @@ const productoSchema = new mongoose.Schema({
     min: 0,
     max: 100,
     default: 0         // Sin descuento por defecto
+  },
+  devolucionesAplicadas: {
+    type: [String],    // Uso interno: devoluciones de stock de pedidos cancelados en curso
+    default: undefined,
+    select: false      // No viaja en las respuestas de la API
   }
 
 }, {

@@ -1,0 +1,96 @@
+<!-- ── PAGO Y SEGUIMIENTO DEL PEDIDO ──────────
+     Pendiente: QR para pagar + cuenta regresiva.
+     Pagado en adelante: línea de seguimiento.
+     Siempre: detalle de lo comprado.          -->
+<div class="pagina contenedor">
+
+  @if (error) {
+    <section class="panel"><div class="vacio"><mat-icon>error_outline</mat-icon><p>{{ error }}</p>
+      <a mat-stroked-button routerLink="/">Volver a la tienda</a></div></section>
+  } @else if (!pedido) {
+    <div class="cargando"><mat-spinner diameter="40"></mat-spinner></div>
+  } @else {
+    <div class="pagina-encabezado">
+      <div>
+        <p class="eyebrow">Pedido {{ pedido.codigo }}</p>
+        <h1 class="pm-titulo-pagina">
+          @switch (pedido.estado) {
+            @case ('pendiente_pago') { Pagá con QR para confirmar }
+            @case ('cancelado') { Pedido cancelado }
+            @default { ¡Gracias por tu compra, {{ pedido.contacto.nombre.split(' ')[0] }}! }
+          }
+        </h1>
+        <p class="bajada">{{ pedido.createdAt | date:"d 'de' MMMM, HH:mm" }} · {{ pedido.entrega.modalidad === 'envio' ? 'Envío a ' + pedido.entrega.direccion : 'Retiro en sucursal' }}</p>
+      </div>
+      <span class="estado-chip" [class]="estados[pedido.estado].clase">
+        <mat-icon>{{ estados[pedido.estado].icono }}</mat-icon> {{ estados[pedido.estado].texto }}
+      </span>
+    </div>
+
+    <div class="columnas">
+      <!-- ── PAGO O SEGUIMIENTO ──────────────── -->
+      <section class="panel">
+        @if (pedido.estado === 'pendiente_pago') {
+          @if (vencido) {
+            <div class="vacio"><mat-icon>timer_off</mat-icon><p>Venció el plazo para pagar.</p>
+              <span>Los productos volvieron a la tienda. Podés armar el carrito de nuevo.</span></div>
+          } @else {
+            <div class="pago">
+              <div class="qr-marco">
+                @if (qr) { <img [src]="qr" alt="Código QR para pagar el pedido" width="240" height="240" /> }
+                @else { <mat-spinner diameter="40"></mat-spinner> }
+              </div>
+              <div class="pago-texto">
+                <span class="pago-monto">{{ pedido.total | currency:'ARS':'symbol-narrow':'1.0-0':'es-AR' }}</span>
+                <ol>
+                  <li>Abrí la app de pagos de tu celular.</li>
+                  <li>Escaneá el código QR.</li>
+                  <li>Confirmá el pago. Esta pantalla se actualiza sola.</li>
+                </ol>
+                <p class="pago-reloj"><mat-icon>timer</mat-icon> Te guardamos el stock por <b>{{ restante }}</b></p>
+                <div class="pago-acciones">
+                  <a mat-flat-button [routerLink]="['/pagar', pedido._id]" target="_blank">
+                    <mat-icon>open_in_new</mat-icon> Abrir el pago en esta compu
+                  </a>
+                  <button mat-button class="btn-cancelar" (click)="cancelar()">Cancelar pedido</button>
+                </div>
+                <p class="nota">Pago de demostración: el QR abre una pantalla que simula la billetera.</p>
+              </div>
+            </div>
+          }
+        } @else if (pedido.estado === 'cancelado') {
+          <div class="vacio"><mat-icon>cancel</mat-icon><p>Este pedido se canceló.</p>
+            <a mat-stroked-button routerLink="/productos">Volver a comprar</a></div>
+        } @else {
+          <ol class="seguimiento">
+            @for (paso of pasos; track paso) {
+              <li [class.hecho]="pasoAlcanzado(paso)">
+                <span class="punto"><mat-icon>{{ paso === 'pendiente_pago' ? 'receipt_long' : estados[paso].icono }}</mat-icon></span>
+                <span>{{ paso === 'pendiente_pago' ? 'Pedido recibido' : estados[paso].texto }}</span>
+              </li>
+            }
+          </ol>
+          <p class="nota">Te avisamos {{ pedido.contacto.email ? 'a ' + pedido.contacto.email : '' }} cuando esté listo. Guardá el código <b>{{ pedido.codigo }}</b> para retirarlo.</p>
+        }
+      </section>
+
+      <!-- ── DETALLE ─────────────────────────── -->
+      <aside class="panel detalle">
+        <div class="panel-titulo"><h2><mat-icon>receipt_long</mat-icon> Detalle</h2></div>
+        <ul class="detalle-items">
+          @for (item of pedido.items; track item.producto) {
+            <li><span class="detalle-cantidad">{{ item.cantidad }}×</span> <span>{{ item.nombre }}</span>
+              <span class="detalle-costo">{{ item.total | currency:'ARS':'symbol-narrow':'1.0-0':'es-AR' }}</span></li>
+          }
+        </ul>
+        <dl class="totales">
+          <div><dt>Subtotal</dt><dd>{{ pedido.subtotalLista | currency:'ARS':'symbol-narrow':'1.0-0':'es-AR' }}</dd></div>
+          @if (pedido.ahorroOfertas + pedido.ahorroPromos + pedido.ahorroCliente > 0) {
+            <div class="ahorro"><dt>Ahorraste</dt><dd>-{{ pedido.ahorroOfertas + pedido.ahorroPromos + pedido.ahorroCliente | currency:'ARS':'symbol-narrow':'1.0-0':'es-AR' }}</dd></div>
+          }
+          <div class="total"><dt>Total</dt><dd>{{ pedido.total | currency:'ARS':'symbol-narrow':'1.0-0':'es-AR' }}</dd></div>
+        </dl>
+      </aside>
+    </div>
+  }
+</div>

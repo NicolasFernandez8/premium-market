@@ -18,6 +18,7 @@ import { MatChipsModule } from '@angular/material/chips';
 
 // ── SERVICIOS ─────────────────────────────────
 import { AuthService, Usuario } from '../../../core/services/auth.service';
+import { ROLES_PERSONAL } from '../../../core/models/usuario.model';
 import { formAnimation } from '../../../form-animations';
 import { MatDialog, MatDialogModule } from '@angular/material/dialog';
 import { ConfirmacionDialogComponent } from '../../../shared/components/confirmacion-dialog/confirmacion-dialog';
@@ -101,7 +102,8 @@ export class UsuariosComponent implements OnInit {
     this.cargando = true;
     this.authService.getUsuarios().subscribe({
       next: (usuarios) => {
-        this.usuarios = usuarios;
+        // Solo el personal: los clientes de la tienda se gestionan en Clientes
+        this.usuarios = usuarios.filter(u => ROLES_PERSONAL.includes(u.rol));
         this.cargando = false;
         this.cdr.detectChanges();
       },

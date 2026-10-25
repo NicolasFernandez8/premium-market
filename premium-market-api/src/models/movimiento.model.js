@@ -38,7 +38,9 @@ const movimientoSchema = new mongoose.Schema({
       // Stock / Recepciones
       'RECEPCION_MERCADERIA', 'AJUSTE_STOCK',
       // Carrito / Pedidos
-      'PEDIDO_CREADO',
+      'PEDIDO_CREADO', 'PEDIDO_ACTUALIZADO',
+      // Tienda online
+      'REGISTRO_CLIENTE',
       // Sistema
       'ERROR', 'OTRO'
     ]

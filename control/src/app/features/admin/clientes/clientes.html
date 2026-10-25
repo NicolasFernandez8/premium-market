@@ -1,0 +1,171 @@
+<!-- ── CLIENTES Y PEDIDOS ONLINE ──────────────
+     Pedidos: lo que llega desde la tienda web, para prepararlo y entregarlo.
+     Clientes: cuentas e invitados con su historial de pedidos.             -->
+<div class="pagina contenedor">
+
+  <div class="pagina-encabezado">
+    <div>
+      <p class="eyebrow">Tienda online</p>
+      <h1 class="pm-titulo-pagina">Clientes</h1>
+      <p class="bajada">Pedidos de la web y el historial de cada cliente.</p>
+    </div>
+    <button mat-stroked-button (click)="cargar()"><mat-icon>refresh</mat-icon> Actualizar</button>
+  </div>
+
+  <div class="barra">
+    <div class="vistas" role="tablist">
+      <button role="tab" class="vista" [class.activa]="vista === 'pedidos'" [attr.aria-selected]="vista === 'pedidos'" (click)="vista = 'pedidos'">
+        <mat-icon>receipt_long</mat-icon> Pedidos online <b>{{ pedidos.length }}</b>
+      </button>
+      <button role="tab" class="vista" [class.activa]="vista === 'clientes'" [attr.aria-selected]="vista === 'clientes'" (click)="vista = 'clientes'">
+        <mat-icon>groups</mat-icon> Clientes <b>{{ clientes.length }}</b>
+      </button>
+    </div>
+    <label class="buscar">
+      <mat-icon>search</mat-icon>
+      <input type="search" [(ngModel)]="busqueda" [placeholder]="vista === 'pedidos' ? 'Código, nombre o contacto' : 'Nombre, usuario o email'" aria-label="Buscar" />
+    </label>
+  </div>
+
+  @if (cargando) {
+    <div class="cargando"><mat-spinner diameter="40"></mat-spinner></div>
+  } @else if (error) {
+    <section class="panel"><div class="vacio"><mat-icon>cloud_off</mat-icon><p>No se pudieron cargar los datos.</p>
+      <button mat-stroked-button (click)="cargar()">Reintentar</button></div></section>
+  } @else if (vista === 'pedidos') {
+
+    <!-- ── PEDIDOS ONLINE ──────────────────── -->
+    <div class="estados">
+      @for (f of filtros; track f.estado) {
+        <button class="estado-filtro" [class.activo]="filtroEstado === f.estado" (click)="filtroEstado = f.estado">
+          {{ f.texto }} <b>{{ cantidadEn(f.estado) }}</b>
+        </button>
+      }
+    </div>
+
+    <section class="panel historial">
+      @if (pedidosFiltrados.length === 0) {
+        <div class="vacio"><mat-icon>inbox</mat-icon><p>No hay pedidos con ese filtro.</p></div>
+      } @else {
+        <table>
+          <thead>
+            <tr><th></th><th>Pedido</th><th>Cliente</th><th>Entrega</th><th>Total</th><th>Estado</th><th>Acciones</th></tr>
+          </thead>
+          <tbody>
+            @for (p of pedidosFiltrados; track p._id) {
+              <tr class="fila-pedido" [class.abierta]="expandido === p._id">
+                <td>
+                  <button mat-icon-button (click)="alternar(p._id)" [attr.aria-expanded]="expandido === p._id"
+                          [attr.aria-label]="'Ver detalle del pedido ' + p.codigo">
+                    <mat-icon>{{ expandido === p._id ? 'expand_less' : 'expand_more' }}</mat-icon>
+                  </button>
+                </td>
+                <td><b>{{ p.codigo }}</b><br /><small>{{ p.createdAt | date:'dd/MM HH:mm' }}</small></td>
+                <td>{{ p.contacto.nombre }}<br /><span class="tipo" [class]="p.tipoCliente">{{ p.tipoCliente }}</span></td>
+                <td>{{ p.entrega.modalidad === 'envio' ? 'Envío' : 'Retiro' }}</td>
+                <td>{{ p.total | currency:'ARS':'symbol-narrow':'1.0-0':'es-AR' }}</td>
+                <td><span class="estado-chip" [class]="estados[p.estado].clase"><mat-icon>{{ estados[p.estado].icono }}</mat-icon> {{ estados[p.estado].texto }}</span></td>
+                <td class="acciones">
+                  @if (siguiente(p); as paso) {
+                    <button mat-flat-button (click)="avanzar(p)"><mat-icon>{{ paso.icono }}</mat-icon> {{ paso.texto }}</button>
+                  }
+                  @if (cancelable(p)) {
+                    <button mat-icon-button class="btn-quitar" (click)="cancelar(p)" [attr.aria-label]="'Cancelar pedido ' + p.codigo" title="Cancelar pedido">
+                      <mat-icon>cancel</mat-icon>
+                    </button>
+                  }
+                </td>
+              </tr>
+              @if (expandido === p._id) {
+                <tr class="fila-detalle">
+                  <td colspan="7">
+                    <p class="detalle-obs"><mat-icon>person</mat-icon>
+                      {{ p.contacto.email || 'sin email' }} · {{ p.contacto.telefono || 'sin teléfono' }}
+                      @if (p.entrega.modalidad === 'envio') { · {{ p.entrega.direccion }} }
+                    </p>
+                    @if (p.notas) { <p class="detalle-obs"><mat-icon>notes</mat-icon> {{ p.notas }}</p> }
+                    <ul class="detalle-items">
+                      @for (item of p.items; track item.producto) {
+                        <li>
+                          <span class="detalle-cantidad">{{ item.cantidad }} u.</span>
+                          <span>{{ item.nombre }}</span>
+                          <span class="detalle-categoria">{{ item.categoria }}</span>
+                          <span class="detalle-costo">{{ item.total | currency:'ARS':'symbol-narrow':'1.0-0':'es-AR' }}</span>
+                        </li>
+                      }
+                    </ul>
+                    <p class="detalle-obs historial-estados"><mat-icon>history</mat-icon>
+                      @for (h of p.historial; track $index) {
+                        <span>{{ estados[h.estado].texto }} ({{ h.fecha | date:'dd/MM HH:mm' }}, {{ h.usuario }})</span>
+                      }
+                    </p>
+                  </td>
+                </tr>
+              }
+            }
+          </tbody>
+        </table>
+      }
+    </section>
+
+  } @else {
+
+    <!-- ── CLIENTES ────────────────────────── -->
+    <section class="panel historial">
+      @if (clientesFiltrados.length === 0) {
+        <div class="vacio"><mat-icon>person_search</mat-icon><p>No hay clientes con esa búsqueda.</p></div>
+      } @else {
+        <table>
+          <thead>
+            <tr><th></th><th>Cliente</th><th>Tipo</th><th>Compras</th><th>Total gastado</th><th>Último pedido</th></tr>
+          </thead>
+          <tbody>
+            @for (c of clientesFiltrados; track c.clave) {
+              <tr class="fila-pedido" [class.abierta]="expandido === c.clave">
+                <td>
+                  <button mat-icon-button (click)="alternarCliente(c)" [disabled]="c.cantidadPedidos === 0"
+                          [attr.aria-expanded]="expandido === c.clave" [attr.aria-label]="'Ver pedidos de ' + c.nombre">
+                    <mat-icon>{{ expandido === c.clave ? 'expand_less' : 'expand_more' }}</mat-icon>
+                  </button>
+                </td>
+                <td><b>{{ c.nombre }}</b><br /><small>{{ c.contacto }}</small></td>
+                <td>
+                  @if (c.usuario && esAdmin) {
+                    <select class="selector-tipo" [ngModel]="c.tipo" (ngModelChange)="cambiarTipo(c, $event)" [attr.aria-label]="'Tipo de cliente de ' + c.nombre">
+                      <option value="cliente">Cliente</option>
+                      <option value="mayorista">Mayorista</option>
+                    </select>
+                  } @else {
+                    <span class="tipo" [class]="c.tipo">{{ c.tipo }}</span>
+                  }
+                </td>
+                <td>{{ c.compras }}</td>
+                <td>{{ c.gastado | currency:'ARS':'symbol-narrow':'1.0-0':'es-AR' }}</td>
+                <td>{{ c.ultimo ? (c.ultimo | date:'dd/MM/yyyy') : '—' }}</td>
+              </tr>
+              @if (expandido === c.clave) {
+                <tr class="fila-detalle">
+                  <td colspan="6">
+                    @if (!historiales.has(c.clave)) {
+                      <mat-spinner diameter="24"></mat-spinner>
+                    }
+                    <ul class="detalle-items pedidos-cliente">
+                      @for (p of historiales.get(c.clave) ?? []; track p._id) {
+                        <li>
+                          <span class="detalle-cantidad">{{ p.codigo }}</span>
+                          <span>{{ p.createdAt | date:'dd/MM/yyyy HH:mm' }} · {{ p.items.length }} productos</span>
+                          <span class="detalle-categoria">{{ estados[p.estado].texto }}</span>
+                          <span class="detalle-costo">{{ p.total | currency:'ARS':'symbol-narrow':'1.0-0':'es-AR' }}</span>
+                        </li>
+                      }
+                    </ul>
+                  </td>
+                </tr>
+              }
+            }
+          </tbody>
+        </table>
+      }
+    </section>
+  }
+</div>

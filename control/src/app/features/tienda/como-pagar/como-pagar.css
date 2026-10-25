@@ -1,0 +1,169 @@
+/* ── CÓMO PAGAR CON QR ─────────────────────── */
+.como-pagar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.75rem;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+  text-align: center;
+}
+
+.eyebrow {
+  margin-bottom: 0.35rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--pm-etiqueta);
+}
+
+.bajada {
+  margin-top: 0.25rem;
+  color: var(--pm-texto-suave);
+}
+
+/* ── QR EN EL CENTRO ───────────────────────── */
+.qr-tarjeta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.85rem;
+}
+
+.qr-marco {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: min(300px, 80vw);
+  aspect-ratio: 1;
+  padding: 14px;
+  border-radius: 20px;
+  background: #fff;
+  border: 2px solid var(--pm-borde);
+  box-shadow: var(--pm-sombra-hover);
+}
+
+.qr-marco > img {
+  width: 100%;
+  height: auto;
+}
+
+/* Logo en el centro del QR, como en los QR de billeteras */
+.qr-logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  padding: 6px;
+  border-radius: 12px;
+  background: #fff;
+}
+
+.qr-muestra {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.3rem 0.8rem;
+  border-radius: 999px;
+  background: var(--pm-violeta-suave);
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--pm-acento) !important;
+}
+
+.qr-muestra mat-icon {
+  font-size: 17px;
+  width: 17px;
+  height: 17px;
+  color: inherit !important;
+}
+
+/* ── INSTRUCTIVO ───────────────────────────── */
+.instructivo {
+  width: 100%;
+  max-width: 980px;
+}
+
+.instructivo h2 {
+  margin-bottom: 1rem;
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+.pasos {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.paso {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 1.25rem 1rem 1rem;
+  background: var(--pm-surface);
+  border: 1px solid var(--pm-linea);
+  border-radius: var(--pm-radio);
+}
+
+.paso-numero {
+  position: absolute;
+  top: 0.6rem;
+  left: 0.75rem;
+  font-family: var(--pm-fuente-titulo);
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--pm-violeta-claro) !important;
+}
+
+.paso > mat-icon {
+  width: 44px;
+  height: 44px;
+  padding: 10px;
+  box-sizing: content-box;
+  border-radius: 50%;
+  background: var(--pm-violeta-suave);
+  color: var(--pm-violeta) !important;
+}
+
+.paso strong {
+  font-size: 0.95rem;
+}
+
+.paso p {
+  font-size: 0.82rem;
+  color: var(--pm-texto-suave) !important;
+}
+
+.nota {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  color: var(--pm-texto-suave);
+}
+
+.nota mat-icon {
+  font-size: 18px;
+  width: 18px;
+  height: 18px;
+  color: var(--pm-violeta);
+}
+
+.acciones {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.acciones a {
+  border-radius: 999px !important;
+}

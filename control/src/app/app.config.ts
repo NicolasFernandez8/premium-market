@@ -16,7 +16,7 @@ registerLocaleData(localeEsAr);
 // Registra todos los servicios globales de Premium Market
 export const appConfig: ApplicationConfig = {
   providers: [
-    provideRouter(routes, withInMemoryScrolling({ scrollPositionRestoration: 'top' })), // Rutas; cada pantalla arranca arriba
+    provideRouter(routes, withInMemoryScrolling({ scrollPositionRestoration: 'top', anchorScrolling: 'enabled' })), // Rutas; cada pantalla arranca arriba (o en el #ancla)
     provideHttpClient(withInterceptors([authInterceptor])), // Habilita HttpClient para la API REST
     provideAnimationsAsync(),     // Habilita animaciones de Angular Material
     { provide: LOCALE_ID, useValue: 'es-AR' }, // Pipes de fecha y moneda en español

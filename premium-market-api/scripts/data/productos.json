@@ -1,0 +1,5202 @@
+[
+ {
+  "nombre": "Coca-Cola Original 1.25L",
+  "categoria": "Gaseosas",
+  "precio": 2900,
+  "stock": 60,
+  "descripcion": "Gaseosa cola sabor original 1.25 litros",
+  "icono": "local_drink",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Manaos Cola 2.25L",
+  "categoria": "Gaseosas",
+  "precio": 1600,
+  "stock": 50,
+  "descripcion": "Gaseosa cola económica 2.25 litros",
+  "icono": "local_drink",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Coca-Cola Zero 1.5L",
+  "categoria": "Gaseosas",
+  "precio": 3363,
+  "stock": 21,
+  "descripcion": "Gaseosa cola sin azúcar 1.5 litros",
+  "icono": "local_drink",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Pepsi Black 1.5L",
+  "categoria": "Gaseosas",
+  "precio": 3160,
+  "stock": 0,
+  "descripcion": "Gaseosa cola sin azúcar 1.5 litros",
+  "icono": "local_drink",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Cunnington Pomelo 1.5L",
+  "categoria": "Gaseosas",
+  "precio": 1900,
+  "stock": 15,
+  "descripcion": "Gaseosa pomelo económica 1.5 litros",
+  "icono": "local_drink",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Agua Eco de los Andes 2.25L",
+  "categoria": "Aguas y Jugos",
+  "precio": 1900,
+  "stock": 29,
+  "descripcion": "Agua mineral sin gas 2.25 litros",
+  "icono": "water_drop",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Agua Nestlé Pureza Vital 500ml",
+  "categoria": "Aguas y Jugos",
+  "precio": 900,
+  "stock": 80,
+  "descripcion": "Agua purificada 500ml",
+  "icono": "water_drop",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Jugo Cepita Del Valle Manzana 1L",
+  "categoria": "Aguas y Jugos",
+  "precio": 2800,
+  "stock": 35,
+  "descripcion": "Jugo de manzana 1 litro",
+  "icono": "water_drop",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Jugo Cepita Durazno 1L",
+  "categoria": "Aguas y Jugos",
+  "precio": 2800,
+  "stock": 23,
+  "descripcion": "Jugo de durazno 1 litro",
+  "icono": "water_drop",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Agua Eco de los Andes 500ml",
+  "categoria": "Aguas y Jugos",
+  "precio": 850,
+  "stock": 64,
+  "descripcion": "Agua mineral 500ml",
+  "icono": "water_drop",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Energizante Monster Verde 473ml",
+  "categoria": "Aguas y Jugos",
+  "precio": 3200,
+  "stock": 0,
+  "descripcion": "Bebida energizante 473ml",
+  "icono": "water_drop",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Cerveza Brahma 473ml Lata",
+  "categoria": "Bebidas con Alcohol",
+  "precio": 2025,
+  "stock": 19,
+  "descripcion": "Cerveza rubia lata 473ml",
+  "icono": "sports_bar",
+  "oferta": true,
+  "descuento": 10
+ },
+ {
+  "nombre": "Cerveza Budweiser 473ml Lata",
+  "categoria": "Bebidas con Alcohol",
+  "precio": 2800,
+  "stock": 19,
+  "descripcion": "Cerveza rubia lata 473ml",
+  "icono": "sports_bar",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Cerveza Isenbeck 473ml Lata",
+  "categoria": "Bebidas con Alcohol",
+  "precio": 1600,
+  "stock": 48,
+  "descripcion": "Cerveza rubia lata 473ml",
+  "icono": "sports_bar",
+  "oferta": true,
+  "descuento": 15
+ },
+ {
+  "nombre": "Cerveza Palermo 1L",
+  "categoria": "Bebidas con Alcohol",
+  "precio": 2800,
+  "stock": 21,
+  "descripcion": "Cerveza rubia descartable 1 litro",
+  "icono": "sports_bar",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Vodka Absolut 750ml",
+  "categoria": "Bebidas con Alcohol",
+  "precio": 15000,
+  "stock": 7,
+  "descripcion": "Vodka premium 750ml",
+  "icono": "wine_bar",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Sidra Real 750ml",
+  "categoria": "Bebidas con Alcohol",
+  "precio": 3500,
+  "stock": 30,
+  "descripcion": "Sidra de manzana 750ml",
+  "icono": "wine_bar",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Cerveza Imperial Golden 473ml",
+  "categoria": "Bebidas con Alcohol",
+  "precio": 2800,
+  "stock": 34,
+  "descripcion": "Cerveza rubia premium lata 473ml",
+  "icono": "sports_bar",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Yogur Actimel Frutilla 100g x4",
+  "categoria": "Lácteos",
+  "precio": 3800,
+  "stock": 18,
+  "descripcion": "Yogur bebible probiótico x4 unidades",
+  "icono": "icecream",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Jamón Cocido Paladini x100g",
+  "categoria": "Fiambres",
+  "precio": 1800,
+  "stock": 27,
+  "descripcion": "Jamón cocido por 100 gramos",
+  "icono": "lunch_dining",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Chorizo Colorado Paladini x100g",
+  "categoria": "Fiambres",
+  "precio": 1900,
+  "stock": 20,
+  "descripcion": "Chorizo colorado por 100 gramos",
+  "icono": "lunch_dining",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Jamón Serrano Iberito x100g",
+  "categoria": "Fiambres",
+  "precio": 4500,
+  "stock": 14,
+  "descripcion": "Jamón serrano importado por 100 gramos",
+  "icono": "lunch_dining",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Pepperoni Paladini x100g",
+  "categoria": "Fiambres",
+  "precio": 2400,
+  "stock": 19,
+  "descripcion": "Pepperoni por 100 gramos",
+  "icono": "lunch_dining",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Soppressata Cagnoli x100g",
+  "categoria": "Fiambres",
+  "precio": 2600,
+  "stock": 15,
+  "descripcion": "Fiambre italiano por 100 gramos",
+  "icono": "lunch_dining",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Jamón Natural Paladini x100g",
+  "categoria": "Fiambres",
+  "precio": 2100,
+  "stock": 22,
+  "descripcion": "Jamón natural por 100 gramos",
+  "icono": "lunch_dining",
+  "oferta": true,
+  "descuento": 15
+ },
+ {
+  "nombre": "Queso Reggianito x kg",
+  "categoria": "Fiambres",
+  "precio": 16000,
+  "stock": 10,
+  "descripcion": "Queso duro reggianito por kilogramo",
+  "icono": "lunch_dining",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Asado de Tira x kg",
+  "categoria": "Carnes",
+  "precio": 9500,
+  "stock": 20,
+  "descripcion": "Asado de tira vacuno por kilogramo",
+  "icono": "kebab_dining",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Nalga x kg",
+  "categoria": "Carnes",
+  "precio": 10500,
+  "stock": 15,
+  "descripcion": "Nalga vacuna por kilogramo",
+  "icono": "kebab_dining",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Muslo y Contramuslo Pollo x kg",
+  "categoria": "Carnes",
+  "precio": 6800,
+  "stock": 25,
+  "descripcion": "Muslo y contramuslo por kilogramo",
+  "icono": "kebab_dining",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Carré de Cerdo x kg",
+  "categoria": "Carnes",
+  "precio": 11350,
+  "stock": 12,
+  "descripcion": "Carré de cerdo por kilogramo",
+  "icono": "kebab_dining",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Merluza Filet x kg",
+  "categoria": "Carnes",
+  "precio": 9000,
+  "stock": 15,
+  "descripcion": "Filet de merluza por kilogramo",
+  "icono": "kebab_dining",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Paleta de Cerdo x kg",
+  "categoria": "Carnes",
+  "precio": 8500,
+  "stock": 12,
+  "descripcion": "Paleta de cerdo por kilogramo",
+  "icono": "kebab_dining",
+  "oferta": true,
+  "descuento": 15
+ },
+ {
+  "nombre": "Pepsi Cola 2L",
+  "categoria": "Gaseosas",
+  "precio": 3520,
+  "stock": 40,
+  "descripcion": "Gaseosa cola Pepsi 2 litros",
+  "icono": "local_drink",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Sprite Lima Limón 2.25L",
+  "categoria": "Gaseosas",
+  "precio": 4200,
+  "stock": 35,
+  "descripcion": "Gaseosa lima limón 2.25 litros",
+  "icono": "local_drink",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Fanta Naranja 1.5L",
+  "categoria": "Gaseosas",
+  "precio": 3100,
+  "stock": 35,
+  "descripcion": "Gaseosa naranja 1.5 litros",
+  "icono": "local_drink",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Cunnington Cola 2.25L",
+  "categoria": "Gaseosas",
+  "precio": 1900,
+  "stock": 45,
+  "descripcion": "Gaseosa cola económica 2.25 litros",
+  "icono": "local_drink",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Agua Villavicencio 1.5L",
+  "categoria": "Aguas y Jugos",
+  "precio": 1800,
+  "stock": 60,
+  "descripcion": "Agua mineral sin gas 1.5 litros",
+  "icono": "water_drop",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Jugo Tang Naranja x10 sobres",
+  "categoria": "Aguas y Jugos",
+  "precio": 1500,
+  "stock": 50,
+  "descripcion": "Jugo en polvo naranja x10 sobres",
+  "icono": "water_drop",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Agua Tónica Cunnington 1.5L",
+  "categoria": "Aguas y Jugos",
+  "precio": 1900,
+  "stock": 35,
+  "descripcion": "Agua tónica 1.5 litros",
+  "icono": "water_drop",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Jugo Baggio Naranja Mango 1L",
+  "categoria": "Aguas y Jugos",
+  "precio": 2600,
+  "stock": 35,
+  "descripcion": "Jugo naranja mango 1 litro",
+  "icono": "water_drop",
+  "oferta": true,
+  "descuento": 15
+ },
+ {
+  "nombre": "Agua Villavicencio Con Gas 500ml",
+  "categoria": "Aguas y Jugos",
+  "precio": 1100,
+  "stock": 50,
+  "descripcion": "Agua mineral con gas 500ml",
+  "icono": "water_drop",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Jugo Tang Multifrutas x10 sobres",
+  "categoria": "Aguas y Jugos",
+  "precio": 1500,
+  "stock": 50,
+  "descripcion": "Jugo en polvo multifrutas x10 sobres",
+  "icono": "water_drop",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Cerveza Heineken 473ml Lata",
+  "categoria": "Bebidas con Alcohol",
+  "precio": 4660,
+  "stock": 22,
+  "descripcion": "Cerveza rubia premium lata 473ml",
+  "icono": "sports_bar",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Vino Malbec Trapiche 750ml",
+  "categoria": "Bebidas con Alcohol",
+  "precio": 6500,
+  "stock": 20,
+  "descripcion": "Vino tinto Malbec 750ml",
+  "icono": "wine_bar",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Vino Chardonnay Trivento 750ml",
+  "categoria": "Bebidas con Alcohol",
+  "precio": 5500,
+  "stock": 15,
+  "descripcion": "Vino blanco Chardonnay 750ml",
+  "icono": "wine_bar",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Ron Bacardi Blanco 750ml",
+  "categoria": "Bebidas con Alcohol",
+  "precio": 16000,
+  "stock": 8,
+  "descripcion": "Ron blanco 750ml",
+  "icono": "wine_bar",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Leche La Serenísima Descremada 1L",
+  "categoria": "Lácteos",
+  "precio": 2134,
+  "stock": 50,
+  "descripcion": "Leche descremada larga vida 1 litro",
+  "icono": "local_cafe",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Leche Sancor Entera 1L",
+  "categoria": "Lácteos",
+  "precio": 2000,
+  "stock": 50,
+  "descripcion": "Leche entera larga vida 1 litro",
+  "icono": "local_cafe",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Manteca Tonadita 200g",
+  "categoria": "Lácteos",
+  "precio": 3300,
+  "stock": 30,
+  "descripcion": "Manteca extra calidad 200g",
+  "icono": "local_cafe",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Queso Crema Casancrem 190g",
+  "categoria": "Lácteos",
+  "precio": 3500,
+  "stock": 25,
+  "descripcion": "Queso crema untable 190g",
+  "icono": "local_cafe",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Queso Crema Philadelphia 150g",
+  "categoria": "Lácteos",
+  "precio": 4200,
+  "stock": 20,
+  "descripcion": "Queso crema untable 150g",
+  "icono": "local_cafe",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Dulce de Leche Sancor 400g",
+  "categoria": "Lácteos",
+  "precio": 2800,
+  "stock": 35,
+  "descripcion": "Dulce de leche clásico 400g",
+  "icono": "icecream",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Dulce de Leche La Serenísima 400g",
+  "categoria": "Lácteos",
+  "precio": 2900,
+  "stock": 35,
+  "descripcion": "Dulce de leche repostero 400g",
+  "icono": "icecream",
+  "oferta": true,
+  "descuento": 10
+ },
+ {
+  "nombre": "Flan Ilolay Vainilla 110g",
+  "categoria": "Lácteos",
+  "precio": 900,
+  "stock": 40,
+  "descripcion": "Flan vainilla con dulce de leche 110g",
+  "icono": "icecream",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Salame Cagnoli x100g",
+  "categoria": "Fiambres",
+  "precio": 2200,
+  "stock": 25,
+  "descripcion": "Salame por 100 gramos",
+  "icono": "lunch_dining",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Mortadela Paladini x100g",
+  "categoria": "Fiambres",
+  "precio": 1400,
+  "stock": 30,
+  "descripcion": "Mortadela por 100 gramos",
+  "icono": "lunch_dining",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Queso Mozzarella x kg",
+  "categoria": "Fiambres",
+  "precio": 14000,
+  "stock": 15,
+  "descripcion": "Queso mozzarella por kilogramo",
+  "icono": "lunch_dining",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Queso Cremoso x kg",
+  "categoria": "Fiambres",
+  "precio": 12000,
+  "stock": 15,
+  "descripcion": "Queso cremoso por kilogramo",
+  "icono": "lunch_dining",
+  "oferta": true,
+  "descuento": 10
+ },
+ {
+  "nombre": "Queso Provolone x kg",
+  "categoria": "Fiambres",
+  "precio": 15000,
+  "stock": 10,
+  "descripcion": "Queso provolone por kilogramo",
+  "icono": "lunch_dining",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Vacío x kg",
+  "categoria": "Carnes",
+  "precio": 11000,
+  "stock": 15,
+  "descripcion": "Vacío vacuno por kilogramo",
+  "icono": "kebab_dining",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Tapa de Asado x kg",
+  "categoria": "Carnes",
+  "precio": 18890,
+  "stock": 10,
+  "descripcion": "Tapa de asado vacuno por kilogramo",
+  "icono": "kebab_dining",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Colita de Cuadril x kg",
+  "categoria": "Carnes",
+  "precio": 25990,
+  "stock": 8,
+  "descripcion": "Colita de cuadril vacuno por kilogramo",
+  "icono": "kebab_dining",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Chorizo Parrillero x kg",
+  "categoria": "Carnes",
+  "precio": 9500,
+  "stock": 20,
+  "descripcion": "Chorizo para parrilla por kilogramo",
+  "icono": "kebab_dining",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Salmón Rosado x kg",
+  "categoria": "Carnes",
+  "precio": 18000,
+  "stock": 8,
+  "descripcion": "Salmón rosado fresco por kilogramo",
+  "icono": "kebab_dining",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Cuadrada de Ternera x kg",
+  "categoria": "Carnes",
+  "precio": 12000,
+  "stock": 10,
+  "descripcion": "Cuadrada de ternera por kilogramo",
+  "icono": "kebab_dining",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Coca-Cola Original 2.25L",
+  "categoria": "Gaseosas",
+  "precio": 4500,
+  "stock": 50,
+  "descripcion": "Gaseosa cola sabor original 2.25 litros",
+  "icono": "local_drink",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Pepsi Cola 1.5L",
+  "categoria": "Gaseosas",
+  "precio": 3160,
+  "stock": 40,
+  "descripcion": "Gaseosa cola Pepsi 1.5 litros",
+  "icono": "local_drink",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "7Up Lima Limón 1.5L",
+  "categoria": "Gaseosas",
+  "precio": 3100,
+  "stock": 30,
+  "descripcion": "Gaseosa lima limón 1.5 litros",
+  "icono": "local_drink",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Schweppes Tónica 1.5L",
+  "categoria": "Gaseosas",
+  "precio": 3400,
+  "stock": 25,
+  "descripcion": "Gaseosa tónica premium 1.5 litros",
+  "icono": "local_drink",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Manaos Naranja 2.25L",
+  "categoria": "Gaseosas",
+  "precio": 1600,
+  "stock": 40,
+  "descripcion": "Gaseosa naranja económica 2.25 litros",
+  "icono": "local_drink",
+  "oferta": true,
+  "descuento": 10
+ },
+ {
+  "nombre": "Fanta Naranja Lata 354ml",
+  "categoria": "Gaseosas",
+  "precio": 1150,
+  "stock": 60,
+  "descripcion": "Gaseosa naranja lata 354ml",
+  "icono": "local_drink",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Jugo Cepita Del Valle Naranja 1L",
+  "categoria": "Aguas y Jugos",
+  "precio": 2800,
+  "stock": 40,
+  "descripcion": "Jugo de naranja 1 litro",
+  "icono": "water_drop",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Cerveza Stella Artois 473ml Lata",
+  "categoria": "Bebidas con Alcohol",
+  "precio": 3200,
+  "stock": 36,
+  "descripcion": "Cerveza rubia premium lata 473ml",
+  "icono": "sports_bar",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Cerveza Schneider 473ml Lata",
+  "categoria": "Bebidas con Alcohol",
+  "precio": 1800,
+  "stock": 48,
+  "descripcion": "Cerveza rubia lata 473ml",
+  "icono": "sports_bar",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Cerveza Quilmes 1L",
+  "categoria": "Bebidas con Alcohol",
+  "precio": 3200,
+  "stock": 24,
+  "descripcion": "Cerveza rubia descartable 1 litro",
+  "icono": "sports_bar",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Vino Cabernet Sauvignon Norton 750ml",
+  "categoria": "Bebidas con Alcohol",
+  "precio": 5800,
+  "stock": 20,
+  "descripcion": "Vino tinto Cabernet Sauvignon 750ml",
+  "icono": "wine_bar",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Gin Beefeater 750ml",
+  "categoria": "Bebidas con Alcohol",
+  "precio": 18000,
+  "stock": 8,
+  "descripcion": "Gin london dry 750ml",
+  "icono": "wine_bar",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Leche La Serenísima Entera 1L",
+  "categoria": "Lácteos",
+  "precio": 2134,
+  "stock": 60,
+  "descripcion": "Leche entera larga vida 1 litro",
+  "icono": "local_cafe",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Yogur Yogurisimo Griego 300g",
+  "categoria": "Lácteos",
+  "precio": 3350,
+  "stock": 25,
+  "descripcion": "Yogur griego natural 300g",
+  "icono": "icecream",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Yogur Milkaut Frutilla 900g",
+  "categoria": "Lácteos",
+  "precio": 3471,
+  "stock": 25,
+  "descripcion": "Yogur entero sabor frutilla 900g",
+  "icono": "icecream",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Queso Tybo La Paulina x kg",
+  "categoria": "Lácteos",
+  "precio": 12000,
+  "stock": 15,
+  "descripcion": "Queso tybo por kilogramo",
+  "icono": "local_cafe",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Paleta Cocida Virginia x100g",
+  "categoria": "Fiambres",
+  "precio": 1600,
+  "stock": 25,
+  "descripcion": "Paleta cocida por 100 gramos",
+  "icono": "lunch_dining",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Lomo de Cerdo Ahumado x100g",
+  "categoria": "Fiambres",
+  "precio": 2500,
+  "stock": 20,
+  "descripcion": "Lomo de cerdo ahumado por 100 gramos",
+  "icono": "lunch_dining",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Salchicha Viena Paladini x200g",
+  "categoria": "Fiambres",
+  "precio": 2800,
+  "stock": 30,
+  "descripcion": "Salchicha viena 200 gramos",
+  "icono": "lunch_dining",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Longaniza x100g",
+  "categoria": "Fiambres",
+  "precio": 2300,
+  "stock": 20,
+  "descripcion": "Longaniza por 100 gramos",
+  "icono": "lunch_dining",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Pastrami x100g",
+  "categoria": "Fiambres",
+  "precio": 3200,
+  "stock": 15,
+  "descripcion": "Pastrami de ternera por 100 gramos",
+  "icono": "lunch_dining",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Bondiola de Cerdo x kg",
+  "categoria": "Carnes",
+  "precio": 10000,
+  "stock": 12,
+  "descripcion": "Bondiola de cerdo por kilogramo",
+  "icono": "kebab_dining",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Paso de los Toros Pomelo 1.5L",
+  "categoria": "Gaseosas",
+  "precio": 3160,
+  "stock": 30,
+  "descripcion": "Gaseosa pomelo con gas 1.5 litros",
+  "icono": "local_drink",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Cunnington Tónica 500ml",
+  "categoria": "Gaseosas",
+  "precio": 1200,
+  "stock": 40,
+  "descripcion": "Gaseosa tónica clásica 500ml",
+  "icono": "local_drink",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Coca-Cola Lata 354ml",
+  "categoria": "Gaseosas",
+  "precio": 1200,
+  "stock": 60,
+  "descripcion": "Gaseosa cola lata 354ml",
+  "icono": "local_drink",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Sprite Lata 354ml",
+  "categoria": "Gaseosas",
+  "precio": 1150,
+  "stock": 60,
+  "descripcion": "Gaseosa lima limón lata 354ml",
+  "icono": "local_drink",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Pepsi Lata 354ml",
+  "categoria": "Gaseosas",
+  "precio": 1150,
+  "stock": 60,
+  "descripcion": "Gaseosa cola lata 354ml",
+  "icono": "local_drink",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Agua Ser 1.5L",
+  "categoria": "Aguas y Jugos",
+  "precio": 1600,
+  "stock": 60,
+  "descripcion": "Agua mineral sin gas 1.5 litros",
+  "icono": "water_drop",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Jugo Ades Manzana 1L",
+  "categoria": "Aguas y Jugos",
+  "precio": 3100,
+  "stock": 30,
+  "descripcion": "Bebida de soja sabor manzana 1 litro",
+  "icono": "water_drop",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Isotónico Powerade Naranja 500ml",
+  "categoria": "Aguas y Jugos",
+  "precio": 1800,
+  "stock": 40,
+  "descripcion": "Bebida isotónica naranja 500ml",
+  "icono": "water_drop",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Isotónico Gatorade Limón 500ml",
+  "categoria": "Aguas y Jugos",
+  "precio": 1900,
+  "stock": 40,
+  "descripcion": "Bebida isotónica limón 500ml",
+  "icono": "water_drop",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Energizante Red Bull 250ml",
+  "categoria": "Aguas y Jugos",
+  "precio": 2800,
+  "stock": 30,
+  "descripcion": "Bebida energizante 250ml",
+  "icono": "water_drop",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Jugo Ades Naranja 1L",
+  "categoria": "Aguas y Jugos",
+  "precio": 3100,
+  "stock": 25,
+  "descripcion": "Bebida de soja sabor naranja 1 litro",
+  "icono": "water_drop",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Agua Ser Con Gas 1.5L",
+  "categoria": "Aguas y Jugos",
+  "precio": 1700,
+  "stock": 40,
+  "descripcion": "Agua mineral con gas 1.5 litros",
+  "icono": "water_drop",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Cerveza Quilmes 473ml Lata",
+  "categoria": "Bebidas con Alcohol",
+  "precio": 2316,
+  "stock": 48,
+  "descripcion": "Cerveza rubia lata 473ml",
+  "icono": "sports_bar",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Fernet Branca 750ml",
+  "categoria": "Bebidas con Alcohol",
+  "precio": 12000,
+  "stock": 15,
+  "descripcion": "Amargo fernet clásico 750ml",
+  "icono": "wine_bar",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Whisky Johnnie Walker Red 750ml",
+  "categoria": "Bebidas con Alcohol",
+  "precio": 22000,
+  "stock": 8,
+  "descripcion": "Whisky escocés 750ml",
+  "icono": "wine_bar",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Vino Rosado Finca Las Moras 750ml",
+  "categoria": "Bebidas con Alcohol",
+  "precio": 4800,
+  "stock": 15,
+  "descripcion": "Vino rosado 750ml",
+  "icono": "wine_bar",
+  "oferta": true,
+  "descuento": 20
+ },
+ {
+  "nombre": "Leche Milkaut Chocolatada 1L",
+  "categoria": "Lácteos",
+  "precio": 2500,
+  "stock": 40,
+  "descripcion": "Leche chocolatada larga vida 1 litro",
+  "icono": "local_cafe",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Yogur Ser Frutilla 900g",
+  "categoria": "Lácteos",
+  "precio": 3200,
+  "stock": 30,
+  "descripcion": "Yogur descremado sabor frutilla 900g",
+  "icono": "icecream",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Manteca La Serenísima 200g",
+  "categoria": "Lácteos",
+  "precio": 3750,
+  "stock": 30,
+  "descripcion": "Manteca sin sal 200g",
+  "icono": "local_cafe",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Crema La Serenísima 200ml",
+  "categoria": "Lácteos",
+  "precio": 2160,
+  "stock": 40,
+  "descripcion": "Crema liviana 200ml",
+  "icono": "local_cafe",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Leche Condensada La Lechera 395g",
+  "categoria": "Lácteos",
+  "precio": 3200,
+  "stock": 25,
+  "descripcion": "Leche condensada azucarada 395g",
+  "icono": "local_cafe",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Leche En Polvo La Serenísima 800g",
+  "categoria": "Lácteos",
+  "precio": 8500,
+  "stock": 20,
+  "descripcion": "Leche en polvo entera 800g",
+  "icono": "local_cafe",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Crema Las 3 Niñas 200ml",
+  "categoria": "Lácteos",
+  "precio": 2350,
+  "stock": 30,
+  "descripcion": "Crema para cocinar 200ml",
+  "icono": "local_cafe",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Queso Pategrás x kg",
+  "categoria": "Fiambres",
+  "precio": 13000,
+  "stock": 15,
+  "descripcion": "Queso pategrás por kilogramo",
+  "icono": "lunch_dining",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Panceta Ahumada Paladini x100g",
+  "categoria": "Fiambres",
+  "precio": 2000,
+  "stock": 25,
+  "descripcion": "Panceta ahumada por 100 gramos",
+  "icono": "lunch_dining",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Queso Brie x kg",
+  "categoria": "Fiambres",
+  "precio": 18000,
+  "stock": 8,
+  "descripcion": "Queso brie por kilogramo",
+  "icono": "lunch_dining",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Ojo de Bife x kg",
+  "categoria": "Carnes",
+  "precio": 28990,
+  "stock": 8,
+  "descripcion": "Ojo de bife vacuno por kilogramo",
+  "icono": "kebab_dining",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Peceto x kg",
+  "categoria": "Carnes",
+  "precio": 13000,
+  "stock": 10,
+  "descripcion": "Peceto vacuno por kilogramo",
+  "icono": "kebab_dining",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Pechuga de Pollo x kg",
+  "categoria": "Carnes",
+  "precio": 12870,
+  "stock": 20,
+  "descripcion": "Pechuga de pollo por kilogramo",
+  "icono": "kebab_dining",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Pollo Entero x kg",
+  "categoria": "Carnes",
+  "precio": 7500,
+  "stock": 20,
+  "descripcion": "Pollo entero por kilogramo",
+  "icono": "kebab_dining",
+  "oferta": true,
+  "descuento": 10
+ },
+ {
+  "nombre": "Costillas de Cerdo x kg",
+  "categoria": "Carnes",
+  "precio": 9000,
+  "stock": 15,
+  "descripcion": "Costillas de cerdo por kilogramo",
+  "icono": "kebab_dining",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Hamburguesa Paty x4 unidades",
+  "categoria": "Carnes",
+  "precio": 5500,
+  "stock": 25,
+  "descripcion": "Hamburguesas de carne vacuna x4",
+  "icono": "kebab_dining",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Milanesa de Nalga x kg",
+  "categoria": "Carnes",
+  "precio": 14000,
+  "stock": 15,
+  "descripcion": "Milanesa de nalga por kilogramo",
+  "icono": "kebab_dining",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Pizza Congelada Muzarella Día",
+  "categoria": "Congelados",
+  "precio": 2890,
+  "stock": 35,
+  "descripcion": "Pizza de muzzarella precocida para terminar en horno",
+  "icono": "ac_unit",
+  "oferta": true,
+  "descuento": 15
+ },
+ {
+  "nombre": "Bastones de Merluza 400g",
+  "categoria": "Congelados",
+  "precio": 4100,
+  "stock": 22,
+  "descripcion": "Bastones de merluza rebozados, sin gluten",
+  "icono": "ac_unit",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Tarta de Espinaca Congelada",
+  "categoria": "Congelados",
+  "precio": 3100,
+  "stock": 25,
+  "descripcion": "Tarta de espinaca y ricota lista para hornear",
+  "icono": "ac_unit",
+  "oferta": true,
+  "descuento": 20
+ },
+ {
+  "nombre": "Croquetas de Papa 500g",
+  "categoria": "Congelados",
+  "precio": 2600,
+  "stock": 40,
+  "descripcion": "Croquetas de papa rebozadas crujientes",
+  "icono": "ac_unit",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Lechuga Criolla",
+  "categoria": "Verdulería",
+  "precio": 890,
+  "stock": 50,
+  "descripcion": "Lechuga criolla fresca de hoja verde",
+  "icono": "eco",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Papas Blancas x kg",
+  "categoria": "Verdulería",
+  "precio": 1200,
+  "stock": 80,
+  "descripcion": "Papas blancas de primera calidad",
+  "icono": "eco",
+  "oferta": true,
+  "descuento": 10
+ },
+ {
+  "nombre": "Naranjas x kg",
+  "categoria": "Verdulería",
+  "precio": 1450,
+  "stock": 60,
+  "descripcion": "Naranjas para jugo o consumo directo",
+  "icono": "eco",
+  "oferta": true,
+  "descuento": 15
+ },
+ {
+  "nombre": "Pimientos Rojos x kg",
+  "categoria": "Verdulería",
+  "precio": 2800,
+  "stock": 35,
+  "descripcion": "Pimientos morrones rojos frescos",
+  "icono": "eco",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Brócoli",
+  "categoria": "Verdulería",
+  "precio": 1750,
+  "stock": 30,
+  "descripcion": "Brócoli fresco en ramilletes",
+  "icono": "eco",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Espinaca Atado",
+  "categoria": "Verdulería",
+  "precio": 950,
+  "stock": 40,
+  "descripcion": "Espinaca fresca en atado para cocina o ensalada",
+  "icono": "eco",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Ajo x cabeza",
+  "categoria": "Verdulería",
+  "precio": 450,
+  "stock": 80,
+  "descripcion": "Cabeza de ajo fresco nacional",
+  "icono": "eco",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Berenjenas x kg",
+  "categoria": "Verdulería",
+  "precio": 2100,
+  "stock": 30,
+  "descripcion": "Berenjenas negras frescas para saltear o asar",
+  "icono": "eco",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Pan Baguette x2u",
+  "categoria": "Panadería",
+  "precio": 1200,
+  "stock": 40,
+  "descripcion": "Baguettes francesas crujientes artesanales",
+  "icono": "bakery_dining",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Focaccia de Romero",
+  "categoria": "Panadería",
+  "precio": 2400,
+  "stock": 20,
+  "descripcion": "Focaccia italiana con aceite de oliva y romero",
+  "icono": "bakery_dining",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Pan Hamburguesa x6",
+  "categoria": "Panadería",
+  "precio": 1750,
+  "stock": 50,
+  "descripcion": "Panes de hamburguesa con sésamo",
+  "icono": "bakery_dining",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Bizcochuelo Vainilla 400g",
+  "categoria": "Panadería",
+  "precio": 2600,
+  "stock": 20,
+  "descripcion": "Bizcochuelo esponjoso de vainilla",
+  "icono": "bakery_dining",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Fideos Tallarín Matarazzo 500g",
+  "categoria": "Almacén",
+  "precio": 1200,
+  "stock": 70,
+  "descripcion": "Fideos tallarín de sémola de trigo",
+  "icono": "storefront",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Azúcar Ledesma 1kg",
+  "categoria": "Almacén",
+  "precio": 1650,
+  "stock": 80,
+  "descripcion": "Azúcar refinada blanca de primera",
+  "icono": "storefront",
+  "oferta": true,
+  "descuento": 10
+ },
+ {
+  "nombre": "Sal Fina Celusal 1kg",
+  "categoria": "Almacén",
+  "precio": 680,
+  "stock": 100,
+  "descripcion": "Sal fina de mesa yodada",
+  "icono": "storefront",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Caldo de Verdura Knorr x6",
+  "categoria": "Almacén",
+  "precio": 1250,
+  "stock": 55,
+  "descripcion": "Cubitos de caldo de verdura concentrado",
+  "icono": "storefront",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Yerba Mate Taragüí 500g",
+  "categoria": "Almacén",
+  "precio": 3100,
+  "stock": 70,
+  "descripcion": "Yerba mate suave con palo elaborada en Corrientes",
+  "icono": "storefront",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Mermelada Damasco Arcor 454g",
+  "categoria": "Almacén",
+  "precio": 2200,
+  "stock": 40,
+  "descripcion": "Mermelada de damasco con trozos de fruta",
+  "icono": "storefront",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Dulce de Leche Sancor 400g",
+  "categoria": "Almacén",
+  "precio": 2700,
+  "stock": 50,
+  "descripcion": "Dulce de leche repostero de primera calidad",
+  "icono": "storefront",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Atún al Natural Lascas Cica 170g",
+  "categoria": "Enlatados",
+  "precio": 2100,
+  "stock": 55,
+  "descripcion": "Atún en trozos al natural bajo en grasas",
+  "icono": "inventory_2",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Aceitunas Negras 180g",
+  "categoria": "Enlatados",
+  "precio": 2400,
+  "stock": 40,
+  "descripcion": "Aceitunas negras deshuesadas en salmuera",
+  "icono": "inventory_2",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Crema de Maíz 410g",
+  "categoria": "Enlatados",
+  "precio": 1600,
+  "stock": 40,
+  "descripcion": "Crema de maíz dulce lista para servir o cocinar",
+  "icono": "inventory_2",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Pimientos Morrones Lata 200g",
+  "categoria": "Enlatados",
+  "precio": 2100,
+  "stock": 35,
+  "descripcion": "Pimientos morrones rojos asados en tiras",
+  "icono": "inventory_2",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Frutas Tropicales Mix Lata 410g",
+  "categoria": "Enlatados",
+  "precio": 2900,
+  "stock": 25,
+  "descripcion": "Mix de frutas tropicales en almíbar ligero",
+  "icono": "inventory_2",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Pimienta Negra Molida 30g",
+  "categoria": "Aceites y Condimentos",
+  "precio": 1200,
+  "stock": 60,
+  "descripcion": "Pimienta negra molida de grano entero",
+  "icono": "oil_barrel",
+  "oferta": true,
+  "descuento": 15
+ },
+ {
+  "nombre": "Curry en Polvo 40g",
+  "categoria": "Aceites y Condimentos",
+  "precio": 1800,
+  "stock": 35,
+  "descripcion": "Mezcla de especias curry de estilo indio",
+  "icono": "oil_barrel",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Aceite de Coco Virgen 250ml",
+  "categoria": "Aceites y Condimentos",
+  "precio": 6200,
+  "stock": 15,
+  "descripcion": "Aceite de coco orgánico de primera prensada",
+  "icono": "oil_barrel",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Adobo Completo Knorr 60g",
+  "categoria": "Aceites y Condimentos",
+  "precio": 1550,
+  "stock": 50,
+  "descripcion": "Mezcla de condimentos para carnes y aves",
+  "icono": "oil_barrel",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Chía 250g",
+  "categoria": "Cereales y Legumbres",
+  "precio": 2800,
+  "stock": 40,
+  "descripcion": "Semillas de chía orgánicas ricas en omega-3",
+  "icono": "grass",
+  "oferta": true,
+  "descuento": 15
+ },
+ {
+  "nombre": "Granola Artesanal 400g",
+  "categoria": "Cereales y Legumbres",
+  "precio": 3800,
+  "stock": 30,
+  "descripcion": "Granola con avena, miel y frutos secos",
+  "icono": "grass",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Mijo Pelado 500g",
+  "categoria": "Cereales y Legumbres",
+  "precio": 2200,
+  "stock": 30,
+  "descripcion": "Mijo pelado sin gluten para guarniciones",
+  "icono": "grass",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Trigo Burgol 500g",
+  "categoria": "Cereales y Legumbres",
+  "precio": 2000,
+  "stock": 35,
+  "descripcion": "Trigo burgol precocido para taboulé",
+  "icono": "grass",
+  "oferta": true,
+  "descuento": 20
+ },
+ {
+  "nombre": "Nueces Peladas 200g",
+  "categoria": "Cereales y Legumbres",
+  "precio": 7200,
+  "stock": 15,
+  "descripcion": "Nueces peladas de primera calidad",
+  "icono": "grass",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Sésamo Blanco 200g",
+  "categoria": "Cereales y Legumbres",
+  "precio": 1900,
+  "stock": 40,
+  "descripcion": "Semillas de sésamo blanco para cocinar",
+  "icono": "grass",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Té Lipton Yellow Label x25",
+  "categoria": "Desayuno y Merienda",
+  "precio": 2100,
+  "stock": 60,
+  "descripcion": "Bolsitas de té negro clásico",
+  "icono": "free_breakfast",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Miel Yuspe 500g",
+  "categoria": "Desayuno y Merienda",
+  "precio": 4500,
+  "stock": 35,
+  "descripcion": "Miel de abejas pura sin agregados",
+  "icono": "free_breakfast",
+  "oferta": true,
+  "descuento": 10
+ },
+ {
+  "nombre": "Yogur Frutado Sancor 190g",
+  "categoria": "Desayuno y Merienda",
+  "precio": 1100,
+  "stock": 70,
+  "descripcion": "Yogur bebible con frutas naturales",
+  "icono": "free_breakfast",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Galletitas María Terrabusi 230g",
+  "categoria": "Desayuno y Merienda",
+  "precio": 1650,
+  "stock": 65,
+  "descripcion": "Galletitas dulces suaves para el mate",
+  "icono": "free_breakfast",
+  "oferta": true,
+  "descuento": 15
+ },
+ {
+  "nombre": "Leche Condensada Nestlé 397g",
+  "categoria": "Desayuno y Merienda",
+  "precio": 3100,
+  "stock": 35,
+  "descripcion": "Leche condensada azucarada para postres",
+  "icono": "free_breakfast",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Budín de Naranja Terrabusi 300g",
+  "categoria": "Desayuno y Merienda",
+  "precio": 2800,
+  "stock": 30,
+  "descripcion": "Budín de naranja en porciones individuales",
+  "icono": "free_breakfast",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Chizitos Banchero 80g",
+  "categoria": "Snacks",
+  "precio": 1250,
+  "stock": 65,
+  "descripcion": "Chizitos de maíz inflado sabor queso",
+  "icono": "fastfood",
+  "oferta": true,
+  "descuento": 20
+ },
+ {
+  "nombre": "Papas Fritas McCain 600g",
+  "categoria": "Congelados",
+  "precio": 3150,
+  "stock": 40,
+  "descripcion": "Papas prefritas congeladas estilo casero",
+  "icono": "ac_unit",
+  "oferta": true,
+  "descuento": 10
+ },
+ {
+  "nombre": "Helado Grido Crema Americana 1kg",
+  "categoria": "Congelados",
+  "precio": 6200,
+  "stock": 20,
+  "descripcion": "Helado artesanal sabor crema americana en pote familiar",
+  "icono": "ac_unit",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Ravioles de Verdura 500g",
+  "categoria": "Congelados",
+  "precio": 3600,
+  "stock": 28,
+  "descripcion": "Ravioles de espinaca y ricota congelados",
+  "icono": "ac_unit",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Vegetales Mixtos Congel. 500g",
+  "categoria": "Congelados",
+  "precio": 1980,
+  "stock": 45,
+  "descripcion": "Mix de arvejas, choclo y zanahoria congelados",
+  "icono": "ac_unit",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Ñoquis de Papa Congelados 500g",
+  "categoria": "Congelados",
+  "precio": 3200,
+  "stock": 30,
+  "descripcion": "Ñoquis de papa listos para hervir",
+  "icono": "ac_unit",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Arándanos Congelados 400g",
+  "categoria": "Congelados",
+  "precio": 4500,
+  "stock": 18,
+  "descripcion": "Arándanos frescos congelados sin azúcar",
+  "icono": "ac_unit",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Medialunas Congeladas x12",
+  "categoria": "Congelados",
+  "precio": 3400,
+  "stock": 30,
+  "descripcion": "Medialunas de manteca listas para hornear",
+  "icono": "ac_unit",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Hamburguesas de Carne x4 Pampero",
+  "categoria": "Congelados",
+  "precio": 4800,
+  "stock": 35,
+  "descripcion": "Hamburguesas de carne vacuna 100% sin agregados",
+  "icono": "ac_unit",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Canelones Rellenos de Carne 500g",
+  "categoria": "Congelados",
+  "precio": 4200,
+  "stock": 22,
+  "descripcion": "Canelones de espinaca rellenos de carne y salsa blanca",
+  "icono": "ac_unit",
+  "oferta": true,
+  "descuento": 10
+ },
+ {
+  "nombre": "Tomates Perita x kg",
+  "categoria": "Verdulería",
+  "precio": 1890,
+  "stock": 60,
+  "descripcion": "Tomates perita frescos para salsa o ensalada",
+  "icono": "eco",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Manzanas Red x kg",
+  "categoria": "Verdulería",
+  "precio": 2200,
+  "stock": 50,
+  "descripcion": "Manzanas rojas Red Delicious importadas",
+  "icono": "eco",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Uvas Tintas x kg",
+  "categoria": "Verdulería",
+  "precio": 3200,
+  "stock": 25,
+  "descripcion": "Uvas tintas sin semilla de temporada",
+  "icono": "eco",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Medialunas de Grasa x6",
+  "categoria": "Panadería",
+  "precio": 1450,
+  "stock": 60,
+  "descripcion": "Medialunas de grasa doradas y crocantes",
+  "icono": "bakery_dining",
+  "oferta": true,
+  "descuento": 10
+ },
+ {
+  "nombre": "Facturas Surtidas x6",
+  "categoria": "Panadería",
+  "precio": 2200,
+  "stock": 35,
+  "descripcion": "Surtido de facturas con crema, dulce y mermelada",
+  "icono": "bakery_dining",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Pan Integral Lactal 400g",
+  "categoria": "Panadería",
+  "precio": 2100,
+  "stock": 40,
+  "descripcion": "Pan integral con semillas sin conservantes",
+  "icono": "bakery_dining",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Tostadas Industriales x40",
+  "categoria": "Panadería",
+  "precio": 1400,
+  "stock": 55,
+  "descripcion": "Tostadas crocantes para copetín o desayuno",
+  "icono": "bakery_dining",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Pan de Leche x8",
+  "categoria": "Panadería",
+  "precio": 2100,
+  "stock": 30,
+  "descripcion": "Panes de leche esponjosos tiernos",
+  "icono": "bakery_dining",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Arroz Largo Fino Molinos Río 1kg",
+  "categoria": "Almacén",
+  "precio": 1850,
+  "stock": 60,
+  "descripcion": "Arroz largo fino de primera calidad",
+  "icono": "storefront",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Harina 000 Cañuelas 1kg",
+  "categoria": "Almacén",
+  "precio": 1420,
+  "stock": 75,
+  "descripcion": "Harina 000 para repostería y pan",
+  "icono": "storefront",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Puré de Tomate Arcor 520g",
+  "categoria": "Almacén",
+  "precio": 1100,
+  "stock": 65,
+  "descripcion": "Puré de tomate natural sin conservantes",
+  "icono": "storefront",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Mayonesa Hellmann's 500g",
+  "categoria": "Almacén",
+  "precio": 3200,
+  "stock": 40,
+  "descripcion": "Mayonesa clásica cremosa sin conservantes",
+  "icono": "storefront",
+  "oferta": true,
+  "descuento": 15
+ },
+ {
+  "nombre": "Fideos Moñito Knorr 500g",
+  "categoria": "Almacén",
+  "precio": 1300,
+  "stock": 55,
+  "descripcion": "Fideos moñito para sopa o guarnición",
+  "icono": "storefront",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Sopa Sobre Knorr Poro",
+  "categoria": "Almacén",
+  "precio": 890,
+  "stock": 60,
+  "descripcion": "Sopa de poro deshidratada instantánea",
+  "icono": "storefront",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Sardinas en Aceite Manón 125g",
+  "categoria": "Enlatados",
+  "precio": 1650,
+  "stock": 45,
+  "descripcion": "Sardinas en aceite de girasol",
+  "icono": "inventory_2",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Puré de Calabaza Lata 400g",
+  "categoria": "Enlatados",
+  "precio": 1800,
+  "stock": 40,
+  "descripcion": "Puré de calabaza listo para usar en recetas",
+  "icono": "inventory_2",
+  "oferta": true,
+  "descuento": 20
+ },
+ {
+  "nombre": "Espárragos en Lata 350g",
+  "categoria": "Enlatados",
+  "precio": 3800,
+  "stock": 20,
+  "descripcion": "Espárragos verdes enteros en agua y sal",
+  "icono": "inventory_2",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Aceite de Girasol Cocinero 1.5L",
+  "categoria": "Aceites y Condimentos",
+  "precio": 4200,
+  "stock": 50,
+  "descripcion": "Aceite de girasol alto oleico para todo uso",
+  "icono": "oil_barrel",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Pimentón Dulce 50g",
+  "categoria": "Aceites y Condimentos",
+  "precio": 1350,
+  "stock": 55,
+  "descripcion": "Pimentón dulce ahumado de primera calidad",
+  "icono": "oil_barrel",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Chimichurri Seco Dos Anclas 30g",
+  "categoria": "Aceites y Condimentos",
+  "precio": 1650,
+  "stock": 50,
+  "descripcion": "Mezcla de hierbas y especias para asado",
+  "icono": "oil_barrel",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Perejil Deshidratado 15g",
+  "categoria": "Aceites y Condimentos",
+  "precio": 890,
+  "stock": 60,
+  "descripcion": "Perejil seco picado para condimentar",
+  "icono": "oil_barrel",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Manteca de Maní Skippy 340g",
+  "categoria": "Aceites y Condimentos",
+  "precio": 4800,
+  "stock": 25,
+  "descripcion": "Manteca de maní cremosa sin azúcar agregada",
+  "icono": "oil_barrel",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Lentejas Secas 500g",
+  "categoria": "Cereales y Legumbres",
+  "precio": 1850,
+  "stock": 60,
+  "descripcion": "Lentejas pardas secas para guisos y sopas",
+  "icono": "grass",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Porotos Blancos 500g",
+  "categoria": "Cereales y Legumbres",
+  "precio": 2100,
+  "stock": 50,
+  "descripcion": "Porotos blancos alubia para puchero",
+  "icono": "grass",
+  "oferta": true,
+  "descuento": 10
+ },
+ {
+  "nombre": "Quinoa 500g",
+  "categoria": "Cereales y Legumbres",
+  "precio": 4200,
+  "stock": 30,
+  "descripcion": "Quinoa blanca orgánica rica en proteínas",
+  "icono": "grass",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Maní Tostado Salado 200g",
+  "categoria": "Cereales y Legumbres",
+  "precio": 1800,
+  "stock": 55,
+  "descripcion": "Maní tostado con sal para snack o cocinar",
+  "icono": "grass",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Manteca La Serenísima 200g",
+  "categoria": "Desayuno y Merienda",
+  "precio": 3750,
+  "stock": 50,
+  "descripcion": "Manteca de primera calidad sin sal",
+  "icono": "free_breakfast",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Pan Dulce Navidad 500g",
+  "categoria": "Desayuno y Merienda",
+  "precio": 3500,
+  "stock": 20,
+  "descripcion": "Pan dulce con frutas y nueces",
+  "icono": "free_breakfast",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Vainillas Bagley x24",
+  "categoria": "Desayuno y Merienda",
+  "precio": 2000,
+  "stock": 55,
+  "descripcion": "Vainillas clásicas para tiramisu o postres",
+  "icono": "free_breakfast",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Gelatina Royal Frutilla x6",
+  "categoria": "Desayuno y Merienda",
+  "precio": 1200,
+  "stock": 60,
+  "descripcion": "Gelatina de frutilla sin azúcar",
+  "icono": "free_breakfast",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Maní Japonés 180g",
+  "categoria": "Snacks",
+  "precio": 1900,
+  "stock": 65,
+  "descripcion": "Maní con cobertura crocante de soja",
+  "icono": "fastfood",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Popcorn Mantequilla Microondas x3",
+  "categoria": "Snacks",
+  "precio": 2400,
+  "stock": 45,
+  "descripcion": "Pochoclos para microondas con manteca",
+  "icono": "fastfood",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Tostadas Ritz 174g",
+  "categoria": "Snacks",
+  "precio": 2600,
+  "stock": 50,
+  "descripcion": "Galletitas saladas crocantes para copetín",
+  "icono": "fastfood",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Ganchitos Cheese Tris 60g",
+  "categoria": "Snacks",
+  "precio": 1100,
+  "stock": 70,
+  "descripcion": "Ganchitos de maíz sabor queso",
+  "icono": "fastfood",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Mix Frutos Secos 200g",
+  "categoria": "Snacks",
+  "precio": 4500,
+  "stock": 30,
+  "descripcion": "Mix de almendras, nueces y pasas de uva",
+  "icono": "fastfood",
+  "oferta": true,
+  "descuento": 15
+ },
+ {
+  "nombre": "Crackers Integral 200g",
+  "categoria": "Snacks",
+  "precio": 2000,
+  "stock": 50,
+  "descripcion": "Galletitas integrales crocantes sin azúcar",
+  "icono": "fastfood",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Palomitas Caramel 100g",
+  "categoria": "Snacks",
+  "precio": 2200,
+  "stock": 40,
+  "descripcion": "Pochoclos caramelizados crocantes",
+  "icono": "fastfood",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Edamame Congelado Salado 400g",
+  "categoria": "Snacks",
+  "precio": 3800,
+  "stock": 20,
+  "descripcion": "Porotos de soja en vaina listos para calentar",
+  "icono": "fastfood",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Galletas de Arroz x16",
+  "categoria": "Snacks",
+  "precio": 1800,
+  "stock": 50,
+  "descripcion": "Galletas de arroz inflado sin sal sin gluten",
+  "icono": "fastfood",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Empanadas Carne Congeladas x12",
+  "categoria": "Congelados",
+  "precio": 5800,
+  "stock": 25,
+  "descripcion": "Empanadas de carne cortada al cuchillo listas para hornear",
+  "icono": "ac_unit",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Sorrentinos de Jamón y Queso 500g",
+  "categoria": "Congelados",
+  "precio": 3900,
+  "stock": 30,
+  "descripcion": "Sorrentinos rellenos de jamón y queso, listos para hervir",
+  "icono": "ac_unit",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Zanahorias x kg",
+  "categoria": "Verdulería",
+  "precio": 1100,
+  "stock": 60,
+  "descripcion": "Zanahorias frescas lavadas",
+  "icono": "eco",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Bananas x kg",
+  "categoria": "Verdulería",
+  "precio": 1650,
+  "stock": 55,
+  "descripcion": "Bananas de primera madurez ideal",
+  "icono": "eco",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Zapallo Anco x kg",
+  "categoria": "Verdulería",
+  "precio": 1300,
+  "stock": 45,
+  "descripcion": "Zapallo anco fresco ideal para puré o sopa",
+  "icono": "eco",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Pepinos x kg",
+  "categoria": "Verdulería",
+  "precio": 1600,
+  "stock": 35,
+  "descripcion": "Pepinos frescos para ensalada",
+  "icono": "eco",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Limones x kg",
+  "categoria": "Verdulería",
+  "precio": 1800,
+  "stock": 50,
+  "descripcion": "Limones ácidos jugosos para cocina y bebidas",
+  "icono": "eco",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Acelga Atado",
+  "categoria": "Verdulería",
+  "precio": 890,
+  "stock": 40,
+  "descripcion": "Acelga fresca en atado grande",
+  "icono": "eco",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Torta de Cumpleaños Choc. 1kg",
+  "categoria": "Panadería",
+  "precio": 12000,
+  "stock": 10,
+  "descripcion": "Torta de chocolate con cobertura de ganache",
+  "icono": "bakery_dining",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Muffins de Arándano x4",
+  "categoria": "Panadería",
+  "precio": 2800,
+  "stock": 30,
+  "descripcion": "Muffins esponjosos con arándanos frescos",
+  "icono": "bakery_dining",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Croissant de Manteca x2",
+  "categoria": "Panadería",
+  "precio": 2200,
+  "stock": 25,
+  "descripcion": "Croissants hojaldrados de manteca pura",
+  "icono": "bakery_dining",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Chipa 200g",
+  "categoria": "Panadería",
+  "precio": 1600,
+  "stock": 45,
+  "descripcion": "Chipas de almidón de mandioca y queso por",
+  "icono": "bakery_dining",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Scones de Queso x4",
+  "categoria": "Panadería",
+  "precio": 2700,
+  "stock": 18,
+  "descripcion": "Scones ingleses de queso crujientes por fuera",
+  "icono": "bakery_dining",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Café Molido La Virginia 500g",
+  "categoria": "Almacén",
+  "precio": 4800,
+  "stock": 35,
+  "descripcion": "Café molido de tostado oscuro intenso",
+  "icono": "storefront",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Polenta Instantánea 500g",
+  "categoria": "Almacén",
+  "precio": 1450,
+  "stock": 50,
+  "descripcion": "Polenta de cocción rápida",
+  "icono": "storefront",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Salsa de Soja Kikkoman 200ml",
+  "categoria": "Almacén",
+  "precio": 2800,
+  "stock": 30,
+  "descripcion": "Salsa de soja japonesa auténtica",
+  "icono": "storefront",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Levadura Seca Fleischmann 10g",
+  "categoria": "Almacén",
+  "precio": 550,
+  "stock": 80,
+  "descripcion": "Levadura seca activa para pan y pizzas",
+  "icono": "storefront",
+  "oferta": true,
+  "descuento": 20
+ },
+ {
+  "nombre": "Maicena Ámbar 500g",
+  "categoria": "Almacén",
+  "precio": 1600,
+  "stock": 55,
+  "descripcion": "Fécula de maíz para espesar salsas y postres",
+  "icono": "storefront",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Tomates Perita Lata Arcor 400g",
+  "categoria": "Enlatados",
+  "precio": 1400,
+  "stock": 60,
+  "descripcion": "Tomates perita pelados enteros en jugo natural",
+  "icono": "inventory_2",
+  "oferta": true,
+  "descuento": 10
+ },
+ {
+  "nombre": "Arvejas La Campagnola 300g",
+  "categoria": "Enlatados",
+  "precio": 1350,
+  "stock": 50,
+  "descripcion": "Arvejas verdes tiernas en agua y sal",
+  "icono": "inventory_2",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Porotos Negros La Campagnola 400g",
+  "categoria": "Enlatados",
+  "precio": 1700,
+  "stock": 40,
+  "descripcion": "Porotos negros cocidos listos para usar",
+  "icono": "inventory_2",
+  "oferta": true,
+  "descuento": 15
+ },
+ {
+  "nombre": "Palmitos Enteros 400g",
+  "categoria": "Enlatados",
+  "precio": 3200,
+  "stock": 30,
+  "descripcion": "Palmitos en agua y sal para ensaladas",
+  "icono": "inventory_2",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Champiñones en Lata 280g",
+  "categoria": "Enlatados",
+  "precio": 2200,
+  "stock": 35,
+  "descripcion": "Champiñones laminados en agua y sal",
+  "icono": "inventory_2",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Tuna en Aceite Oliva 170g",
+  "categoria": "Enlatados",
+  "precio": 3100,
+  "stock": 25,
+  "descripcion": "Tuna premium en aceite de oliva extra virgen",
+  "icono": "inventory_2",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Aceite de Oliva Ybarra 500ml",
+  "categoria": "Aceites y Condimentos",
+  "precio": 7800,
+  "stock": 30,
+  "descripcion": "Aceite de oliva extra virgen de primera prensada",
+  "icono": "oil_barrel",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Ketchup Heinz 397g",
+  "categoria": "Aceites y Condimentos",
+  "precio": 2900,
+  "stock": 45,
+  "descripcion": "Ketchup de tomate natural sin colorantes",
+  "icono": "oil_barrel",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Vinagre de Vino Tinto 500ml",
+  "categoria": "Aceites y Condimentos",
+  "precio": 1400,
+  "stock": 50,
+  "descripcion": "Vinagre de vino tinto añejado naturalmente",
+  "icono": "oil_barrel",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Orégano Seco McCormick 25g",
+  "categoria": "Aceites y Condimentos",
+  "precio": 1100,
+  "stock": 70,
+  "descripcion": "Orégano deshidratado de sabor intenso",
+  "icono": "oil_barrel",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Cúrcuma Molida 40g",
+  "categoria": "Aceites y Condimentos",
+  "precio": 1450,
+  "stock": 45,
+  "descripcion": "Cúrcuma molida con propiedades antiinflamatorias",
+  "icono": "oil_barrel",
+  "oferta": true,
+  "descuento": 20
+ },
+ {
+  "nombre": "Cebada Perlada 500g",
+  "categoria": "Cereales y Legumbres",
+  "precio": 1700,
+  "stock": 40,
+  "descripcion": "Cebada perlada para sopas y guarniciones",
+  "icono": "grass",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Maíz Pisingallo 500g",
+  "categoria": "Cereales y Legumbres",
+  "precio": 1600,
+  "stock": 55,
+  "descripcion": "Maíz pisingallo para pop corn",
+  "icono": "grass",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Amaranto 400g",
+  "categoria": "Cereales y Legumbres",
+  "precio": 3500,
+  "stock": 25,
+  "descripcion": "Semillas de amaranto sin gluten",
+  "icono": "grass",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Soja en Grano 500g",
+  "categoria": "Cereales y Legumbres",
+  "precio": 1900,
+  "stock": 45,
+  "descripcion": "Soja amarilla en grano para cocinar o germinar",
+  "icono": "grass",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Arroz Integral 1kg",
+  "categoria": "Cereales y Legumbres",
+  "precio": 2600,
+  "stock": 50,
+  "descripcion": "Arroz integral de grano largo con fibra",
+  "icono": "grass",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Arveja Partida 500g",
+  "categoria": "Cereales y Legumbres",
+  "precio": 1750,
+  "stock": 45,
+  "descripcion": "Arvejas partidas para sopas y purés",
+  "icono": "grass",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Café Instantáneo Nescafé Classic 200g",
+  "categoria": "Desayuno y Merienda",
+  "precio": 5800,
+  "stock": 40,
+  "descripcion": "Café instantáneo de mezcla select",
+  "icono": "free_breakfast",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Cereales Honey Smacks Kellogg's 330g",
+  "categoria": "Desayuno y Merienda",
+  "precio": 5200,
+  "stock": 30,
+  "descripcion": "Copos de maíz con miel para el desayuno",
+  "icono": "free_breakfast",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Mermelada Frutilla Arcor 454g",
+  "categoria": "Desayuno y Merienda",
+  "precio": 2400,
+  "stock": 40,
+  "descripcion": "Mermelada de frutilla con trozos de fruta",
+  "icono": "free_breakfast",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Cacao Amargo Savoy 200g",
+  "categoria": "Desayuno y Merienda",
+  "precio": 4200,
+  "stock": 25,
+  "descripcion": "Cacao en polvo amargo puro 100%",
+  "icono": "free_breakfast",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Tostadas Integrales x30",
+  "categoria": "Desayuno y Merienda",
+  "precio": 2200,
+  "stock": 50,
+  "descripcion": "Tostadas integrales crocantes con fibra",
+  "icono": "free_breakfast",
+  "oferta": true,
+  "descuento": 20
+ },
+ {
+  "nombre": "Mantequilla de Almendras 250g",
+  "categoria": "Desayuno y Merienda",
+  "precio": 5800,
+  "stock": 15,
+  "descripcion": "Crema de almendras sin azúcar agregada",
+  "icono": "free_breakfast",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Papas Fritas Lay's Classic 120g",
+  "categoria": "Snacks",
+  "precio": 2100,
+  "stock": 60,
+  "descripcion": "Papas fritas con sal clásicas",
+  "icono": "fastfood",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Nachos con Queso Doritos 185g",
+  "categoria": "Snacks",
+  "precio": 2800,
+  "stock": 55,
+  "descripcion": "Nachos de maíz con sabor a queso",
+  "icono": "fastfood",
+  "oferta": true,
+  "descuento": 10
+ },
+ {
+  "nombre": "Palitos Salados Pringles 137g",
+  "categoria": "Snacks",
+  "precio": 3200,
+  "stock": 40,
+  "descripcion": "Palitos de papa en tubo crujientes",
+  "icono": "fastfood",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Chips de Batata 100g",
+  "categoria": "Snacks",
+  "precio": 2300,
+  "stock": 35,
+  "descripcion": "Chips de batata horneados sin aceite",
+  "icono": "fastfood",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Pepas de Maíz Tostadas 150g",
+  "categoria": "Snacks",
+  "precio": 1600,
+  "stock": 55,
+  "descripcion": "Maíz tostado con sal y especias",
+  "icono": "fastfood",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Twisties 75g",
+  "categoria": "Snacks",
+  "precio": 1400,
+  "stock": 60,
+  "descripcion": "Snack de maíz torcido sabor queso",
+  "icono": "fastfood",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Milanesas de Pollo Congeladas 500g",
+  "categoria": "Congelados",
+  "precio": 4290,
+  "stock": 30,
+  "descripcion": "Milanesas de pechuga de pollo rebozadas listas para freír",
+  "icono": "ac_unit",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Nuggets de Pollo Granja del Sol 400g",
+  "categoria": "Congelados",
+  "precio": 3750,
+  "stock": 40,
+  "descripcion": "Nuggets de pollo rebozados listos para freír o airfryer",
+  "icono": "ac_unit",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Chipa Congelada x20u",
+  "categoria": "Congelados",
+  "precio": 2750,
+  "stock": 35,
+  "descripcion": "Chipas de almidón de mandioca y queso listas para hornear",
+  "icono": "ac_unit",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Mousse de Chocolate Helado 500g",
+  "categoria": "Congelados",
+  "precio": 5100,
+  "stock": 15,
+  "descripcion": "Postre helado de chocolate con cobertura crocante",
+  "icono": "ac_unit",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Frutos Rojos Mix Congelado 500g",
+  "categoria": "Congelados",
+  "precio": 4700,
+  "stock": 20,
+  "descripcion": "Mix de frutillas, moras y frambuesas congeladas",
+  "icono": "ac_unit",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Cebollas x kg",
+  "categoria": "Verdulería",
+  "precio": 980,
+  "stock": 70,
+  "descripcion": "Cebollas blancas frescas",
+  "icono": "eco",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Choclo x unidad",
+  "categoria": "Verdulería",
+  "precio": 780,
+  "stock": 50,
+  "descripcion": "Choclo fresco en chala",
+  "icono": "eco",
+  "oferta": true,
+  "descuento": 20
+ },
+ {
+  "nombre": "Frutillas x kg",
+  "categoria": "Verdulería",
+  "precio": 3500,
+  "stock": 20,
+  "descripcion": "Frutillas frescas de temporada",
+  "icono": "eco",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Pan Lactal Bimbo 500g",
+  "categoria": "Panadería",
+  "precio": 1890,
+  "stock": 50,
+  "descripcion": "Pan lactal blanco familiar con 20 rebanadas",
+  "icono": "bakery_dining",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Budín de Pan",
+  "categoria": "Panadería",
+  "precio": 1800,
+  "stock": 25,
+  "descripcion": "Budín de pan casero con pasas de uva",
+  "icono": "bakery_dining",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Pan de Campo 500g",
+  "categoria": "Panadería",
+  "precio": 1650,
+  "stock": 45,
+  "descripcion": "Pan de campo crocante de masa madre",
+  "icono": "bakery_dining",
+  "oferta": true,
+  "descuento": 15
+ },
+ {
+  "nombre": "Pepas de Membrillo x6",
+  "categoria": "Panadería",
+  "precio": 1900,
+  "stock": 40,
+  "descripcion": "Pepas de membrillo caseras tiernas",
+  "icono": "bakery_dining",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Pan de Molde Sin Corteza",
+  "categoria": "Panadería",
+  "precio": 2300,
+  "stock": 35,
+  "descripcion": "Pan de molde blanco sin corteza para sándwiches",
+  "icono": "bakery_dining",
+  "oferta": true,
+  "descuento": 20
+ },
+ {
+  "nombre": "Espirales de Canela x4",
+  "categoria": "Panadería",
+  "precio": 2500,
+  "stock": 20,
+  "descripcion": "Espirales hojaldradas con azúcar y canela",
+  "icono": "bakery_dining",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Vinagre de Manzana 500ml",
+  "categoria": "Almacén",
+  "precio": 1200,
+  "stock": 45,
+  "descripcion": "Vinagre de manzana natural con madre",
+  "icono": "storefront",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Cacao en Polvo Nesquik 400g",
+  "categoria": "Almacén",
+  "precio": 3500,
+  "stock": 35,
+  "descripcion": "Cacao en polvo azucarado para leche",
+  "icono": "storefront",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Choclo Amarillo Arcor 340g",
+  "categoria": "Enlatados",
+  "precio": 1550,
+  "stock": 55,
+  "descripcion": "Granos de choclo amarillo dulce en agua",
+  "icono": "inventory_2",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Duraznos en Almíbar La Campag. 820g",
+  "categoria": "Enlatados",
+  "precio": 2800,
+  "stock": 35,
+  "descripcion": "Mitades de durazno en almíbar ligero",
+  "icono": "inventory_2",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Lentejas Precocidas 400g",
+  "categoria": "Enlatados",
+  "precio": 1600,
+  "stock": 45,
+  "descripcion": "Lentejas listas para consumir o agregar a guisos",
+  "icono": "inventory_2",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Caldo Casero Concentrado 340g",
+  "categoria": "Enlatados",
+  "precio": 1900,
+  "stock": 50,
+  "descripcion": "Caldo de res concentrado en lata",
+  "icono": "inventory_2",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Garbanzos Cocidos 400g",
+  "categoria": "Enlatados",
+  "precio": 1750,
+  "stock": 45,
+  "descripcion": "Garbanzos tiernos listos para ensaladas o hummus",
+  "icono": "inventory_2",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Caballa en Aceite 170g",
+  "categoria": "Enlatados",
+  "precio": 2350,
+  "stock": 30,
+  "descripcion": "Filetes de caballa en aceite de girasol",
+  "icono": "inventory_2",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Mostaza Savora 250g",
+  "categoria": "Aceites y Condimentos",
+  "precio": 1850,
+  "stock": 55,
+  "descripcion": "Mostaza clásica con especias de receta original",
+  "icono": "oil_barrel",
+  "oferta": true,
+  "descuento": 10
+ },
+ {
+  "nombre": "Salsa Criolla Lista 300g",
+  "categoria": "Aceites y Condimentos",
+  "precio": 2200,
+  "stock": 35,
+  "descripcion": "Salsa criolla fresca con tomate y cebolla",
+  "icono": "oil_barrel",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Aceite de Maíz Mazorca 900ml",
+  "categoria": "Aceites y Condimentos",
+  "precio": 3600,
+  "stock": 40,
+  "descripcion": "Aceite de maíz refinado para frituras",
+  "icono": "oil_barrel",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Ají Molido 50g",
+  "categoria": "Aceites y Condimentos",
+  "precio": 980,
+  "stock": 65,
+  "descripcion": "Ají molido picante para condimentar",
+  "icono": "oil_barrel",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Salsa Tabasco 60ml",
+  "categoria": "Aceites y Condimentos",
+  "precio": 3200,
+  "stock": 25,
+  "descripcion": "Salsa picante de jalapeño original",
+  "icono": "oil_barrel",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Aceite de Sésamo 250ml",
+  "categoria": "Aceites y Condimentos",
+  "precio": 5500,
+  "stock": 20,
+  "descripcion": "Aceite de sésamo tostado para cocina oriental",
+  "icono": "oil_barrel",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Avena Instantánea Quaker 500g",
+  "categoria": "Cereales y Legumbres",
+  "precio": 2400,
+  "stock": 55,
+  "descripcion": "Avena arrollada de cocción rápida",
+  "icono": "grass",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Garbanzos Secos 500g",
+  "categoria": "Cereales y Legumbres",
+  "precio": 2300,
+  "stock": 45,
+  "descripcion": "Garbanzos para remojo y cocción lenta",
+  "icono": "grass",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Almendras Peladas 200g",
+  "categoria": "Cereales y Legumbres",
+  "precio": 6500,
+  "stock": 20,
+  "descripcion": "Almendras crudas peladas sin sal",
+  "icono": "grass",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Semillas de Girasol 250g",
+  "categoria": "Cereales y Legumbres",
+  "precio": 1400,
+  "stock": 50,
+  "descripcion": "Pepitas de girasol sin cáscara para cocinar",
+  "icono": "grass",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Queso Crema Casancrem 200g",
+  "categoria": "Desayuno y Merienda",
+  "precio": 2900,
+  "stock": 45,
+  "descripcion": "Queso crema untable cremoso sin conservantes",
+  "icono": "free_breakfast",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Chocolate para Taza Suchard 200g",
+  "categoria": "Desayuno y Merienda",
+  "precio": 3800,
+  "stock": 30,
+  "descripcion": "Chocolate en tableta para preparar en leche caliente",
+  "icono": "free_breakfast",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Mate Cocido Nobleza Gaucha x25",
+  "categoria": "Desayuno y Merienda",
+  "precio": 2800,
+  "stock": 45,
+  "descripcion": "Mate cocido en saquitos sabor intenso",
+  "icono": "free_breakfast",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Té Verde Clipper x25",
+  "categoria": "Desayuno y Merienda",
+  "precio": 2500,
+  "stock": 40,
+  "descripcion": "Té verde orgánico antioxidante",
+  "icono": "free_breakfast",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Barritas de Cereal Quaker x6",
+  "categoria": "Snacks",
+  "precio": 2900,
+  "stock": 45,
+  "descripcion": "Barritas de avena y frutas",
+  "icono": "fastfood",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Tortillas Chips Mision 200g",
+  "categoria": "Snacks",
+  "precio": 2500,
+  "stock": 40,
+  "descripcion": "Tortillas de maíz para dippear",
+  "icono": "fastfood",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Hummus Clasico 200g",
+  "categoria": "Snacks",
+  "precio": 3400,
+  "stock": 25,
+  "descripcion": "Hummus de garbanzos cremoso sin conservantes",
+  "icono": "fastfood",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Barra Proteica Protein One 60g",
+  "categoria": "Snacks",
+  "precio": 2800,
+  "stock": 30,
+  "descripcion": "Barra proteica de chocolate y caramelo",
+  "icono": "fastfood",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Chocolates M&M Maní 200g",
+  "categoria": "Golosinas",
+  "precio": 4500,
+  "stock": 40,
+  "descripcion": "Confites de chocolate con maní",
+  "icono": "cake",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Paleta Chupetín Blow Pop x12",
+  "categoria": "Golosinas",
+  "precio": 2400,
+  "stock": 55,
+  "descripcion": "Chupetines con chicle surtidos",
+  "icono": "cake",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Tableta Chocolate Milka 100g",
+  "categoria": "Golosinas",
+  "precio": 2800,
+  "stock": 60,
+  "descripcion": "Chocolate con leche alpino suave",
+  "icono": "cake",
+  "oferta": true,
+  "descuento": 15
+ },
+ {
+  "nombre": "Kit Kat 4 Fingers 45g",
+  "categoria": "Golosinas",
+  "precio": 2200,
+  "stock": 55,
+  "descripcion": "Barrita de chocolate con wafer",
+  "icono": "cake",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Palitos de Chocolate Pocky 45g",
+  "categoria": "Golosinas",
+  "precio": 2600,
+  "stock": 30,
+  "descripcion": "Palitos de galleta con cobertura de chocolate",
+  "icono": "cake",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Chupetin Pica Pica x20",
+  "categoria": "Golosinas",
+  "precio": 1800,
+  "stock": 65,
+  "descripcion": "Chupetines con polvito ácido surtido",
+  "icono": "cake",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Desengrasante Limpia Cocina 500ml",
+  "categoria": "Limpieza",
+  "precio": 2600,
+  "stock": 45,
+  "descripcion": "Desengrasante potente para hornallas y mesadas",
+  "icono": "cleaning_services",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Trapo Rejilla Multiuso x2",
+  "categoria": "Limpieza",
+  "precio": 1400,
+  "stock": 50,
+  "descripcion": "Trapos de cocina absorbentes reutilizables",
+  "icono": "cleaning_services",
+  "oferta": true,
+  "descuento": 20
+ },
+ {
+  "nombre": "Desodorante Rexona Roll-on 50ml",
+  "categoria": "Higiene Personal",
+  "precio": 2900,
+  "stock": 65,
+  "descripcion": "Desodorante antitranspirante 48hs",
+  "icono": "soap",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Afeitadora Gillette Mach3 x4",
+  "categoria": "Higiene Personal",
+  "precio": 8500,
+  "stock": 25,
+  "descripcion": "Cartuchos de afeitar triple hoja",
+  "icono": "soap",
+  "oferta": true,
+  "descuento": 15
+ },
+ {
+  "nombre": "Gel de Ducha Nivea 250ml",
+  "categoria": "Higiene Personal",
+  "precio": 3800,
+  "stock": 45,
+  "descripcion": "Gel corporal hidratante con extratos naturales",
+  "icono": "soap",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Papel Higiénico Personal x10",
+  "categoria": "Higiene Personal",
+  "precio": 5500,
+  "stock": 50,
+  "descripcion": "Pack de rollos triple hoja ultrasuave",
+  "icono": "soap",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Enjuague Bucal Listerine 500ml",
+  "categoria": "Higiene Personal",
+  "precio": 4500,
+  "stock": 35,
+  "descripcion": "Enjuague bucal antiséptico zero alcohol",
+  "icono": "soap",
+  "oferta": true,
+  "descuento": 20
+ },
+ {
+  "nombre": "Shampoo Bebé Johnson's 200ml",
+  "categoria": "Higiene Personal",
+  "precio": 3100,
+  "stock": 35,
+  "descripcion": "Shampoo sin lágrimas para bebés",
+  "icono": "soap",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Espuma de Afeitar Gillette 175g",
+  "categoria": "Higiene Personal",
+  "precio": 3600,
+  "stock": 30,
+  "descripcion": "Espuma de afeitar sensible protección",
+  "icono": "soap",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Desmaquillante Bifásico 150ml",
+  "categoria": "Perfumería",
+  "precio": 4200,
+  "stock": 30,
+  "descripcion": "Removedor de maquillaje suave para ojos",
+  "icono": "self_care",
+  "oferta": true,
+  "descuento": 20
+ },
+ {
+  "nombre": "Esmalte de Uñas OPI 15ml",
+  "categoria": "Perfumería",
+  "precio": 4800,
+  "stock": 28,
+  "descripcion": "Esmalte de uñas gel larga duración",
+  "icono": "self_care",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Contorno de Ojos Revitalift 15ml",
+  "categoria": "Perfumería",
+  "precio": 10500,
+  "stock": 12,
+  "descripcion": "Crema contorno de ojos antibolsas y ojeras",
+  "icono": "self_care",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Omega 3 1000mg x30",
+  "categoria": "Farmacia",
+  "precio": 5800,
+  "stock": 25,
+  "descripcion": "Cápsulas de aceite de pescado omega 3",
+  "icono": "local_pharmacy",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Spray Nasal Sinomist 50ml",
+  "categoria": "Farmacia",
+  "precio": 2900,
+  "stock": 30,
+  "descripcion": "Spray nasal salino para congestión",
+  "icono": "local_pharmacy",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Pastillas para la Garganta x20",
+  "categoria": "Farmacia",
+  "precio": 2100,
+  "stock": 40,
+  "descripcion": "Caramelos medicinales para irritación de garganta",
+  "icono": "local_pharmacy",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Alimento Gato Whiskas 1.5kg",
+  "categoria": "Mascotas",
+  "precio": 9200,
+  "stock": 25,
+  "descripcion": "Croquetas para gatos adultos sabor pollo",
+  "icono": "pets",
+  "oferta": true,
+  "descuento": 10
+ },
+ {
+  "nombre": "Shampoo Perro Suave 500ml",
+  "categoria": "Mascotas",
+  "precio": 3500,
+  "stock": 28,
+  "descripcion": "Shampoo suave con avena para piel sensible",
+  "icono": "pets",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Correa Retráctil Perro 5m",
+  "categoria": "Mascotas",
+  "precio": 6800,
+  "stock": 18,
+  "descripcion": "Correa automática con freno de 5 metros",
+  "icono": "pets",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Pipeta Antipulgas Gato x3",
+  "categoria": "Mascotas",
+  "precio": 5500,
+  "stock": 22,
+  "descripcion": "Pipetas spot-on antipulgas y garrapatas",
+  "icono": "pets",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Antiparasitario Perro Bravecto M",
+  "categoria": "Mascotas",
+  "precio": 9800,
+  "stock": 15,
+  "descripcion": "Tableta masticable antipulgas y garrapatas 3 meses",
+  "icono": "pets",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Plato Cerámica Mascotas x2",
+  "categoria": "Mascotas",
+  "precio": 3200,
+  "stock": 25,
+  "descripcion": "Set de platos de cerámica para comida y agua",
+  "icono": "pets",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Pañales Perro Macho M x12",
+  "categoria": "Mascotas",
+  "precio": 4500,
+  "stock": 20,
+  "descripcion": "Pañales descartables para perros machos",
+  "icono": "pets",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Martillo Stanley 500g",
+  "categoria": "Ferretería",
+  "precio": 6800,
+  "stock": 25,
+  "descripcion": "Martillo de orejas con mango de fibra de vidrio",
+  "icono": "hardware",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Destornillador Stanley x3",
+  "categoria": "Ferretería",
+  "precio": 5200,
+  "stock": 30,
+  "descripcion": "Set de destornilladores plano y Phillips",
+  "icono": "hardware",
+  "oferta": true,
+  "descuento": 10
+ },
+ {
+  "nombre": "Cinta Métrica 5m Stanley",
+  "categoria": "Ferretería",
+  "precio": 3800,
+  "stock": 40,
+  "descripcion": "Cinta de medir automática con freno",
+  "icono": "hardware",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Alicate Universal 8 pulgadas",
+  "categoria": "Ferretería",
+  "precio": 4500,
+  "stock": 25,
+  "descripcion": "Alicate corte y agarre para electricidad",
+  "icono": "hardware",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Malla Sombra 1x50m 80%",
+  "categoria": "Ferretería",
+  "precio": 9500,
+  "stock": 10,
+  "descripcion": "Malla media sombra verde 80% para jardín",
+  "icono": "hardware",
+  "oferta": true,
+  "descuento": 20
+ },
+ {
+  "nombre": "Termostato Calefacción Digital",
+  "categoria": "Ferretería",
+  "precio": 8500,
+  "stock": 12,
+  "descripcion": "Termostato digital programable para calefacción",
+  "icono": "hardware",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Cuadernos Rivadavia A4 x3",
+  "categoria": "Librería",
+  "precio": 3200,
+  "stock": 50,
+  "descripcion": "Pack de cuadernos rayados 48 hojas tapa dura",
+  "icono": "menu_book",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Marcadores Sharpie Surtidos x8",
+  "categoria": "Librería",
+  "precio": 4800,
+  "stock": 35,
+  "descripcion": "Marcadores permanentes de colores surtidos",
+  "icono": "menu_book",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Resma Papel A4 500 hojas",
+  "categoria": "Librería",
+  "precio": 4500,
+  "stock": 40,
+  "descripcion": "Papel A4 80g para impresión y fotocopiado",
+  "icono": "menu_book",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Lápices de Colores Faber x12",
+  "categoria": "Librería",
+  "precio": 3500,
+  "stock": 45,
+  "descripcion": "Lápices de colores triangulares resistentes a rotura",
+  "icono": "menu_book",
+  "oferta": true,
+  "descuento": 15
+ },
+ {
+  "nombre": "Compás Escolar Artesco",
+  "categoria": "Librería",
+  "precio": 1900,
+  "stock": 30,
+  "descripcion": "Compás metálico con porta lápiz ajustable",
+  "icono": "menu_book",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Webcam Logitech C920 HD",
+  "categoria": "Electrónica",
+  "precio": 42000,
+  "stock": 8,
+  "descripcion": "Cámara web Full HD 1080p con micrófono estéreo",
+  "icono": "devices",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Funda Silicona iPhone 15",
+  "categoria": "Electrónica",
+  "precio": 3800,
+  "stock": 25,
+  "descripcion": "Funda de silicona líquida para iPhone 15",
+  "icono": "devices",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Regleta 6 Tomas Protección 1.5m",
+  "categoria": "Electrónica",
+  "precio": 6500,
+  "stock": 22,
+  "descripcion": "Regleta con supresor de picos y 6 tomacorrientes",
+  "icono": "devices",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Leche Maternizada NAN 800g",
+  "categoria": "Infantil",
+  "precio": 22000,
+  "stock": 12,
+  "descripcion": "Fórmula infantil etapa 1 hasta 6 meses",
+  "icono": "child_care",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Mamadera Anticólico Dr. Brown 240ml",
+  "categoria": "Infantil",
+  "precio": 8500,
+  "stock": 18,
+  "descripcion": "Biberón con válvula anticólico de vidrio",
+  "icono": "child_care",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Babero Silicona Antiderrame",
+  "categoria": "Infantil",
+  "precio": 2800,
+  "stock": 30,
+  "descripcion": "Babero de silicona con bolsillo recolector",
+  "icono": "child_care",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Juguete Sonajero Fisher Price",
+  "categoria": "Infantil",
+  "precio": 3500,
+  "stock": 25,
+  "descripcion": "Sonajero colorido con mordedor suave para bebés",
+  "icono": "child_care",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Cortauñas Bebé Set 5 piezas",
+  "categoria": "Infantil",
+  "precio": 3200,
+  "stock": 25,
+  "descripcion": "Kit manicura para bebés con cortauñas, lima y más",
+  "icono": "child_care",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Bañera Plegable Bebé",
+  "categoria": "Infantil",
+  "precio": 15000,
+  "stock": 8,
+  "descripcion": "Bañera plegable portátil con soporte antideslizante",
+  "icono": "child_care",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Colchón Impermeable Cuna 60x120",
+  "categoria": "Infantil",
+  "precio": 12000,
+  "stock": 10,
+  "descripcion": "Colchón de espuma con funda impermeable",
+  "icono": "child_care",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Medias Deportivas Hombre x3",
+  "categoria": "Textil",
+  "precio": 3200,
+  "stock": 45,
+  "descripcion": "Pack de medias cortas de algodón para deporte",
+  "icono": "checkroom",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Buzo Hoodie Canguro Talle L",
+  "categoria": "Textil",
+  "precio": 15000,
+  "stock": 18,
+  "descripcion": "Buzo con capucha y bolsillo canguro de frisa",
+  "icono": "checkroom",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Cartera Mujer Bandolera",
+  "categoria": "Textil",
+  "precio": 16500,
+  "stock": 10,
+  "descripcion": "Cartera de cuero ecológico con tira ajustable",
+  "icono": "checkroom",
+  "oferta": true,
+  "descuento": 20
+ },
+ {
+  "nombre": "Campera Rompevientos Impermeable",
+  "categoria": "Textil",
+  "precio": 28000,
+  "stock": 8,
+  "descripcion": "Campera cortaviento impermeable con capucha",
+  "icono": "checkroom",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Pijama Polar Adulto Talle XL",
+  "categoria": "Textil",
+  "precio": 13500,
+  "stock": 12,
+  "descripcion": "Pijama de polar suave conjunto pantalón y remera",
+  "icono": "checkroom",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Toalla Microfibra Deportiva 150x80",
+  "categoria": "Textil",
+  "precio": 6800,
+  "stock": 20,
+  "descripcion": "Toalla de microfibra de secado rápido extra grande",
+  "icono": "checkroom",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Turrones El Almendro 150g",
+  "categoria": "Golosinas",
+  "precio": 4200,
+  "stock": 25,
+  "descripcion": "Turrón de Jijona con almendras",
+  "icono": "cake",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Bon o Bon Caja x16",
+  "categoria": "Golosinas",
+  "precio": 3800,
+  "stock": 40,
+  "descripcion": "Bombones de chocolate rellenos de maní",
+  "icono": "cake",
+  "oferta": true,
+  "descuento": 20
+ },
+ {
+  "nombre": "Chocolate Amargo Lindt 70% 100g",
+  "categoria": "Golosinas",
+  "precio": 5500,
+  "stock": 20,
+  "descripcion": "Chocolate negro 70% cacao premium",
+  "icono": "cake",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Garrapiñadas Maní 200g",
+  "categoria": "Golosinas",
+  "precio": 2400,
+  "stock": 45,
+  "descripcion": "Maní garrapiñado con azúcar tostada",
+  "icono": "cake",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Regaliz Lacasitos 100g",
+  "categoria": "Golosinas",
+  "precio": 2000,
+  "stock": 40,
+  "descripcion": "Grageas de chocolate de colores",
+  "icono": "cake",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Desodorante Ambiental Glade 400ml",
+  "categoria": "Limpieza",
+  "precio": 3200,
+  "stock": 40,
+  "descripcion": "Aerosol desodorante de ambiente floral",
+  "icono": "cleaning_services",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Limpiavidrios CIF 500ml",
+  "categoria": "Limpieza",
+  "precio": 2400,
+  "stock": 50,
+  "descripcion": "Limpiador de vidrios sin rayaduras",
+  "icono": "cleaning_services",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Cera para Pisos Trulu 500ml",
+  "categoria": "Limpieza",
+  "precio": 2700,
+  "stock": 30,
+  "descripcion": "Cera líquida para pisos de madera y cerámica",
+  "icono": "cleaning_services",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Quitamanchas Vanish 200g",
+  "categoria": "Limpieza",
+  "precio": 3500,
+  "stock": 35,
+  "descripcion": "Quitamanchas en polvo para ropa blanca y color",
+  "icono": "cleaning_services",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Jabón Dove Barra 90g x3",
+  "categoria": "Higiene Personal",
+  "precio": 3200,
+  "stock": 60,
+  "descripcion": "Jabón humectante con ¼ de crema hidratante",
+  "icono": "soap",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Cepillo Dientes Oral-B 3D x2",
+  "categoria": "Higiene Personal",
+  "precio": 2800,
+  "stock": 50,
+  "descripcion": "Cepillos de dientes con filamentos 3D suaves",
+  "icono": "soap",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Pasta Dental Colgate Triple 90g",
+  "categoria": "Higiene Personal",
+  "precio": 2100,
+  "stock": 70,
+  "descripcion": "Pasta dental triple acción blanqueadora",
+  "icono": "soap",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Hilo Dental Oral-B 25m",
+  "categoria": "Higiene Personal",
+  "precio": 1800,
+  "stock": 55,
+  "descripcion": "Hilo dental con cera protectora",
+  "icono": "soap",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Preservativos Tulipán x6",
+  "categoria": "Higiene Personal",
+  "precio": 3200,
+  "stock": 30,
+  "descripcion": "Preservativos lubricados ultrafinos",
+  "icono": "soap",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Tampones OB Regular x16",
+  "categoria": "Higiene Personal",
+  "precio": 3400,
+  "stock": 45,
+  "descripcion": "Tampones sin aplicador flujo regular",
+  "icono": "soap",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Perfume Carolina Herrera 212 100ml",
+  "categoria": "Perfumería",
+  "precio": 45000,
+  "stock": 10,
+  "descripcion": "Eau de Toilette unisex cítrico y floral",
+  "icono": "self_care",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Colonia Aqua di Gio 100ml",
+  "categoria": "Perfumería",
+  "precio": 52000,
+  "stock": 8,
+  "descripcion": "Colonia marino fresca para hombre",
+  "icono": "self_care",
+  "oferta": true,
+  "descuento": 10
+ },
+ {
+  "nombre": "Desodorante Axe Ice Chill 150ml",
+  "categoria": "Perfumería",
+  "precio": 3800,
+  "stock": 50,
+  "descripcion": "Desodorante aerosol para hombre menta y eucalipto",
+  "icono": "self_care",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Crema Corporal Q10 Nivea 400ml",
+  "categoria": "Perfumería",
+  "precio": 5200,
+  "stock": 30,
+  "descripcion": "Crema antienvejecimiento con coenzima Q10",
+  "icono": "self_care",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Serum Vitamina C Garnier 30ml",
+  "categoria": "Perfumería",
+  "precio": 7800,
+  "stock": 20,
+  "descripcion": "Sérum iluminador con vitamina C pura",
+  "icono": "self_care",
+  "oferta": true,
+  "descuento": 15
+ },
+ {
+  "nombre": "Bloqueador Solar FPS50 100g",
+  "categoria": "Perfumería",
+  "precio": 6500,
+  "stock": 35,
+  "descripcion": "Protector solar FPS 50 para piel sensible",
+  "icono": "self_care",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Crema de Noche Eucerin 50ml",
+  "categoria": "Perfumería",
+  "precio": 12000,
+  "stock": 15,
+  "descripcion": "Crema regeneradora nocturna con ácido hialurónico",
+  "icono": "self_care",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Delineador Ojos Negro NYX",
+  "categoria": "Perfumería",
+  "precio": 4500,
+  "stock": 30,
+  "descripcion": "Lápiz delineador de ojos en gel negro intenso",
+  "icono": "self_care",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Tinte de Cabello Clairol 50ml",
+  "categoria": "Perfumería",
+  "precio": 3200,
+  "stock": 35,
+  "descripcion": "Kit de tintura permanente cobre dorado",
+  "icono": "self_care",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Spray Fijador Maquillaje 100ml",
+  "categoria": "Perfumería",
+  "precio": 5500,
+  "stock": 20,
+  "descripcion": "Fijador de maquillaje larga duración HD",
+  "icono": "self_care",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Paracetamol 500mg x20",
+  "categoria": "Farmacia",
+  "precio": 1800,
+  "stock": 50,
+  "descripcion": "Analgésico y antipirético de uso general",
+  "icono": "local_pharmacy",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Alcohol en Gel 500ml",
+  "categoria": "Farmacia",
+  "precio": 2200,
+  "stock": 60,
+  "descripcion": "Gel antibacterial con 70% de alcohol",
+  "icono": "local_pharmacy",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Curita Tela Surtida x40",
+  "categoria": "Farmacia",
+  "precio": 1900,
+  "stock": 55,
+  "descripcion": "Curitas adhesivas de tela en varios tamaños",
+  "icono": "local_pharmacy",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Probiótico Lactobacilos x20",
+  "categoria": "Farmacia",
+  "precio": 6500,
+  "stock": 18,
+  "descripcion": "Cápsulas probióticas para flora intestinal",
+  "icono": "local_pharmacy",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Suero Fisiológico 500ml",
+  "categoria": "Farmacia",
+  "precio": 1800,
+  "stock": 40,
+  "descripcion": "Solución salina isotónica para lavado nasal",
+  "icono": "local_pharmacy",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Colirio Lagricel 10ml",
+  "categoria": "Farmacia",
+  "precio": 2400,
+  "stock": 25,
+  "descripcion": "Gotas oculares lubricantes sin conservantes",
+  "icono": "local_pharmacy",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Magnesio 375mg x30",
+  "categoria": "Farmacia",
+  "precio": 4500,
+  "stock": 22,
+  "descripcion": "Suplemento de magnesio para calambres",
+  "icono": "local_pharmacy",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Cama Perro Felpa 70x50cm",
+  "categoria": "Mascotas",
+  "precio": 7500,
+  "stock": 12,
+  "descripcion": "Cama suave de felpa lavable a máquina",
+  "icono": "pets",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Cinta Teflon 1/2 x10m",
+  "categoria": "Ferretería",
+  "precio": 650,
+  "stock": 80,
+  "descripcion": "Cinta de sellado de rosca PTFE",
+  "icono": "hardware",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Tornillos Autorroscantes 6x1 x100",
+  "categoria": "Ferretería",
+  "precio": 1800,
+  "stock": 60,
+  "descripcion": "Tornillos galvanizados para madera y metal",
+  "icono": "hardware",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Pintura Látex Blanco 4L Alba",
+  "categoria": "Ferretería",
+  "precio": 12500,
+  "stock": 15,
+  "descripcion": "Pintura látex interior lavable blanco nieve",
+  "icono": "hardware",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Sierra Caladora Bosch GST150",
+  "categoria": "Ferretería",
+  "precio": 38000,
+  "stock": 5,
+  "descripcion": "Sierra caladora 650W con pendulum orbital",
+  "icono": "hardware",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Guantes de Trabajo Cuero T9",
+  "categoria": "Ferretería",
+  "precio": 2600,
+  "stock": 30,
+  "descripcion": "Guantes de trabajo de cuero con refuerzo en palma",
+  "icono": "hardware",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Pegamento Epóxico Loctite 25ml",
+  "categoria": "Ferretería",
+  "precio": 3500,
+  "stock": 28,
+  "descripcion": "Adhesivo bicomponente de alta resistencia",
+  "icono": "hardware",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Maceta Plástico N°14 x3",
+  "categoria": "Ferretería",
+  "precio": 2100,
+  "stock": 40,
+  "descripcion": "Macetas de plástico resistente para jardín y interior",
+  "icono": "hardware",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Tijeras Maped 21cm",
+  "categoria": "Librería",
+  "precio": 2200,
+  "stock": 45,
+  "descripcion": "Tijeras de acero inoxidable con mango ergonómico",
+  "icono": "menu_book",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Regla Plástica 30cm",
+  "categoria": "Librería",
+  "precio": 850,
+  "stock": 80,
+  "descripcion": "Regla transparente graduada 30 centímetros",
+  "icono": "menu_book",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Carpeta Anillada A4 Azul",
+  "categoria": "Librería",
+  "precio": 2800,
+  "stock": 35,
+  "descripcion": "Carpeta con 2 anillos y recuadro para nombre",
+  "icono": "menu_book",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Post-it 3M 76x76mm x100",
+  "categoria": "Librería",
+  "precio": 2100,
+  "stock": 55,
+  "descripcion": "Notas adhesivas repositables amarillas",
+  "icono": "menu_book",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Calculadora Casio FX-82LA",
+  "categoria": "Librería",
+  "precio": 8500,
+  "stock": 15,
+  "descripcion": "Calculadora científica 252 funciones",
+  "icono": "menu_book",
+  "oferta": true,
+  "descuento": 20
+ },
+ {
+  "nombre": "Pintura Acuarela Pañuelos x12",
+  "categoria": "Librería",
+  "precio": 2900,
+  "stock": 28,
+  "descripcion": "Set de acuarelas en pastilla con pincel incluido",
+  "icono": "menu_book",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Cutter Olfa 18mm",
+  "categoria": "Librería",
+  "precio": 2100,
+  "stock": 30,
+  "descripcion": "Cutter profesional con hoja de 18mm recambiable",
+  "icono": "menu_book",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Pintura Tempera x6 Colores 30ml",
+  "categoria": "Librería",
+  "precio": 2800,
+  "stock": 40,
+  "descripcion": "Témperas de colores primarios y secundarios",
+  "icono": "menu_book",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Portafolio Plástico A4 x10",
+  "categoria": "Librería",
+  "precio": 1600,
+  "stock": 55,
+  "descripcion": "Fundas plásticas transparentes para carpeta",
+  "icono": "menu_book",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Cable USB-C 1m Trenzado",
+  "categoria": "Electrónica",
+  "precio": 4200,
+  "stock": 35,
+  "descripcion": "Cable de carga y datos USB-C resistente",
+  "icono": "devices",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Pendrive Kingston 64GB USB3.0",
+  "categoria": "Electrónica",
+  "precio": 7800,
+  "stock": 25,
+  "descripcion": "Memoria USB 3.0 de 64GB de alta velocidad",
+  "icono": "devices",
+  "oferta": true,
+  "descuento": 15
+ },
+ {
+  "nombre": "Smartwatch Xiaomi Mi Band 8",
+  "categoria": "Electrónica",
+  "precio": 28000,
+  "stock": 10,
+  "descripcion": "Pulsera inteligente con monitor de salud y GPS",
+  "icono": "devices",
+  "oferta": true,
+  "descuento": 20
+ },
+ {
+  "nombre": "Tira LED RGB 5m Control",
+  "categoria": "Electrónica",
+  "precio": 9800,
+  "stock": 15,
+  "descripcion": "Tira de luces LED RGB con mando y app",
+  "icono": "devices",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Pañales Pampers Active Baby T3 x60",
+  "categoria": "Infantil",
+  "precio": 18500,
+  "stock": 20,
+  "descripcion": "Pañales con tecnología absorbente triple protección",
+  "icono": "child_care",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Mordedor Refrigerable Sophie",
+  "categoria": "Infantil",
+  "precio": 4800,
+  "stock": 18,
+  "descripcion": "Mordedor de jirafa de goma natural sin BPA",
+  "icono": "child_care",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Termómetro Infrarojo Bebé",
+  "categoria": "Infantil",
+  "precio": 8500,
+  "stock": 12,
+  "descripcion": "Termómetro sin contacto de lectura instantánea",
+  "icono": "child_care",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Remera Básica Algodón Talle M",
+  "categoria": "Textil",
+  "precio": 5800,
+  "stock": 30,
+  "descripcion": "Remera de algodón peinado 100% unisex",
+  "icono": "checkroom",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Calzas Deportivas Mujer M",
+  "categoria": "Textil",
+  "precio": 9800,
+  "stock": 20,
+  "descripcion": "Calzas con compresión y bolsillo lateral",
+  "icono": "checkroom",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Camisa Lino Hombre Talle XL",
+  "categoria": "Textil",
+  "precio": 12500,
+  "stock": 12,
+  "descripcion": "Camisa de lino natural manga larga blanca",
+  "icono": "checkroom",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Pantalón Jogging Hombre M",
+  "categoria": "Textil",
+  "precio": 11000,
+  "stock": 20,
+  "descripcion": "Pantalón de frisa con bolsillos y puño",
+  "icono": "checkroom",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Zapatos Crocs Classic Talle 40",
+  "categoria": "Textil",
+  "precio": 22000,
+  "stock": 10,
+  "descripcion": "Zuecos de goma EVA con ventilación clásicos",
+  "icono": "checkroom",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Zapatillas Addidas Runfalcon 3.0",
+  "categoria": "Textil",
+  "precio": 55000,
+  "stock": 6,
+  "descripcion": "Zapatillas running con amortiguación Cloudfoam",
+  "icono": "checkroom",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Alfajor Milka Triple 100g",
+  "categoria": "Golosinas",
+  "precio": 2100,
+  "stock": 80,
+  "descripcion": "Alfajor de chocolate con dulce de leche triple",
+  "icono": "cake",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Chicles Trident Fresh x12",
+  "categoria": "Golosinas",
+  "precio": 980,
+  "stock": 90,
+  "descripcion": "Chicles sin azúcar sabor menta fresca",
+  "icono": "cake",
+  "oferta": true,
+  "descuento": 10
+ },
+ {
+  "nombre": "Gomitas Haribo Ositos 250g",
+  "categoria": "Golosinas",
+  "precio": 3200,
+  "stock": 45,
+  "descripcion": "Ositos de goma frutales de colores",
+  "icono": "cake",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Marroc Blanco Arcor",
+  "categoria": "Golosinas",
+  "precio": 1100,
+  "stock": 70,
+  "descripcion": "Caramelo de leche con chocolate blanco",
+  "icono": "cake",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Chocolate Blanco Nestlé 100g",
+  "categoria": "Golosinas",
+  "precio": 3000,
+  "stock": 35,
+  "descripcion": "Tableta de chocolate blanco cremoso",
+  "icono": "cake",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Limpiador Multiuso Mr Músculo 500ml",
+  "categoria": "Limpieza",
+  "precio": 2800,
+  "stock": 45,
+  "descripcion": "Limpiador desengrasante para cocina y baño",
+  "icono": "cleaning_services",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Jabón en Polvo Skip 3kg",
+  "categoria": "Limpieza",
+  "precio": 8500,
+  "stock": 30,
+  "descripcion": "Jabón en polvo con suavizante para ropa",
+  "icono": "cleaning_services",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Papel Higiénico Higienol x4",
+  "categoria": "Limpieza",
+  "precio": 2900,
+  "stock": 80,
+  "descripcion": "Rollo de papel higiénico doble hoja suave",
+  "icono": "cleaning_services",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Bolsas Residuos 60L x20",
+  "categoria": "Limpieza",
+  "precio": 1800,
+  "stock": 65,
+  "descripcion": "Bolsas de residuos resistentes 60 litros",
+  "icono": "cleaning_services",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Jabón Blanco El Oso 4x200g",
+  "categoria": "Limpieza",
+  "precio": 2200,
+  "stock": 60,
+  "descripcion": "Jabón en barra para lavar ropa a mano",
+  "icono": "cleaning_services",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Insecticida Raid Aerosol 360ml",
+  "categoria": "Limpieza",
+  "precio": 4200,
+  "stock": 25,
+  "descripcion": "Insecticida para mosquitos y cucarachas",
+  "icono": "cleaning_services",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Toallas de Papel Húmedas x80",
+  "categoria": "Limpieza",
+  "precio": 2600,
+  "stock": 45,
+  "descripcion": "Toallitas húmedas multiuso con aloe vera",
+  "icono": "cleaning_services",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Acondicionador Pantene 400ml",
+  "categoria": "Higiene Personal",
+  "precio": 4800,
+  "stock": 40,
+  "descripcion": "Acondicionador nutritivo para cabello dañado",
+  "icono": "soap",
+  "oferta": true,
+  "descuento": 10
+ },
+ {
+  "nombre": "Toallitas Íntimas Always x20",
+  "categoria": "Higiene Personal",
+  "precio": 2900,
+  "stock": 50,
+  "descripcion": "Toallitas femeninas con alas",
+  "icono": "soap",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Body Splash Victoria's Secret 250ml",
+  "categoria": "Perfumería",
+  "precio": 8500,
+  "stock": 25,
+  "descripcion": "Splash corporal floral suave",
+  "icono": "self_care",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Lapiz Labial Revlon 4g",
+  "categoria": "Perfumería",
+  "precio": 5800,
+  "stock": 25,
+  "descripcion": "Labial cremoso con hidratación",
+  "icono": "self_care",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Tónico Facial Bioderma 250ml",
+  "categoria": "Perfumería",
+  "precio": 9800,
+  "stock": 12,
+  "descripcion": "Agua micelar desmaquillante todo tipo de piel",
+  "icono": "self_care",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Ibuprofeno 400mg x20",
+  "categoria": "Farmacia",
+  "precio": 2800,
+  "stock": 40,
+  "descripcion": "Antiinflamatorio y analgésico 400mg",
+  "icono": "local_pharmacy",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Vitamina C 1g x30",
+  "categoria": "Farmacia",
+  "precio": 3500,
+  "stock": 35,
+  "descripcion": "Suplemento vitamínico efervescente naranja",
+  "icono": "local_pharmacy",
+  "oferta": true,
+  "descuento": 10
+ },
+ {
+  "nombre": "Termómetro Digital",
+  "categoria": "Farmacia",
+  "precio": 4500,
+  "stock": 20,
+  "descripcion": "Termómetro clínico digital con alarma",
+  "icono": "local_pharmacy",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Vendas Elásticas 10cm x4",
+  "categoria": "Farmacia",
+  "precio": 2600,
+  "stock": 30,
+  "descripcion": "Vendas elásticas reutilizables para lesiones",
+  "icono": "local_pharmacy",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Complejo B x30",
+  "categoria": "Farmacia",
+  "precio": 3800,
+  "stock": 30,
+  "descripcion": "Suplemento vitaminas del grupo B",
+  "icono": "local_pharmacy",
+  "oferta": true,
+  "descuento": 20
+ },
+ {
+  "nombre": "Tijera de Primeros Auxilios",
+  "categoria": "Farmacia",
+  "precio": 1600,
+  "stock": 20,
+  "descripcion": "Tijera de punta roma para botiquín",
+  "icono": "local_pharmacy",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Snacks Perro Pedigree DentaStix x7",
+  "categoria": "Mascotas",
+  "precio": 3200,
+  "stock": 40,
+  "descripcion": "Palitos para la higiene dental del perro",
+  "icono": "pets",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Alimento Húmedo Gato Purina 85g x6",
+  "categoria": "Mascotas",
+  "precio": 4200,
+  "stock": 35,
+  "descripcion": "Patitas de pollo en salsa para gatos",
+  "icono": "pets",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Bebedero Automático Mascotas 2L",
+  "categoria": "Mascotas",
+  "precio": 8900,
+  "stock": 12,
+  "descripcion": "Fuente bebedero con filtro de carbón activo",
+  "icono": "pets",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Transportín Gato Mediano",
+  "categoria": "Mascotas",
+  "precio": 15000,
+  "stock": 8,
+  "descripcion": "Transportín plástico con ventilación para viaje",
+  "icono": "pets",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Premio Gato Dreamies x60g",
+  "categoria": "Mascotas",
+  "precio": 2800,
+  "stock": 45,
+  "descripcion": "Snacks crujientes con centro cremoso para gatos",
+  "icono": "pets",
+  "oferta": true,
+  "descuento": 20
+ },
+ {
+  "nombre": "Hueso Masticable Perro x5",
+  "categoria": "Mascotas",
+  "precio": 3800,
+  "stock": 30,
+  "descripcion": "Huesos de cuero natural para masticar",
+  "icono": "pets",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Llave Inglesa 12 pulgadas",
+  "categoria": "Ferretería",
+  "precio": 5800,
+  "stock": 20,
+  "descripcion": "Llave ajustable cromada de alta resistencia",
+  "icono": "hardware",
+  "oferta": true,
+  "descuento": 15
+ },
+ {
+  "nombre": "Extensión Eléctrica 10m 3 tomas",
+  "categoria": "Ferretería",
+  "precio": 4200,
+  "stock": 25,
+  "descripcion": "Prolongación eléctrica con interruptor y fusible",
+  "icono": "hardware",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Cable Unipolar 1.5mm x10m",
+  "categoria": "Ferretería",
+  "precio": 3200,
+  "stock": 35,
+  "descripcion": "Cable eléctrico unipolar negro 1.5mm",
+  "icono": "hardware",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Cerradura Puerta Yale 3 Llaves",
+  "categoria": "Ferretería",
+  "precio": 9800,
+  "stock": 10,
+  "descripcion": "Cerradura de embutir con 3 llaves de seguridad",
+  "icono": "hardware",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Lapiceras Bic Cristal x10",
+  "categoria": "Librería",
+  "precio": 2400,
+  "stock": 70,
+  "descripcion": "Bolígrafos azules de punta media",
+  "icono": "menu_book",
+  "oferta": true,
+  "descuento": 10
+ },
+ {
+  "nombre": "Resaltadores Stabilo Boss x4",
+  "categoria": "Librería",
+  "precio": 2600,
+  "stock": 50,
+  "descripcion": "Marcadores fluorescentes en 4 colores",
+  "icono": "menu_book",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Bibliorato Lomo Ancho A4",
+  "categoria": "Librería",
+  "precio": 2400,
+  "stock": 35,
+  "descripcion": "Bibliorato cartón plastificado lomo 8cm",
+  "icono": "menu_book",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Goma de Borrar Faber Milan x3",
+  "categoria": "Librería",
+  "precio": 1200,
+  "stock": 70,
+  "descripcion": "Gomas de borrar sin PVC que no manchan",
+  "icono": "menu_book",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Batería Externa 20000mAh Xiaomi",
+  "categoria": "Electrónica",
+  "precio": 25000,
+  "stock": 12,
+  "descripcion": "Power bank con carga rápida 22.5W",
+  "icono": "devices",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Adaptador HDMI a VGA",
+  "categoria": "Electrónica",
+  "precio": 4800,
+  "stock": 20,
+  "descripcion": "Conversor HDMI macho a VGA hembra 1080p",
+  "icono": "devices",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Organizador Cables Velcro x10",
+  "categoria": "Electrónica",
+  "precio": 2200,
+  "stock": 45,
+  "descripcion": "Sujetadores de velcro para organizar cables",
+  "icono": "devices",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Lector SD Card USB 3.0",
+  "categoria": "Electrónica",
+  "precio": 3200,
+  "stock": 30,
+  "descripcion": "Lector de tarjetas SD/TF de alta velocidad",
+  "icono": "devices",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Hub USB 4 Puertos Anker",
+  "categoria": "Electrónica",
+  "precio": 8200,
+  "stock": 18,
+  "descripcion": "Hub USB 3.0 de 4 puertos ultra compacto",
+  "icono": "devices",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Toallitas Huggies Natural x80",
+  "categoria": "Infantil",
+  "precio": 3800,
+  "stock": 35,
+  "descripcion": "Toallitas húmedas con aloe vera para bebé",
+  "icono": "child_care",
+  "oferta": true,
+  "descuento": 10
+ },
+ {
+  "nombre": "Silla de Comer Graco Slim Spaces",
+  "categoria": "Infantil",
+  "precio": 45000,
+  "stock": 5,
+  "descripcion": "Silla de comer plegable con bandeja removible",
+  "icono": "child_care",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Librito Sensorial Tela 10p",
+  "categoria": "Infantil",
+  "precio": 3600,
+  "stock": 20,
+  "descripcion": "Libro de tela con texturas y sonidos para bebés",
+  "icono": "child_care",
+  "oferta": true,
+  "descuento": 20
+ },
+ {
+  "nombre": "Ropa de Cama Bebé 3 piezas",
+  "categoria": "Infantil",
+  "precio": 6500,
+  "stock": 15,
+  "descripcion": "Set de sábana ajustable, almohada y frazada polar",
+  "icono": "child_care",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Monitor de Bebé Philips Avent",
+  "categoria": "Infantil",
+  "precio": 38000,
+  "stock": 5,
+  "descripcion": "Monitor de audio digital DECT con pantalla",
+  "icono": "child_care",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Chupete Chicco Physio Comfort",
+  "categoria": "Infantil",
+  "precio": 2800,
+  "stock": 35,
+  "descripcion": "Chupete fisiológico de silicona 0-6 meses",
+  "icono": "child_care",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Jean Slim Fit Mujer Talle 38",
+  "categoria": "Textil",
+  "precio": 18500,
+  "stock": 15,
+  "descripcion": "Jean elastizado de corte slim bajo consumo agua",
+  "icono": "checkroom",
+  "oferta": true,
+  "descuento": 10
+ },
+ {
+  "nombre": "Vestido Verano Floral Mujer S",
+  "categoria": "Textil",
+  "precio": 14000,
+  "stock": 12,
+  "descripcion": "Vestido de modal estampado floral manga corta",
+  "icono": "checkroom",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Cinturón Cuero Hombre 90cm",
+  "categoria": "Textil",
+  "precio": 7500,
+  "stock": 18,
+  "descripcion": "Cinturón de cuero genuino con hebilla plateada",
+  "icono": "checkroom",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Gorra Visera Plana Unisex",
+  "categoria": "Textil",
+  "precio": 4800,
+  "stock": 25,
+  "descripcion": "Gorra con visera plana regulable 100% algodón",
+  "icono": "checkroom",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Bufanda Lana Merino 180cm",
+  "categoria": "Textil",
+  "precio": 8200,
+  "stock": 15,
+  "descripcion": "Bufanda de lana merino extrafina cálida y suave",
+  "icono": "checkroom",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Bañador Mujer Bikini Copa C",
+  "categoria": "Textil",
+  "precio": 12000,
+  "stock": 10,
+  "descripcion": "Conjunto bikini estampado con busto acolchado",
+  "icono": "checkroom",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Sábana Percal 200 Hilos 2 plazas",
+  "categoria": "Textil",
+  "precio": 18000,
+  "stock": 10,
+  "descripcion": "Juego de sábanas percal 200 hilos 2 plazas",
+  "icono": "checkroom",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Chocolate Toblerone 200g",
+  "categoria": "Golosinas",
+  "precio": 5800,
+  "stock": 35,
+  "descripcion": "Chocolate suizo con miel y almendras",
+  "icono": "cake",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Caramelos Halls Mentol x10",
+  "categoria": "Golosinas",
+  "precio": 850,
+  "stock": 100,
+  "descripcion": "Caramelos mentolados para la garganta",
+  "icono": "cake",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Caramelos Sugus Surtidos 30g",
+  "categoria": "Golosinas",
+  "precio": 750,
+  "stock": 100,
+  "descripcion": "Caramelos blandos frutales",
+  "icono": "cake",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Masticables Starburst x12",
+  "categoria": "Golosinas",
+  "precio": 2100,
+  "stock": 50,
+  "descripcion": "Caramelos masticables frutales en colores",
+  "icono": "cake",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Lavandina Ayudín 1L",
+  "categoria": "Limpieza",
+  "precio": 1450,
+  "stock": 70,
+  "descripcion": "Lavandina concentrada para blanquear y desinfectar",
+  "icono": "cleaning_services",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Detergente Magistral 750ml",
+  "categoria": "Limpieza",
+  "precio": 2100,
+  "stock": 60,
+  "descripcion": "Detergente líquido ultra concentrado",
+  "icono": "cleaning_services",
+  "oferta": true,
+  "descuento": 10
+ },
+ {
+  "nombre": "Suavizante Downy 1L",
+  "categoria": "Limpieza",
+  "precio": 3800,
+  "stock": 40,
+  "descripcion": "Suavizante concentrado floral para ropa",
+  "icono": "cleaning_services",
+  "oferta": true,
+  "descuento": 15
+ },
+ {
+  "nombre": "Limpiapiso Flash Pino 1L",
+  "categoria": "Limpieza",
+  "precio": 1950,
+  "stock": 55,
+  "descripcion": "Limpiapiso desinfectante aroma pino",
+  "icono": "cleaning_services",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Esponjas Scotch Brite x3",
+  "categoria": "Limpieza",
+  "precio": 2100,
+  "stock": 60,
+  "descripcion": "Esponjas doble cara para lavar vajilla",
+  "icono": "cleaning_services",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Papel de Cocina El Tejar x2",
+  "categoria": "Limpieza",
+  "precio": 2400,
+  "stock": 55,
+  "descripcion": "Rollos de papel de cocina doble hoja",
+  "icono": "cleaning_services",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Limpiabaños Harpic 500ml",
+  "categoria": "Limpieza",
+  "precio": 3100,
+  "stock": 40,
+  "descripcion": "Limpiador desinfectante para inodoro con antical",
+  "icono": "cleaning_services",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Shampoo Head & Shoulders 400ml",
+  "categoria": "Higiene Personal",
+  "precio": 5200,
+  "stock": 40,
+  "descripcion": "Shampoo anticaspa con zinc",
+  "icono": "soap",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Toallitas Húmedas Bebé x80",
+  "categoria": "Higiene Personal",
+  "precio": 2400,
+  "stock": 55,
+  "descripcion": "Toallitas húmedas sin alcohol para piel sensible",
+  "icono": "soap",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Algodón Bells 100g",
+  "categoria": "Higiene Personal",
+  "precio": 1500,
+  "stock": 60,
+  "descripcion": "Algodón hidrófilo en bolsa 100g",
+  "icono": "soap",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Crema Hidratante Nivea 200ml",
+  "categoria": "Higiene Personal",
+  "precio": 4200,
+  "stock": 40,
+  "descripcion": "Crema corporal intensiva con aceite de almendras",
+  "icono": "soap",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Talco Johnson's 200g",
+  "categoria": "Higiene Personal",
+  "precio": 2600,
+  "stock": 40,
+  "descripcion": "Talco suave para bebé y adultos",
+  "icono": "soap",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Perfume 212 Sexy Men 100ml",
+  "categoria": "Perfumería",
+  "precio": 48000,
+  "stock": 8,
+  "descripcion": "Eau de Toilette seductor y amaderado",
+  "icono": "self_care",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Máscara de Pestañas L'Oreal",
+  "categoria": "Perfumería",
+  "precio": 8200,
+  "stock": 22,
+  "descripcion": "Máscara voluminizadora negra resistente al agua",
+  "icono": "self_care",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Base de Maquillaje Maybelline",
+  "categoria": "Perfumería",
+  "precio": 9500,
+  "stock": 18,
+  "descripcion": "Base de maquillaje cobertura total larga duración",
+  "icono": "self_care",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Polvo Compacto Studio Fix MAC",
+  "categoria": "Perfumería",
+  "precio": 18000,
+  "stock": 10,
+  "descripcion": "Polvo compacto matificante con cobertura media",
+  "icono": "self_care",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Agua Oxigenada 100ml",
+  "categoria": "Farmacia",
+  "precio": 950,
+  "stock": 60,
+  "descripcion": "Agua oxigenada vol 10 para desinfección",
+  "icono": "local_pharmacy",
+  "oferta": true,
+  "descuento": 15
+ },
+ {
+  "nombre": "Antiácido Gaviscon 500ml",
+  "categoria": "Farmacia",
+  "precio": 4200,
+  "stock": 20,
+  "descripcion": "Jarabe antiácido para acidez y reflujo",
+  "icono": "local_pharmacy",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Crema Bepanthen 30g",
+  "categoria": "Farmacia",
+  "precio": 3200,
+  "stock": 28,
+  "descripcion": "Crema cicatrizante con pantenol",
+  "icono": "local_pharmacy",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Test de Embarazo Clearblue x2",
+  "categoria": "Farmacia",
+  "precio": 5500,
+  "stock": 15,
+  "descripcion": "Test de embarazo digital con lectura semanal",
+  "icono": "local_pharmacy",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Alimento Perro Royal Canin 3kg",
+  "categoria": "Mascotas",
+  "precio": 18500,
+  "stock": 20,
+  "descripcion": "Alimento balanceado para perros adultos medianos",
+  "icono": "pets",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Arena Sanitaria Gato 4kg",
+  "categoria": "Mascotas",
+  "precio": 4800,
+  "stock": 30,
+  "descripcion": "Arena aglutinante sin polvo para gatos",
+  "icono": "pets",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Collar Antipulgas Seresto Perro",
+  "categoria": "Mascotas",
+  "precio": 12000,
+  "stock": 15,
+  "descripcion": "Collar antipulgas y garrapatas 8 meses",
+  "icono": "pets",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Juguete Pelota Kong Rojo S",
+  "categoria": "Mascotas",
+  "precio": 5200,
+  "stock": 20,
+  "descripcion": "Pelota de goma resistente para perros medianos",
+  "icono": "pets",
+  "oferta": true,
+  "descuento": 15
+ },
+ {
+  "nombre": "Rascador Gato Con Casa",
+  "categoria": "Mascotas",
+  "precio": 12500,
+  "stock": 10,
+  "descripcion": "Árbol rascador con casita y cuerda de sisal",
+  "icono": "pets",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Suplemento Articular Perro 60cp",
+  "categoria": "Mascotas",
+  "precio": 8200,
+  "stock": 12,
+  "descripcion": "Comprimidos con glucosamina y condroitina para articulaciones",
+  "icono": "pets",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Lija Hoja 220 Pack x5",
+  "categoria": "Ferretería",
+  "precio": 1200,
+  "stock": 55,
+  "descripcion": "Lijas al agua grano 220 para madera y metal",
+  "icono": "hardware",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Taladro Inalámbrico Black+Decker",
+  "categoria": "Ferretería",
+  "precio": 28000,
+  "stock": 8,
+  "descripcion": "Taladro 12V con batería de litio y maletín",
+  "icono": "hardware",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Silicona Neutra Transparente 280ml",
+  "categoria": "Ferretería",
+  "precio": 2800,
+  "stock": 35,
+  "descripcion": "Silicona selladora neutra para vidrio y metal",
+  "icono": "hardware",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Pegamento UHU 40g",
+  "categoria": "Librería",
+  "precio": 1800,
+  "stock": 60,
+  "descripcion": "Adhesivo en barra repositable sin manchar",
+  "icono": "menu_book",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Tinta Impresora Epson T544 Negro",
+  "categoria": "Librería",
+  "precio": 4200,
+  "stock": 20,
+  "descripcion": "Cartucho de tinta original para Epson L3250",
+  "icono": "menu_book",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Auriculares JBL Tune 510BT",
+  "categoria": "Electrónica",
+  "precio": 32000,
+  "stock": 12,
+  "descripcion": "Auriculares inalámbricos Bluetooth con 40h batería",
+  "icono": "devices",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Cargador USB-C 65W Anker",
+  "categoria": "Electrónica",
+  "precio": 14500,
+  "stock": 20,
+  "descripcion": "Cargador GaN ultra compacto con carga rápida",
+  "icono": "devices",
+  "oferta": true,
+  "descuento": 10
+ },
+ {
+  "nombre": "Parlante Bluetooth JBL Go 3",
+  "categoria": "Electrónica",
+  "precio": 22000,
+  "stock": 15,
+  "descripcion": "Parlante portátil waterproof con 5h autonomía",
+  "icono": "devices",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Mouse Inalámbrico Logitech M185",
+  "categoria": "Electrónica",
+  "precio": 12000,
+  "stock": 18,
+  "descripcion": "Mouse inalámbrico 2.4GHz con batería 1 año",
+  "icono": "devices",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Teclado USB Genius KB-110",
+  "categoria": "Electrónica",
+  "precio": 8500,
+  "stock": 20,
+  "descripcion": "Teclado USB español con numpad",
+  "icono": "devices",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Lámpara LED Ring Light 10 pulgadas",
+  "categoria": "Electrónica",
+  "precio": 18000,
+  "stock": 10,
+  "descripcion": "Aro de luz LED con trípode para streaming",
+  "icono": "devices",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Soporte Celular Auto Ventilación",
+  "categoria": "Electrónica",
+  "precio": 3500,
+  "stock": 40,
+  "descripcion": "Soporte magnético para celular en rejilla de auto",
+  "icono": "devices",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Micrófono Condenser BM800",
+  "categoria": "Electrónica",
+  "precio": 15000,
+  "stock": 10,
+  "descripcion": "Micrófono condensador con soporte anti-shock",
+  "icono": "devices",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Crema Bebe Johnsons 200g",
+  "categoria": "Infantil",
+  "precio": 3200,
+  "stock": 30,
+  "descripcion": "Crema corporal para bebés con aceite de almendras",
+  "icono": "child_care",
+  "oferta": true,
+  "descuento": 15
+ },
+ {
+  "nombre": "Cuna Portátil Chicco Next2Me",
+  "categoria": "Infantil",
+  "precio": 85000,
+  "stock": 3,
+  "descripcion": "Moisés portátil colecho para recién nacidos",
+  "icono": "child_care",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Set Platos Bambú Bebé x3",
+  "categoria": "Infantil",
+  "precio": 4200,
+  "stock": 22,
+  "descripcion": "Set de plato hondo, llano y bowl de bambú",
+  "icono": "child_care",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Portabebé Ergonómico Chicco",
+  "categoria": "Infantil",
+  "precio": 28000,
+  "stock": 8,
+  "descripcion": "Portabebé frontal y dorsal 4-posiciones ergonómico",
+  "icono": "child_care",
+  "oferta": false,
+  "descuento": 0
+ },
+ {
+  "nombre": "Ropa Interior Mujer x3",
+  "categoria": "Textil",
+  "precio": 6500,
+  "stock": 25,
+  "descripcion": "Pack de 3 bombacha de algodón talle S-M-L",
+  "icono": "checkroom",
+  "oferta": true,
+  "descuento": 15
+ }
+]

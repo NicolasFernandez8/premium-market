@@ -1,0 +1,52 @@
+/* ── AJUSTES DEL HEADER DE LA TIENDA ─────────
+   La base es navbar.css (mismo header que la gestión interna) */
+
+/* "Ingresar" arriba a la derecha: pastilla blanca sobre el violeta */
+.ingresar {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  height: 40px;
+  padding: 0 1rem 0 0.75rem;
+  border-radius: 999px;
+  background: #FBF9F7;
+  color: #6B2D8C !important;
+  font-weight: 600;
+  font-size: 0.88rem;
+  white-space: nowrap;
+  transition: background-color 150ms ease, box-shadow 150ms ease;
+}
+
+.ingresar span,
+.ingresar mat-icon {
+  color: #6B2D8C !important;
+}
+
+.ingresar:hover {
+  background: #fff;
+  box-shadow: 0 0 0 3px rgba(201, 166, 224, 0.55);
+}
+
+/* Botón de la cuenta: misma pastilla que el usuario del header interno */
+.cuenta {
+  border: none;
+  font: inherit;
+  cursor: pointer;
+}
+
+.cuenta:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.cuenta-flecha {
+  color: #fff !important;
+  font-size: 20px;
+  width: 20px;
+  height: 20px;
+}
+
+@media (max-width: 1100px) {
+  .cuenta-flecha {
+    display: none;
+  }
+}

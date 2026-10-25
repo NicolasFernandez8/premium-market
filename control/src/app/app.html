@@ -1,13 +1,31 @@
 <!-- ── ESTRUCTURA PRINCIPAL ────────────────────
-     Con sesión: header interno + pantalla activa.
-     Sin sesión: solo la pantalla de login.
+     Personal: header interno + pantalla activa.
+     Clientes e invitados: header de la tienda + pantalla + pie.
+     Login y registro: pantalla completa, sin header.
      [@routeAnimations]: dispara la transición al cambiar de página,
      usando la URL como dato que identifica cada estado.           -->
 
-@if (usuarioActual$ | async) {
-  <app-navbar></app-navbar>
+@if (!pantallaCompleta()) {
+  @if (esPersonal()) {
+    <app-navbar></app-navbar>
+  } @else {
+    <app-tienda-header></app-tienda-header>
+  }
 }
 
 <main class="pantalla" [@routeAnimations]="outlet.isActivated ? outlet.activatedRouteData['animation'] ?? outlet.activatedRoute : ''">
   <router-outlet #outlet="outlet"></router-outlet>
 </main>
+
+@if (!pantallaCompleta() && !esPersonal()) {
+  <footer class="pie-tienda">
+    <div class="contenedor pie-fila">
+      <img src="/marca/premium-market-horizontal-negativo.svg" alt="Premium Market" width="140" height="40" />
+      <ul>
+        <li><a routerLink="/como-pagar"><mat-icon>qr_code_2</mat-icon> Pagás con QR desde el celular</a></li>
+        <li><mat-icon>storefront</mat-icon> Retiro en sucursal o envío a domicilio</li>
+        <li><mat-icon>schedule</mat-icon> Lunes a sábado de 8 a 21 h · Domingos de 9 a 14 h</li>
+      </ul>
+    </div>
+  </footer>
+}

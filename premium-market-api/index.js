@@ -1,53 +1,26 @@
 require('dotenv').config();
-const express  = require('express');
 const mongoose = require('mongoose');
-const cors     = require('cors');
 
-// ── RUTAS ─────────────────────────────────────────────────────────────
-const productosRoutes    = require('./src/routes/productos.routes');
-const usuariosRoutes     = require('./src/routes/usuarios.routes');
-const recepcionesRoutes  = require('./src/routes/recepciones.routes');
-const movimientosRoutes  = require('./src/routes/movimientos.routes');
+const app = require('./src/app');
+const { vencerPendientes } = require('./src/routes/pedidos.routes');
 
-// ── MIDDLEWARE DE AUDITORÍA ───────────────────────────────────────────
-const { auditoriaMiddleware } = require('./src/middleware/auditoria.middleware');
-
-const app  = express();
 const PORT = process.env.PORT || 3000;
 
-// ── MIDDLEWARES GLOBALES ──────────────────────────────────────────────
-app.use(cors());
-app.use(express.json());
-
-// ── AUDITORÍA AUTOMÁTICA ──────────────────────────────────────────────
-app.use('/api', auditoriaMiddleware);
-
-// ── PROXY DÓLAR ───────────────────────────────────────────────────────
-// Angular no puede llamar a dolarapi.com directamente (CORS).
-// El backend hace el fetch server-to-server y lo devuelve al frontend.
-app.get('/api/dolar', async (req, res) => {
-  try {
-    const response = await fetch('https://dolarapi.com/v1/dolares');
-    const data     = await response.json();
-    res.json(data);
-  } catch (err) {
-    res.status(500).json({ error: 'No se pudo obtener cotización del dólar' });
-  }
-});
-
-// ── RUTAS ─────────────────────────────────────────────────────────────
-app.use('/api/productos',   productosRoutes);
-app.use('/api/usuarios',    usuariosRoutes);
-app.use('/api/recepciones', recepcionesRoutes);
-app.use('/api/movimientos', movimientosRoutes);
+// Sin MONGODB_URI se usa la base local: la app nunca cae en otra base por accidente.
+const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/premium_market';
 
 // ── CONEXIÓN A MONGODB ────────────────────────────────────────────────
-mongoose.connect(process.env.MONGODB_URI)
+mongoose.connect(MONGODB_URI)
   .then(() => {
-    console.log('✅ Conectado a MongoDB');
+    console.log(`✅ Conectado a MongoDB (${mongoose.connection.host}/${mongoose.connection.name})`);
     app.listen(PORT, () => {
       console.log(`🚀 Servidor corriendo en http://localhost:${PORT}`);
     });
+
+    // Los pedidos sin pagar liberan su stock al vencer
+    setInterval(() => {
+      vencerPendientes().catch(err => console.error('[Pedidos] Error al vencer pendientes:', err.message));
+    }, 60 * 1000);
   })
   .catch(err => {
     console.error('❌ Error al conectar a MongoDB:', err.message);

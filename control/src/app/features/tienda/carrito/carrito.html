@@ -1,0 +1,179 @@
+<!-- ── CARRITO Y CHECKOUT ─────────────────────
+     Izquierda: productos del carrito.
+     Derecha: totales calculados por la API + datos del pedido. -->
+<div class="pagina contenedor">
+
+  <div class="pagina-encabezado">
+    <div>
+      <p class="eyebrow">Tienda online</p>
+      <h1 class="pm-titulo-pagina">Tu carrito</h1>
+      <p class="bajada">Revisá los productos, completá tus datos y pagá con QR.</p>
+    </div>
+    <a mat-stroked-button routerLink="/productos">
+      <mat-icon>add_shopping_cart</mat-icon> Seguir comprando
+    </a>
+  </div>
+
+  @if (carrito$ | async; as items) {
+    @if (items.length === 0) {
+      <section class="panel">
+        <div class="vacio">
+          <mat-icon>shopping_cart</mat-icon>
+          <p>Tu carrito está vacío.</p>
+          <span>Mirá las promos de la semana o buscá en el catálogo.</span>
+          <div class="vacio-acciones">
+            <a mat-flat-button routerLink="/" fragment="promos">Ver promos</a>
+            <a mat-stroked-button routerLink="/productos">Ir al catálogo</a>
+          </div>
+        </div>
+      </section>
+    } @else {
+      <div class="columnas checkout">
+
+        <!-- ── PRODUCTOS ───────────────────────── -->
+        <section class="panel">
+          <div class="panel-titulo">
+            <h2><mat-icon>shopping_cart</mat-icon> Productos ({{ items.length }})</h2>
+            <button mat-button class="btn-vaciar" (click)="vaciar()">
+              <mat-icon>delete_sweep</mat-icon> Vaciar
+            </button>
+          </div>
+
+          <ul class="items">
+            @for (item of items; track idDe(item)) {
+              @let cot = cotizado(item);
+              <li class="item">
+                <div class="item-foto">
+                  <app-producto-imagen [nombre]="item.producto.nombre" [icono]="item.producto.icono" />
+                </div>
+                <div class="item-info">
+                  <span class="item-nombre">{{ item.producto.nombre }}</span>
+                  <span class="item-meta">
+                    {{ item.producto.categoria }}
+                    @if (item.producto.stock < 5) { · <span class="stock-bajo">quedan {{ item.producto.stock }}</span> }
+                  </span>
+                  @if (cot?.promo) {
+                    <span class="item-promo"><mat-icon>campaign</mat-icon> {{ nombrePromo(cot!.promo) }}</span>
+                  } @else if (cot?.ofertaPct) {
+                    <span class="item-promo oferta"><mat-icon>local_offer</mat-icon> Oferta -{{ cot!.ofertaPct }}%</span>
+                  }
+                </div>
+                <div class="item-cantidad">
+                  <button mat-icon-button (click)="restar(item)" aria-label="Restar una unidad">
+                    <mat-icon>remove</mat-icon>
+                  </button>
+                  <input type="number" min="1" [max]="item.producto.stock" [value]="item.cantidad"
+                         (change)="fijarCantidad(item, $any($event.target).value)"
+                         aria-label="Cantidad" />
+                  <button mat-icon-button (click)="sumar(item)" [disabled]="item.cantidad >= item.producto.stock" aria-label="Sumar una unidad">
+                    <mat-icon>add</mat-icon>
+                  </button>
+                </div>
+                <span class="item-subtotal">
+                  @if (cot && cot.total < cot.subtotalLista) {
+                    <s>{{ cot.subtotalLista | currency:'ARS':'symbol-narrow':'1.0-0':'es-AR' }}</s>
+                  }
+                  {{ (cot?.total ?? item.producto.precio * item.cantidad) | currency:'ARS':'symbol-narrow':'1.0-0':'es-AR' }}
+                </span>
+                <button mat-icon-button class="btn-quitar" (click)="quitar(item)" aria-label="Quitar del carrito">
+                  <mat-icon>close</mat-icon>
+                </button>
+              </li>
+            }
+          </ul>
+
+          @if (!esCliente) {
+            <p class="aviso-cuenta">
+              <mat-icon>loyalty</mat-icon>
+              <span>Con cuenta de cliente tenés descuento en todo el carrito.
+                <a routerLink="/login" [queryParams]="{ volver: '/carrito' }">Ingresá</a> o
+                <a routerLink="/registro" [queryParams]="{ volver: '/carrito' }">registrate</a>.</span>
+            </p>
+          }
+        </section>
+
+        <!-- ── RESUMEN Y DATOS ─────────────────── -->
+        <aside class="panel resumen-compra">
+          <div class="panel-titulo">
+            <h2><mat-icon>receipt_long</mat-icon> Resumen</h2>
+            @if (cotizando) { <mat-spinner diameter="18"></mat-spinner> }
+          </div>
+
+          @if (errorCotizacion) {
+            <p class="error-cotizacion"><mat-icon>error</mat-icon> {{ errorCotizacion }}</p>
+          }
+
+          @if (cotizacion; as c) {
+            <dl class="totales">
+              <div><dt>Subtotal (precio de lista)</dt><dd>{{ c.subtotalLista | currency:'ARS':'symbol-narrow':'1.0-0':'es-AR' }}</dd></div>
+              @if (c.ahorroOfertas) {
+                <div class="ahorro"><dt>Ofertas</dt><dd>-{{ c.ahorroOfertas | currency:'ARS':'symbol-narrow':'1.0-0':'es-AR' }}</dd></div>
+              }
+              @if (c.ahorroPromos) {
+                <div class="ahorro"><dt>Promos del día</dt><dd>-{{ c.ahorroPromos | currency:'ARS':'symbol-narrow':'1.0-0':'es-AR' }}</dd></div>
+              }
+              @if (c.ahorroCliente) {
+                <div class="ahorro">
+                  <dt>Descuento {{ c.tipoCliente === 'mayorista' ? 'mayorista' : 'cliente' }} ({{ c.descuentoClientePct }}%)</dt>
+                  <dd>-{{ c.ahorroCliente | currency:'ARS':'symbol-narrow':'1.0-0':'es-AR' }}</dd>
+                </div>
+              }
+              <div class="total"><dt>Total</dt><dd>{{ c.total | currency:'ARS':'symbol-narrow':'1.0-0':'es-AR' }}</dd></div>
+            </dl>
+            @if (c.promosReintegro.length) {
+              <p class="nota"><mat-icon>account_balance</mat-icon> Hoy hay reintegros bancarios: los devuelve el banco, no cambian este total.</p>
+            }
+          }
+
+          <form [formGroup]="formulario" (ngSubmit)="confirmar()" class="datos">
+            <h3>Tus datos</h3>
+            <mat-form-field appearance="outline">
+              <mat-label>Nombre y apellido</mat-label>
+              <input matInput formControlName="nombre" autocomplete="name" />
+              @if (f.nombre.touched && f.nombre.invalid) { <mat-error>Ingresá tu nombre.</mat-error> }
+            </mat-form-field>
+            <div class="fila-campos">
+              <mat-form-field appearance="outline">
+                <mat-label>Email</mat-label>
+                <input matInput formControlName="email" type="email" autocomplete="email" />
+                @if (f.email.touched && f.email.invalid) { <mat-error>Email no válido.</mat-error> }
+              </mat-form-field>
+              <mat-form-field appearance="outline">
+                <mat-label>Teléfono</mat-label>
+                <input matInput formControlName="telefono" type="tel" autocomplete="tel" />
+                @if (f.telefono.touched && f.telefono.invalid) { <mat-error>Teléfono no válido.</mat-error> }
+              </mat-form-field>
+            </div>
+
+            <h3>Entrega</h3>
+            <mat-button-toggle-group formControlName="modalidad" aria-label="Forma de entrega" class="modalidad">
+              <mat-button-toggle value="retiro"><mat-icon>storefront</mat-icon> Retiro en sucursal</mat-button-toggle>
+              <mat-button-toggle value="envio"><mat-icon>local_shipping</mat-icon> Envío</mat-button-toggle>
+            </mat-button-toggle-group>
+            @if (f.modalidad.value === 'envio') {
+              <mat-form-field appearance="outline">
+                <mat-label>Dirección de envío</mat-label>
+                <input matInput formControlName="direccion" autocomplete="street-address" />
+                @if (f.direccion.touched && f.direccion.invalid) { <mat-error>Ingresá la dirección.</mat-error> }
+              </mat-form-field>
+            }
+            <mat-form-field appearance="outline">
+              <mat-label>Notas (opcional)</mat-label>
+              <input matInput formControlName="notas" placeholder="Ej: tocar timbre B" />
+            </mat-form-field>
+
+            <button mat-flat-button type="submit" class="btn-pagar"
+                    [disabled]="enviando || cotizando || !cotizacion">
+              @if (enviando) {
+                <ng-container><mat-spinner diameter="20"></mat-spinner> Creando pedido…</ng-container>
+              } @else {
+                <ng-container><mat-icon>qr_code_2</mat-icon> Pagar con QR</ng-container>
+              }
+            </button>
+            <p class="nota">Tenés 30 minutos para pagar. Mientras tanto te guardamos el stock.</p>
+          </form>
+        </aside>
+      </div>
+    }
+  }
+</div>

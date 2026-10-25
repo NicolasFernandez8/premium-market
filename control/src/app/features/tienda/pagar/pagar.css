@@ -1,0 +1,93 @@
+.billetera-pagina {
+  display: flex;
+  justify-content: center;
+  padding-top: 2.5rem;
+  padding-bottom: 3rem;
+}
+
+.billetera {
+  width: min(380px, 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0 1.5rem 1.75rem;
+  overflow: hidden;
+  text-align: center;
+  background: var(--pm-surface);
+  border: 1px solid var(--pm-linea);
+  border-radius: 24px;
+  box-shadow: var(--pm-sombra-hover);
+}
+
+.billetera-cabecera {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: calc(100% + 3rem);
+  padding: 0.9rem;
+  margin-bottom: 0.75rem;
+  background: #43185C;
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.billetera-cabecera :is(span, mat-icon) {
+  color: #fff !important;
+}
+
+.comercio {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-weight: 600;
+}
+
+.concepto,
+.aviso {
+  font-size: 0.82rem;
+  color: var(--pm-texto-suave);
+}
+
+.monto {
+  font-family: var(--pm-fuente-titulo);
+  font-size: 2.6rem;
+  font-weight: 600;
+  color: var(--pm-violeta-oscuro) !important;
+}
+
+.btn-confirmar {
+  width: 100%;
+  height: 50px;
+  border-radius: 999px !important;
+  font-size: 1rem;
+}
+
+.btn-confirmar mat-spinner {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.billetera-estado {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 1.5rem 0;
+}
+
+.billetera-estado mat-icon {
+  font-size: 56px;
+  width: 56px;
+  height: 56px;
+}
+
+.billetera-estado p {
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+.billetera-estado.ok mat-icon { color: var(--pm-ok) !important; }
+.billetera-estado.error mat-icon { color: var(--pm-error) !important; }

@@ -1,0 +1,219 @@
+/* ── PEDIDO: AJUSTES SOBRE pedidos.css ────── */
+.cargando {
+  display: flex;
+  justify-content: center;
+  padding: 5rem 0;
+}
+
+/* Estado del pedido (también lo usan Mi cuenta y Clientes) */
+.estado-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.35rem 0.8rem;
+  border-radius: 999px;
+  font-size: 0.82rem;
+  font-weight: 600;
+}
+
+.estado-chip mat-icon {
+  font-size: 18px;
+  width: 18px;
+  height: 18px;
+  color: inherit !important;
+}
+
+.estado-chip.alerta { background: var(--pm-alerta-suave); color: var(--pm-alerta) !important; }
+.estado-chip.ok     { background: var(--pm-ok-suave); color: var(--pm-ok) !important; }
+.estado-chip.info   { background: var(--pm-violeta-suave); color: var(--pm-acento) !important; }
+.estado-chip.error  { background: var(--pm-oferta-suave); color: var(--pm-error) !important; }
+
+/* ── PAGO CON QR ───────────────────────────── */
+.pago {
+  display: grid;
+  grid-template-columns: 260px minmax(0, 1fr);
+  gap: 1.75rem;
+  align-items: center;
+}
+
+.qr-marco {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 1;
+  padding: 10px;
+  border-radius: 16px;
+  background: #fff;
+  border: 2px solid var(--pm-borde);
+  box-shadow: var(--pm-sombra);
+}
+
+.qr-marco img {
+  width: 100%;
+  height: auto;
+}
+
+.pago-texto {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.pago-monto {
+  font-family: var(--pm-fuente-titulo);
+  font-size: 2.4rem;
+  font-weight: 600;
+  line-height: 1;
+  color: var(--pm-violeta-oscuro) !important;
+}
+
+.pago-texto ol {
+  padding-left: 1.2rem;
+  font-size: 0.9rem;
+  display: grid;
+  gap: 0.25rem;
+}
+
+.pago-reloj {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.88rem;
+  color: var(--pm-alerta);
+}
+
+.pago-reloj b {
+  font-variant-numeric: tabular-nums;
+}
+
+.pago-acciones {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.pago-acciones a {
+  border-radius: 999px !important;
+}
+
+.btn-cancelar {
+  color: var(--pm-oferta);
+}
+
+/* ── SEGUIMIENTO ───────────────────────────── */
+.seguimiento {
+  list-style: none;
+  display: grid;
+  gap: 0.85rem;
+  margin-bottom: 1rem;
+}
+
+.seguimiento li {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-weight: 500;
+  color: var(--pm-texto-suave);
+}
+
+.punto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: var(--pm-surface-alt);
+  border: 2px solid var(--pm-linea);
+}
+
+.punto mat-icon {
+  font-size: 20px;
+  width: 20px;
+  height: 20px;
+  color: var(--pm-texto-suave) !important;
+}
+
+.seguimiento li.hecho {
+  color: var(--pm-texto);
+  font-weight: 600;
+}
+
+.seguimiento li.hecho .punto {
+  background: var(--pm-violeta);
+  border-color: var(--pm-violeta);
+}
+
+.seguimiento li.hecho .punto mat-icon {
+  color: #fff !important;
+}
+
+/* ── DETALLE ───────────────────────────────── */
+.detalle .detalle-items li {
+  grid-template-columns: 36px minmax(0, 1fr) auto;
+}
+
+.totales {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  margin-top: 1rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--pm-linea);
+}
+
+.totales div {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.88rem;
+}
+
+.totales dt {
+  color: var(--pm-texto-suave);
+}
+
+.totales .ahorro dd {
+  font-weight: 600;
+  color: var(--pm-ok) !important;
+}
+
+.totales .total dd {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--pm-violeta-oscuro) !important;
+}
+
+@media (max-width: 700px) {
+  .pago {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+  }
+
+  .qr-marco {
+    width: min(260px, 100%);
+  }
+
+  .pago-texto ol {
+    text-align: left;
+  }
+
+  .pago-reloj,
+  .pago-acciones {
+    justify-content: center;
+  }
+}
+
+/* ── MI CUENTA (comparte esta hoja) ────────── */
+.resumen-cuenta {
+  justify-content: flex-start;
+  margin-bottom: 1.25rem;
+}
+
+.resumen-cuenta div {
+  align-items: flex-start;
+}
+
+.resumen-cuenta .ahorro {
+  color: var(--pm-ok) !important;
+}
