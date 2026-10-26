@@ -45,7 +45,7 @@ export const PROMOCIONES: Promocion[] = [
     detalle: 'Pagando con BNA+ o tarjetas del Banco Nación. El banco reintegra hasta $15.000 por mes. Compra mínima $20.000.',
     medioPago: 'Banco Nación',
     dias: [4, 5],
-    productos: ['Café Molido La Virginia 500g', 'Galletitas María Terrabusi 230g', 'Mermelada Frutilla Arcor 454g'],
+    productos: ['Café Molido La Virginia 500g', 'Tostadas Integrales x30', 'Mermelada Frutilla Arcor 454g'],
     fondo: '#43185C',
     tinta: 'clara',
   },
