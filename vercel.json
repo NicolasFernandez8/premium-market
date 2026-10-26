@@ -1,0 +1,10 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "installCommand": "npm install && npm ci --prefix control --legacy-peer-deps",
+  "buildCommand": "npm run build --prefix control",
+  "outputDirectory": "control/dist/control/browser",
+  "rewrites": [
+    { "source": "/api/:ruta*", "destination": "/api" },
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}
